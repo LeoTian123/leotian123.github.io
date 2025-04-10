@@ -4,9 +4,12 @@ site_author: Leo Tian
 site_description: Leo Tian的个人网站
 
 nav:
+  - 主页: index.md
+
   - Python:
     - python/index.md
     - 一些小玩具:
+      - 一些小玩具: python/一些小玩具/index.md
       - 游戏脚本: python/一些小玩具/游戏脚本.md
       - pygame: python/一些小玩具/pygame.md
       - tkinter: python/一些小玩具/tkinter.md
