@@ -9,17 +9,103 @@ nav:
     - 一些小玩具:
       - 游戏脚本: python/一些小玩具/游戏脚本.md
       - pygame: python/一些小玩具/pygame.md
+      - tkinter: python/一些小玩具/tkinter.md
       - networkx: python/一些小玩具/networkx.md
+      - 爬虫: python/一些小玩具/爬虫.md
+      - U盘检测: python/一些小玩具/U盘检测.md
 
   - 数学:
     - maths/index.md
     - maths/不同构的简单有向图.md
+    - maths/多联骨牌.md
 
   - 语言学:
     - linguistics/index.md
+    - 英语词源:
+      - 英语词源: linguistics/英语词源/index.md
+      - 按照意义分类的:
+        - linguistics/英语词源/按照意义分类的/归类 代词和介词.md
+        - linguistics/英语词源/按照意义分类的/归类 分合 分离.md
+        - linguistics/英语词源/按照意义分类的/归类 分合 完整一同.md
+        - linguistics/英语词源/按照意义分类的/归类 分合 展开.md
+        - linguistics/英语词源/按照意义分类的/归类 分合 聚合闭合收缩.md
+        - linguistics/英语词源/按照意义分类的/归类 分合 膨胀.md
+        - linguistics/英语词源/按照意义分类的/归类 动作 万金油.md
+        - linguistics/英语词源/按照意义分类的/归类 动作 万金油2.md
+        - linguistics/英语词源/按照意义分类的/归类 动作 万金油3.md
+        - linguistics/英语词源/按照意义分类的/归类 动作 切砍劈.md
+        - linguistics/英语词源/按照意义分类的/归类 动作 坐站跳睡呼吸等.md
+        - linguistics/英语词源/按照意义分类的/归类 动作 打伤战.md
+        - linguistics/英语词源/按照意义分类的/归类 动作 抓住.md
+        - linguistics/英语词源/按照意义分类的/归类 动作 摩擦刮.md
+        - linguistics/英语词源/按照意义分类的/归类 动作 系紧联结.md
+        - linguistics/英语词源/按照意义分类的/归类 动作 遮蔽覆盖保护.md
+        - linguistics/英语词源/按照意义分类的/归类 口 吃咬.md
+        - linguistics/英语词源/按照意义分类的/归类 口 喊说唱.md
+        - linguistics/英语词源/按照意义分类的/归类 名词 人.md
+        - linguistics/英语词源/按照意义分类的/归类 名词 器官 五官 其他.md
+        - linguistics/英语词源/按照意义分类的/归类 名词 器官 五官 眼睛.md
+        - linguistics/英语词源/按照意义分类的/归类 名词 器官 身体四肢内脏.md
+        - linguistics/英语词源/按照意义分类的/归类 名词 地点.md
+        - linguistics/英语词源/按照意义分类的/归类 名词 气象天象与历法.md
+        - linguistics/英语词源/按照意义分类的/归类 名词 生命 其他.md
+        - linguistics/英语词源/按照意义分类的/归类 名词 生命 动物.md
+        - linguistics/英语词源/按照意义分类的/归类 名词 生命 植物.md
+        - linguistics/英语词源/按照意义分类的/归类 形容词 经典力学.md
+        - linguistics/英语词源/按照意义分类的/归类 形容词 长短多少大小好坏.md
+        - linguistics/英语词源/按照意义分类的/归类 心理 中性.md
+        - linguistics/英语词源/按照意义分类的/归类 心理 中性2.md
+        - linguistics/英语词源/按照意义分类的/归类 心理 消极.md
+        - linguistics/英语词源/按照意义分类的/归类 心理 积极.md
+        - linguistics/英语词源/按照意义分类的/归类 意义类 1.1信用 市场 分配 财产.md
+        - linguistics/英语词源/按照意义分类的/归类 意义类 1.2生产生活.md
+        - linguistics/英语词源/按照意义分类的/归类 意义类 2权力与宗教.md
+        - linguistics/英语词源/按照意义分类的/归类 意义类 光芒照耀.md
+        - linguistics/英语词源/按照意义分类的/归类 意义类 刺与突.md
+        - linguistics/英语词源/按照意义分类的/归类 意义类 放下留下滞留.md
+        - linguistics/英语词源/按照意义分类的/归类 意义类 旋转弯曲.md
+        - linguistics/英语词源/按照意义分类的/归类 意义类 旋转弯曲2.md
+        - linguistics/英语词源/按照意义分类的/归类 意义类 火焰燃烧.md
+        - linguistics/英语词源/按照意义分类的/归类 意义类 生育生长.md
+        - linguistics/英语词源/按照意义分类的/归类 移动 上下方向.md
+        - linguistics/英语词源/按照意义分类的/归类 移动 人.md
+        - linguistics/英语词源/按照意义分类的/归类 移动 使动 推拉拖投.md
+        - linguistics/英语词源/按照意义分类的/归类 移动 使动 携带支撑引导驾驶.md
+        - linguistics/英语词源/按照意义分类的/归类 移动 物品.md
+        - linguistics/英语词源/按照意义分类的/归类 移动 物品2.md
+        - linguistics/英语词源/按照意义分类的/归类 简明介词与方位词.md
+      - 按照词性分类的:
+        - linguistics/英语词源/按照词性分类的/归类 动词具体.md
+        - linguistics/英语词源/按照词性分类的/归类 动词具体2.md
+        - linguistics/英语词源/按照词性分类的/归类 动词抽象1.md
+        - linguistics/英语词源/按照词性分类的/归类 动词抽象2.md
+        - linguistics/英语词源/按照词性分类的/归类 名词 人造物1.md
+        - linguistics/英语词源/按照词性分类的/归类 名词 人造物2.md
+        - linguistics/英语词源/按照词性分类的/归类 名词 自然.md
+        - linguistics/英语词源/按照词性分类的/归类 形容词.md
+      - 专项项目:
+        - linguistics/英语词源/专项项目/PIE-per.md
+        - linguistics/英语词源/专项项目/PIE-pere.md
+        - linguistics/英语词源/专项项目/一网站的onomatopoeia.md
+        - linguistics/英语词源/专项项目/元素词源.md
+        - linguistics/英语词源/专项项目/元素词源的分类.md
+        - linguistics/英语词源/专项项目/有趣的专题.md
+        - linguistics/英语词源/专项项目/有趣的专题2.md
+        - linguistics/英语词源/专项项目/来自闪米特语族 按意义分类.md
+        - linguistics/英语词源/专项项目/来自闪米特语族.md
 
-  
-
+  - Aesthetics:
+    - aesthetics/index.md
+    - 文字:
+      - aesthetics/文字/index.md
+      - aesthetics/文字/假山.md
+      - aesthetics/文字/图书馆知道.md
+      - aesthetics/文字/写作练习-长长的句子.md
+    - 英文字体（?）:
+      - aesthetics/英文字体/头饰体.md
+      - aesthetics/英文字体/类缅体.md
+      - aesthetics/英文字体/色彩体.md
+    - 化学周期表（?）: aesthetics/化学周期表.md
 
 theme:
   name: material
@@ -82,30 +168,30 @@ theme:
 # # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#copyright-notice
 # copyright: CC-BY-4.0
 # # [bottom-right corner]
-# extra:
-#   # [添加社交网络图标和链接]
-#   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#social-links
-#   # 搜索图标：https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
-#   # name 会在鼠标悬浮时提示
-#   social: # icons
-#     - name: GitHub | Yang-Xijie
-#       icon: fontawesome/brands/github
-#       link: https://github.com/Yang-Xijie
-#     - name: Bilibili | 杨希杰619
-#       icon: fontawesome/brands/bilibili
-#       link: https://space.bilibili.com/24502827
-#     - name: 小杰答疑群 QQ 796233390
-#       icon: fontawesome/brands/qq
-#       link: https://yang-xijie.github.io/ME/qq-groups/
-#     - name: 小杰水群 QQ 824114857
-#       icon: fontawesome/brands/qq
-#       link: https://yang-xijie.github.io/ME/qq-groups/
-#     - name: 小红书 | 杨希杰
-#       icon: fontawesome/solid/images
-#       link: https://www.xiaohongshu.com/user/profile/61be0cc10000000021024369
-#     - name: 打赏支持
-#       icon: fontawesome/solid/mug-saucer
-#       link: https://yang-xijie.github.io/ME/support/
+extra:
+  # [添加社交网络图标和链接]
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#social-links
+  # 搜索图标：https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
+  # name 会在鼠标悬浮时提示
+  social: # icons
+    # - name: GitHub | Yang-Xijie
+    #   icon: fontawesome/brands/github
+    #   link: https://github.com/Yang-Xijie
+    - name: Bilibili | 风竹云墨
+      icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/262390776
+    # - name: 小杰答疑群 QQ 796233390
+    #   icon: fontawesome/brands/qq
+    #   link: https://yang-xijie.github.io/ME/qq-groups/
+    # - name: 小杰水群 QQ 824114857
+    #   icon: fontawesome/brands/qq
+    #   link: https://yang-xijie.github.io/ME/qq-groups/
+    # - name: 小红书 | 杨希杰
+    #   icon: fontawesome/solid/images
+    #   link: https://www.xiaohongshu.com/user/profile/61be0cc10000000021024369
+    # - name: 打赏支持
+    #   icon: fontawesome/solid/mug-saucer
+    #   link: https://yang-xijie.github.io/ME/support/
 
 # [Extensions]
 plugins:
@@ -121,6 +207,7 @@ plugins:
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
   # https://squidfunk.github.io/mkdocs-material/plugins/tags/#meta.tags
   - tags
+
 markdown_extensions:
   # [数学公式支持]
   # https://squidfunk.github.io/mkdocs-material/reference/math/#katex
