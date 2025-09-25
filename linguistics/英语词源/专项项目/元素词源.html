@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+        <title>元素词源</title>
+
+        <style>
+          html {
+            margin: 0;
+            padding: 0;
+          }
+
+          @font-face {
+  font-family: 'mm-iconfont';
+  src: url('data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAVcAA0AAAAADSAAAAUHAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GVgCCShEICo0IigYLGAABNgIkAx4EIAWFLAd0G58KyI7S1LBNkiTFr/P/+6Z638ziLBkIQ8wrsxwEKUmBA4Dwlfarxzy8f+PP7b21ZXFa6IFleXg1a60AqO3LF3jX79fq2xMRxM/jDd1CpYX3FxcP1SqJuY6YNU3FUiQ2jtU11Up8H/EkAATA3TXpGgA83rt/vfLZBDABYQCGcAKRAAxAFXRBBnayKwD+gZ+nPyqFBjBygXL/DlvTIWjwo3cVuK8s9Sl++AEEEjlOjElBk3hilJIMpUKKY21LyxouyaqeWOQjuRrUI+IKdQAY7d9DwI5a04k3MIQFzgG2AOwIKjVqJIrYTsbHABOn6EE+VdOSA1gHO0CS9GBxkMQUvqKqmhP23oxVltyoYu+7Facuv129xJ6zAUpuNJw/Noer8zbl/7HRtyFEqCv9mw2LZ3VXCfF7ULGQwXk1E0zFkant5pHX+SO069xIZQFP7GuSunhzT+uPuaGY8wjz93lhNH9+VyPuCPieEDFvrGZaKEn8By0/Xn3v0RVHUmC89ZOhDlh3jGjeou4WwZ4VRP5wFNIcni96pNDC/qa/zwFLw/qDuH+eGGTtvRnLltyoYu67FceX3+5qwVyZ4I0Xa9BhhYiSnsziTU5ZezSSLTiSYq47FsUXHwcvFjNkwu3NBXzMKiJ/15BtsMQ1xgy5e7/7/fvd7t3pcudO16737nWjDd3v3u16ULnTY0/s1yP0/Scmui+Y0HDii4p2hF3JmehUsiKsiv/3cSrHVX6R/IJJdzYQ9r9pP26TdOc/zP6LnbKg9ZkfiIwv+XOzYQe94qkIvdk05Kn/lyMsmm8KPh98KGQVX3h25WBxRS+vXRVyjG6mfDgvpohyqM+M8zOu6OX0K63v9aXZ8EOl+hM99FbLkGeTpl4Nig85BNS98ahbdCwAz502byvV8h3Wg/UjvlpDaulHWXJ45xmpkR+vfH/c0lR+U6qRDFPFMasTvr+qVeUxFMVUJpGYeohQqEP2nPx5SKO4ooVwruVuCjlnklU9Hy5kSay6LNeiYqv7PjU71+oQWCgHdmB+QcB1t5V7+623sbeXXsGLgy+EbAxegxZ1XtyouW5Ld5F9q9GtCZ11Z2HDJg27dS5c0djIMyrvwL1Elbgmbkv3nTmpbTx5a58ZEeHlIiJmhEeUCw87OCNCZSJMkqK4nWJa+E70KviUNnlpz8pnolu0atLWPDd5Ye+6N0Latm/RSb7VtNuTc6v4gwfcUq568CBa6AgAAAnf3mlYOr2/U+eHZkg41F2gtCyzuA+AhmkRcXiKqLkGv0G0LKl6EWquoiXD9ua35Kvrb/DSahlAIBNQhmOQZyAoDJUTmoihl4lRjTZxhnkgcQ+BzH1GFGkwk5AdnosNwXEIHFUdQBaAiYRpZGJsHhMXZjJI3FUgc8+Bwv1kErqFfbIhLWZBaGw410AjbdshEgwyzrnAYKW8POuMJEDcicMjIvxjg+tAiRK5pAole26Fi4FOXHlGKTbQcPjt4uTbTV5w7sY13AgFgxNUVE4FuIWzBBXLVegDmsd7+xlrL3oZYbQ8lXKUI3lyPYaTxhIJmrG5rmK9vlSCoflfKeQabKRy8CCw7YjReZVGjvRc/8Gn3vEiLOr74PlAfv+1Q9VSHs/l6Tm/nMFjJuLiPNHTGI9vR5xALUQwYDyIsGDESSKZFFJJI908y2iXWzJq0Cj5RDdOO6nFE954+YIpXx1UcFoaLx+TN/EhpYPVt1cBAA==') format('woff2'),
+      url('data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAfMAA0AAAAADSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAHsAAAABoAAAAcjQ+WV0dERUYAAAeQAAAAHgAAAB4AKQART1MvMgAAAaAAAABCAAAAVjxwSCNjbWFwAAAB/AAAAEkAAAFK5m7pl2dhc3AAAAeIAAAACAAAAAj//wADZ2x5ZgAAAmAAAAN8AAAGiB3BA0toZWFkAAABMAAAADAAAAA2GiKzS2hoZWEAAAFgAAAAHQAAACQHcAOFaG10eAAAAeQAAAAYAAAAHg2lAQZsb2NhAAACSAAAABgAAAAYB5YI6G1heHAAAAGAAAAAHwAAACABHQB6bmFtZQAABdwAAAFNAAACrJtyy2Nwb3N0AAAHLAAAAFkAAAB0hhp62HjaY2BkYGAA4iTORQfi+W2+MnCzMIDA7a3bl8Nptv8NzJOYG4BcDgYmkCgASEMMAXjaY2BkYGBu+N/AEMPCAALMkxgYGVABCwBRzAL+AAAAeNpjYGRgYOBmyGPgYAABJiDmAkIGhv9gPgMAFOkBmAB42mNgZGFgnMDAysDA1Ml0hoGBoR9CM75mMGLkAIoysDIzYAUBaa4pDA7PGJ8ZMDf8b2CIYW5kaAQKM4LkAN52DA4AAHjaY2GAABYIZmPwBMI8MPRkaAAAEskCuHjaY2BgYGaAYBkGRgYQcAHyGMF8FgYNIM0GpBkZmJ4xPjP4/5+BAUhr/f8vxSR5C6oeCBjZGOAcRiYgwcSAChgZhj0AAM5gCc8AAAAAAAAAAAAAAACYAPQBjgH2Al4CugMSA0R42o1UT2zTdhR+z26c2ooduXbiEIdkjhtnKzRMThuXqI34syKlaDBp1ZD2hwMMkJAojAPigKAwDrtsmjggDcSFcoALEtzWy05rx20r5VAEhx2oYOyI2CVxeT+7JU0h0RTne9/zTy953/f8DL0grFzjv+DPQhxysAU82A374Ss4BoBZNFQFo1YJi2oNvYilYELVk2XLrXhqCdFN6kLULuFQhW61uMf4Fsw7xO11vNDhPvfv4Cji6GDzchi5c83LcV2Pc+fiOqLucyyxGeBthq/fwn8MfmTQ3zrecJM/iyMDjecDI0iRT1HchX1K47miaQqfUvqaM3qW/U1WX4uLIQ+vtgQAeqC+Ms1P8dPQC2kYgCr5ZKmWaued4YLl5jDJPLMtSskzjXwxEmFeHK6hUXaTmzF0iuXcT36C+25KUpr/cOO6cimGaGrN7VoG03N4WJIRZcm/EcZ5SQ6AOG83ZrlfFWlB+UHWGs9009T5m3raPyhL20SFQJJfyFIprKNAfQttfY/Bp/ANnHindxqvEPY+VNFo5Fmk+SfKWQybTqxrfwxL6FlhzkrGaPRGkIdyW3nrnOTq3OmTIpNb15XzciYQmzmDW/P0lBVyVTEWE6shpm05/gRjgigK/quoKEYZx951yepB4MasLD6Mf6/0Nf5edcP0B/PbED/eMSi4GBM1UcZvFQpksbPphfzBhCRUBCmAW2J0WOgVo+WoyCj7eQLm2RR5dmXVsw9hBEZhR8uz4ns8ywuU0jZQ4tgFq32DDCtheaqtcvdp6qdP0niaL8kH+bxs6s0q9f2Y4yNYjfCcP4dVx6UNc/y5IKp4xL++uLuT1KNU8iASQY/jJ1nRg7AYPcf9c2LZv4JTAO16TPgIttNzsLOrnvL/EJSwh98VlNaaI7qZ1v7oruj6rg2KtExa429pmW6KrtbjCwsb9aQhCyVwodJ9PnTyPhHs03Eqj/AT/w4eNwuI/Rn/ahBzrHv27TgR/zfcOckKfsn0s0I8ZhbG68t16jvStosOdV3rvomWS1tEGe2QsZ6XGae3KPFOq3UXf06l/FOGsRbvsatT1zNGKZUqGbP0JbYagIdpAH6aZ47LsAlAxGTFq2HREaIK5uhFUAzeFYaC3Ev/4pe/18flC1//ta8u7Hk6s9TTszQTIFf0Dw1l9u6bv1ZLfPb5wwPzaweEbwCNs0tEeNqNkT9OwzAYxZ/7D9FIHUAwe2IAmv4ZO1Kp7Awd2NrUCa2SOHLcSl04BAMH4Bg9AMfgAD0Fr+HrUpbGyqefn5/fl9gArvADhb/nBo/CCgFehWu4wEa4Tv1TuEHeCTfJx5wWAlUTbuNBxcIBrtWOCapxydl9lXZghVs8CdfQQSxcp/4u3CB/CTfJ38It8l64janqCAe4Ux9UxnAwmMGzLqAxx5Z1iQgWOTsdqqcP7bEzM28Wer7Vy8jmsc095Yyj+8+PLOseTcALsxOskbKP49Qk63Tmztt7jmfKfIeSrsOqxgAh+pSNK5c214Owf17OM3PyKuv0PEreb4IhVc+9mq9jQkaaSJLh36VkjaJaW1GJqIeMNblxx6MrN8nQ+1jHzmZ6wrYmTa0unF2ZyNP8VvUoMEKPIz5JD6vvz2jzvhj1erEEhJHN8AuKq3jTAAAAeNpdiEsOgCAQxXgogp+reChxJnESgUTQ86u4s4smrdLqY6iG+jPWq6HRoIVBBwuHfgoci6Q4h9Ofhg652AWJFFNhkzfmYr2Uxe9P7ULcUFotSX7PDa0DFeMAAAAAAAAB//8AAgABAAAADAAAABYAAAACAAEAAwAKAAEABAAAAAIAAAAAeNpjYGBgZACCq0vUOUD07a3bl8NoAEb7B4YAAA==') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.mm-iconfont::before {
+  font-family: 'mm-iconfont', sans-serif !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+          .mention[data-type='1']::before,
+          .mention[data-type='3']::before,
+          .mention[data-type='8']::before,
+          .mention[data-type='11']::before,
+          .mention[data-type='12']::before,
+          .mention[data-type='15']::before,
+          .mention[data-type='16']::before {
+            content: '\e62f';
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -4px;
+            font-size: inherit;
+          }
+          .mention[data-type='3']::before {
+            content: '\e62c';
+          }
+          .mention[data-type='8']::before {
+            content: '\e62d';
+          }
+          .mention[data-type='11']::before {
+            content: '\e62b';
+          }
+          .mention[data-type='12']::before {
+            content: '\e62a';
+          }
+          .mention[data-type='15']::before {
+            content: '\e62e';
+          }
+          .mention[data-type='22']::before {
+            content: '\e602';
+          }
+
+          body {
+            margin: 50px 20px;
+            padding: 0;
+            color: #333;
+            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'PingFang SC',
+                  Helvetica, Arial, 'Microsoft YaHei', 微软雅黑, 黑体, Heiti, sans-serif,
+                  SimSun, 宋体, serif,
+                  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+          }
+
+          body.narrow {
+            max-width: 790px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+
+          .title {
+            min-height: 40px;
+            padding-left: 10px;
+            padding-bottom: 24px;
+            margin-bottom: 20px;
+            line-height: 40px;
+            font-size: 26px;
+            font-weight: 500;
+            border-bottom: 1px solid #e5e6e8;
+          }
+
+          .node-list {
+            margin: 0 0 0 28px;
+            padding: 0;
+            list-style: none;
+          }
+
+          .node {
+            position: relative;
+          }
+
+          .node.drill-node > .content {
+            margin-bottom: 15px;
+            font-size: 20px;
+            line-height: 28px;
+          }
+
+          .node.drill-node > .note {
+            margin-bottom: 10px;
+          }
+
+          .content {
+            min-height: 24px;
+            padding-top: 2px;
+            padding-bottom: 3px;
+            line-height: 24px;
+            font-size: 16px;
+          }
+
+          .note {
+            position: relative;
+            padding-bottom: 2px;
+            line-height: 22px;
+            font-size: 14px;
+            color: #888;
+            white-space: pre-wrap;
+          }
+
+          .content > *,
+          .note > * {
+            padding-top: 2px;
+            padding-bottom: 2px;
+          }
+
+          .note:empty {
+            padding-bottom: 0;
+          }
+
+          .node.finished .content,
+          .node.finished .note {
+            opacity: 0.5;
+          }
+
+          .node.finished > .content {
+            text-decoration: line-through;
+          }
+
+          .heading1 > .content {
+            min-height: 34px;
+            line-height: 34px;
+            font-size: 24px;
+            font-weight: 500;
+          }
+
+          .heading2 > .content {
+            min-height: 30px;
+            line-height: 30px;
+            font-size: 21px;
+            font-weight: 500;
+          }
+
+          .heading3 > .content {
+            min-height: 27px;
+            line-height: 27px;
+            font-size: 19px;
+            font-weight: 500;
+          }
+
+          .mention {
+            padding-left: 2px;
+            padding-right: 2px;
+            color: #5856d5;
+            word-break: break-all;
+            text-decoration: none;
+          }
+
+          .content-link {
+            color: unset;
+            opacity: 0.6;
+            word-break: break-all;
+          }
+
+          .tag {
+            text-decoration: underline;
+            opacity: 0.6;
+          }
+
+          .bold {
+            font-weight: bold;
+          }
+
+          .italic {
+            font-style: italic;
+          }
+
+          .underline {
+            text-decoration: underline;
+          }
+
+          .content .highlight-red,
+          .highlight-red > .content > * {
+            background-color: #ff8c8c99;
+          }
+
+          .content .highlight-yellow,
+          .highlight-yellow > .content > * {
+            background-color: #ffff2699;
+          }
+
+          .content .highlight-blue,
+          .highlight-blue > .content > * {
+            background-color: #8ce5ff99;
+          }
+
+          .content .highlight-cyan,
+          .highlight-cyan > .content > * {
+            background-color: #a3ffca99;
+          }
+
+          .content .highlight-pink,
+          .highlight-pink > .content > * {
+            background-color: #f3a6ff99;
+          }
+
+          .content .highlight-olive,
+          .highlight-olive > .content > * {
+            background-color: #c8ff8c99;
+          }
+
+          .content .highlight-grey,
+          .highlight-grey > .content > * {
+            background-color: #b1b6be99;
+          }
+
+          .text-color-red {
+            color: #dc2d1e;
+          }
+
+          .text-color-yellow {
+            color: #ffaf38;
+          }
+
+          .text-color-green {
+            color: #75c940;
+          }
+
+          .text-color-blue {
+            color: #3da8f5;
+          }
+
+          .text-color-purple {
+            color: #797ec9;
+          }
+
+          .bullet {
+            position: absolute;
+            left: -25px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            border-radius: 9px;
+          }
+
+          .node.collapsed > .bullet {
+            background-color: #dee0e3;
+          }
+
+          .heading1 > .bullet {
+            top: 10px;
+          }
+
+          .heading2 > .bullet {
+            top: 8px;
+          }
+
+          .heading3 > .bullet {
+            top: 6px;
+          }
+
+          .bullet-dot {
+            position: absolute;
+            left: 6px;
+            top: 6px;
+            width: 6px;
+            height: 6px;
+            background-color: rgb(100, 106, 115);
+            border-radius: 3px;
+          }
+
+          .image-list {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          }
+
+          .image-item {
+            padding-top: 2px;
+            padding-bottom: 8px;
+          }
+
+          .image {
+            display: block;
+            max-width: 100%;
+          }
+
+          .children {
+            position: relative;
+          }
+
+          .note::before,
+          .image-list::before,
+          .children::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -17px;
+            width: 1px;
+            height: 100%;
+            background-color: #dee0e3;
+          }
+
+          .node.drill-node > .note::before,
+          .node.drill-node > .image-list::before,
+          .node.drill-node > .children::before,
+          body.noline .note::before,
+          body.noline .image-list::before,
+          body.noline .children::before {
+            display: none;
+          }
+
+          .node.drill-node > .note,
+          .node.drill-node > .content,
+          .node.drill-node > .image-list,
+          .node.drill-node > .children {
+            margin-left: 10px;
+          }
+
+          body.noline .node-list {
+            margin-right: 20px;
+          }
+
+          .publish {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+          }
+
+          .publish-link {
+            color: #4694FF;
+          }
+
+          .node .mention.mm-iconfont::before {
+            content: '\e601';
+          }
+
+          .node .mention.mm-iconfont {
+             color: #5856d5;
+          }
+
+          @media print {
+            body {
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+          }
+
+          @page {
+            margin-left: 0.25in;
+            margin-right: 0.25in;
+            margin-top: 0.5in;
+            margin-bottom: 0.5in;
+          }
+        </style>
+        <style>
+        @font-face{font-family:KaTeX_AMS;src:url(fonts/KaTeX_AMS-Regular.woff2) format("woff2"),url(fonts/KaTeX_AMS-Regular.woff) format("woff"),url(fonts/KaTeX_AMS-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Bold.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Bold.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Regular.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Regular.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Bold.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Bold.woff) format("woff"),url(fonts/KaTeX_Fraktur-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Regular.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Regular.woff) format("woff"),url(fonts/KaTeX_Fraktur-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Bold.woff2) format("woff2"),url(fonts/KaTeX_Main-Bold.woff) format("woff"),url(fonts/KaTeX_Main-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Main-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Main-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Italic.woff2) format("woff2"),url(fonts/KaTeX_Main-Italic.woff) format("woff"),url(fonts/KaTeX_Main-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Regular.woff2) format("woff2"),url(fonts/KaTeX_Main-Regular.woff) format("woff"),url(fonts/KaTeX_Main-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Math-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Math-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-Italic.woff2) format("woff2"),url(fonts/KaTeX_Math-Italic.woff) format("woff"),url(fonts/KaTeX_Math-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Bold.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Bold.woff) format("woff"),url(fonts/KaTeX_SansSerif-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Italic.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Italic.woff) format("woff"),url(fonts/KaTeX_SansSerif-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Regular.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Regular.woff) format("woff"),url(fonts/KaTeX_SansSerif-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Script;src:url(fonts/KaTeX_Script-Regular.woff2) format("woff2"),url(fonts/KaTeX_Script-Regular.woff) format("woff"),url(fonts/KaTeX_Script-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size1;src:url(fonts/KaTeX_Size1-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size1-Regular.woff) format("woff"),url(fonts/KaTeX_Size1-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size2;src:url(fonts/KaTeX_Size2-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size2-Regular.woff) format("woff"),url(fonts/KaTeX_Size2-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size3;src:url(fonts/KaTeX_Size3-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size3-Regular.woff) format("woff"),url(fonts/KaTeX_Size3-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size4;src:url(fonts/KaTeX_Size4-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size4-Regular.woff) format("woff"),url(fonts/KaTeX_Size4-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Typewriter;src:url(fonts/KaTeX_Typewriter-Regular.woff2) format("woff2"),url(fonts/KaTeX_Typewriter-Regular.woff) format("woff"),url(fonts/KaTeX_Typewriter-Regular.ttf) format("truetype");font-weight:400;font-style:normal}.katex{font:normal 1.21em KaTeX_Main,Times New Roman,serif;line-height:1.2;text-indent:0;text-rendering:auto;border-color:currentColor}.katex *{-ms-high-contrast-adjust:none!important}.katex .katex-version:after{content:"0.12.0"}.katex .katex-mathml{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}.katex .katex-html>.newline{display:block}.katex .base{position:relative;white-space:nowrap;width:min-content}.katex .base,.katex .strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathnormal{font-family:KaTeX_Math;font-style:italic}.katex .mathit{font-family:KaTeX_Main;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-weight:700;font-style:italic}.katex .amsrm,.katex .mathbb,.katex .textbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak,.katex .textfrak{font-family:KaTeX_Fraktur}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr,.katex .textscr{font-family:KaTeX_Script}.katex .mathsf,.katex .textsf{font-family:KaTeX_SansSerif}.katex .mathboldsf,.katex .textboldsf{font-family:KaTeX_SansSerif;font-weight:700}.katex .mathitsf,.katex .textitsf{font-family:KaTeX_SansSerif;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{display:inline-table;table-layout:fixed;border-collapse:collapse}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;vertical-align:bottom;position:relative}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;vertical-align:bottom;font-size:1px;width:2px;min-width:2px}.katex .vbox{-ms-flex-direction:column;flex-direction:column;align-items:baseline}.katex .hbox,.katex .vbox{display:-ms-inline-flexbox;display:inline-flex}.katex .hbox{-ms-flex-direction:row;flex-direction:row;width:100%}.katex .thinbox{display:inline-flex;flex-direction:row;width:0;max-width:0}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline,.katex .hline,.katex .mfrac .frac-line,.katex .overline .overline-line,.katex .rule,.katex .underline .underline-line{min-height:1px}.katex .mspace{display:inline-block}.katex .clap,.katex .llap,.katex .rlap{width:0;position:relative}.katex .clap>.inner,.katex .llap>.inner,.katex .rlap>.inner{position:absolute}.katex .clap>.fix,.katex .llap>.fix,.katex .rlap>.fix{display:inline-block}.katex .llap>.inner{right:0}.katex .clap>.inner,.katex .rlap>.inner{left:0}.katex .clap>.inner>span{margin-left:-50%;margin-right:50%}.katex .rule{display:inline-block;border:0 solid;position:relative}.katex .hline,.katex .overline .overline-line,.katex .underline .underline-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline{display:inline-block;width:100%;border-bottom-style:dashed}.katex .sqrt>.root{margin-left:.27777778em;margin-right:-.55555556em}.katex .fontsize-ensurer.reset-size1.size1,.katex .sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .sizing.reset-size2.size1{font-size:.83333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .sizing.reset-size2.size3{font-size:1.16666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .sizing.reset-size2.size4{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .sizing.reset-size2.size6{font-size:1.66666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .sizing.reset-size2.size10{font-size:3.45666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .sizing.reset-size2.size11{font-size:4.14666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .sizing.reset-size3.size1{font-size:.71428571em}.katex .fontsize-ensurer.reset-size3.size2,.katex .sizing.reset-size3.size2{font-size:.85714286em}.katex .fontsize-ensurer.reset-size3.size3,.katex .sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .sizing.reset-size3.size4{font-size:1.14285714em}.katex .fontsize-ensurer.reset-size3.size5,.katex .sizing.reset-size3.size5{font-size:1.28571429em}.katex .fontsize-ensurer.reset-size3.size6,.katex .sizing.reset-size3.size6{font-size:1.42857143em}.katex .fontsize-ensurer.reset-size3.size7,.katex .sizing.reset-size3.size7{font-size:1.71428571em}.katex .fontsize-ensurer.reset-size3.size8,.katex .sizing.reset-size3.size8{font-size:2.05714286em}.katex .fontsize-ensurer.reset-size3.size9,.katex .sizing.reset-size3.size9{font-size:2.46857143em}.katex .fontsize-ensurer.reset-size3.size10,.katex .sizing.reset-size3.size10{font-size:2.96285714em}.katex .fontsize-ensurer.reset-size3.size11,.katex .sizing.reset-size3.size11{font-size:3.55428571em}.katex .fontsize-ensurer.reset-size4.size1,.katex .sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .sizing.reset-size5.size1{font-size:.55555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .sizing.reset-size5.size2{font-size:.66666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .sizing.reset-size5.size3{font-size:.77777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .sizing.reset-size5.size4{font-size:.88888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .sizing.reset-size5.size6{font-size:1.11111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .sizing.reset-size5.size7{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .sizing.reset-size5.size10{font-size:2.30444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .sizing.reset-size5.size11{font-size:2.76444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .sizing.reset-size7.size1{font-size:.41666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .sizing.reset-size7.size3{font-size:.58333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .sizing.reset-size7.size4{font-size:.66666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .sizing.reset-size7.size6{font-size:.83333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .sizing.reset-size7.size10{font-size:1.72833333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .sizing.reset-size7.size11{font-size:2.07333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .sizing.reset-size8.size1{font-size:.34722222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .sizing.reset-size8.size2{font-size:.41666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .sizing.reset-size8.size3{font-size:.48611111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .sizing.reset-size8.size4{font-size:.55555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .sizing.reset-size8.size6{font-size:.69444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .sizing.reset-size8.size7{font-size:.83333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .sizing.reset-size8.size10{font-size:1.44027778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .sizing.reset-size8.size11{font-size:1.72777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .sizing.reset-size9.size1{font-size:.28935185em}.katex .fontsize-ensurer.reset-size9.size2,.katex .sizing.reset-size9.size2{font-size:.34722222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .sizing.reset-size9.size3{font-size:.40509259em}.katex .fontsize-ensurer.reset-size9.size4,.katex .sizing.reset-size9.size4{font-size:.46296296em}.katex .fontsize-ensurer.reset-size9.size5,.katex .sizing.reset-size9.size5{font-size:.52083333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .sizing.reset-size9.size6{font-size:.5787037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .sizing.reset-size9.size7{font-size:.69444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .sizing.reset-size9.size8{font-size:.83333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .sizing.reset-size9.size10{font-size:1.20023148em}.katex .fontsize-ensurer.reset-size9.size11,.katex .sizing.reset-size9.size11{font-size:1.43981481em}.katex .fontsize-ensurer.reset-size10.size1,.katex .sizing.reset-size10.size1{font-size:.24108004em}.katex .fontsize-ensurer.reset-size10.size2,.katex .sizing.reset-size10.size2{font-size:.28929605em}.katex .fontsize-ensurer.reset-size10.size3,.katex .sizing.reset-size10.size3{font-size:.33751205em}.katex .fontsize-ensurer.reset-size10.size4,.katex .sizing.reset-size10.size4{font-size:.38572806em}.katex .fontsize-ensurer.reset-size10.size5,.katex .sizing.reset-size10.size5{font-size:.43394407em}.katex .fontsize-ensurer.reset-size10.size6,.katex .sizing.reset-size10.size6{font-size:.48216008em}.katex .fontsize-ensurer.reset-size10.size7,.katex .sizing.reset-size10.size7{font-size:.57859209em}.katex .fontsize-ensurer.reset-size10.size8,.katex .sizing.reset-size10.size8{font-size:.69431051em}.katex .fontsize-ensurer.reset-size10.size9,.katex .sizing.reset-size10.size9{font-size:.83317261em}.katex .fontsize-ensurer.reset-size10.size10,.katex .sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .sizing.reset-size10.size11{font-size:1.19961427em}.katex .fontsize-ensurer.reset-size11.size1,.katex .sizing.reset-size11.size1{font-size:.20096463em}.katex .fontsize-ensurer.reset-size11.size2,.katex .sizing.reset-size11.size2{font-size:.24115756em}.katex .fontsize-ensurer.reset-size11.size3,.katex .sizing.reset-size11.size3{font-size:.28135048em}.katex .fontsize-ensurer.reset-size11.size4,.katex .sizing.reset-size11.size4{font-size:.32154341em}.katex .fontsize-ensurer.reset-size11.size5,.katex .sizing.reset-size11.size5{font-size:.36173633em}.katex .fontsize-ensurer.reset-size11.size6,.katex .sizing.reset-size11.size6{font-size:.40192926em}.katex .fontsize-ensurer.reset-size11.size7,.katex .sizing.reset-size11.size7{font-size:.48231511em}.katex .fontsize-ensurer.reset-size11.size8,.katex .sizing.reset-size11.size8{font-size:.57877814em}.katex .fontsize-ensurer.reset-size11.size9,.katex .sizing.reset-size11.size9{font-size:.69453376em}.katex .fontsize-ensurer.reset-size11.size10,.katex .sizing.reset-size11.size10{font-size:.83360129em}.katex .fontsize-ensurer.reset-size11.size11,.katex .sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .op-limits>.vlist-t{text-align:center}.katex .accent>.vlist-t{text-align:center}.katex .accent .accent-body{position:relative}.katex .accent .accent-body:not(.accent-full){width:0}.katex .overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;min-width:1px}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{display:block;position:absolute;width:100%;height:inherit;fill:currentColor;stroke:currentColor;fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1}.katex svg path{stroke:none}.katex img{border-style:none;min-width:0;min-height:0;max-width:none;max-height:none}.katex .stretchy{width:100%;display:block;position:relative;overflow:hidden}.katex .stretchy:after,.katex .stretchy:before{content:""}.katex .hide-tail{width:100%;position:relative;overflow:hidden}.katex .halfarrow-left{position:absolute;left:0;width:50.2%;overflow:hidden}.katex .halfarrow-right{position:absolute;right:0;width:50.2%;overflow:hidden}.katex .brace-left{position:absolute;left:0;width:25.1%;overflow:hidden}.katex .brace-center{position:absolute;left:25%;width:50%;overflow:hidden}.katex .brace-right{position:absolute;right:0;width:25.1%;overflow:hidden}.katex .x-arrow-pad{padding:0 .5em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox,.katex .fcolorbox{box-sizing:border-box;border:.04em solid}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap{margin-left:-.2em;margin-right:-.2em}.katex .sout{border-bottom-style:solid;border-bottom-width:.08em}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:block;text-align:center;white-space:nowrap}.katex-display>.katex>.katex-html{display:block;position:relative}.katex-display>.katex>.katex-html>.tag{position:absolute;right:0}.katex-display.leqno>.katex>.katex-html>.tag{left:0;right:auto}.katex-display.fleqn>.katex{text-align:left;padding-left:2em}
+        </style>
+      </head>
+      <body >
+        <div class="title">元素词源</div>
+        <ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>1.氢hydrogen/'haɪdrədʒ(ə)n/：hydro-,水，-gen,生成，词源同generate.因氢接触氧气生成水而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>2.氦helium/'hiːlɪəm/：来自希腊语helios,太阳。因这种元素发现于太阳光谱中而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>3.锂lithium/'lɪθɪəm/：来自希腊语lithos,石头。因该金属元素发现于石头中而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>4.铍beryllium/bə'rɪlɪəm/：从绿宝石beryl中提炼出来的化学元素。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>beryl：来自南印度语。因在印度南部城市Belur开采而得名，为brilliant原词。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>5.硼boron/'bɔːrɒn/：词源同borax, 硼砂。-on, 化学名词后缀，衍生自carbon.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>6.碳carbon/'kɑːb(ə)n/：来自PIE *ker, 燃烧，词源同cremate（/krɪ'meɪt/火葬）, hearth（壁炉）.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>7.氮nitrogen/'naɪtrədʒ(ə)n/：nitr-,硝，-gen,产生。因研究硝石化学性质时认识这种气体而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>8.氧oxygen/'ɒksɪdʒ(ə)n/：来自希腊语oxys,尖锐的，刺鼻的，来自PIE*ak,尖，刺，词源同acid,acumen.-gen,生成，产生。即生成的尖锐刺鼻气体，后用于指氧气。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>9.氟fluorine/'flʊəriːn; 'flɔː-/：来自19世纪英国化学家Humphry Davy, 因首先在氟石（fluor）中发现这种化学元素而得名。-ine, 化学名词后缀，衍生物。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>fluor：氟石。来自拉丁语fluere, 流动，词源同fluent. 后用于化学名词，指一种流体状的矿物质。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>10.氖neon/'niːɒn/：发现于1898年，来自希腊语neos,新的，因其为当时的新化学元素而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>11.钠sodium/'səʊdɪəm/：来自 soda,苏打，-ium,金属元素后素。因提取自氢氧化钠(sodium hydroxide)而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>12.镁magnesium/mæg'niːzɪəm/：来自magnesia,镁砂，-um,金属元素后缀。Magnesia为古希腊地名</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>13.铝aluminum/əˈluːmɪnəm/：矾土提取物。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>alum明矾</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>14.硅silicon/'sɪlɪk(ə)n/：英文中的silicon一词，来自拉丁文的silex, silicis，意思为燧石（即火石，富含硅元素）。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>15.磷phosphorus/'fɒsf(ə)rəs/：来自拉丁语phosphorus,启明星，来自希腊语Phosphoros,启明星，来自phos,光，phoros,携带者，词源同bring.后用作化学物质磷。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>phos=phot 如photograph</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>16.硫sulfur/sʌlfɚ/：</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>趣词词典的英文词源 只推到了拉丁语 指出可能来自更早的表示燃烧的词儿</span></div>
+    <ul class="image-list">
+    <li class="image-item">
+    <img
+      src="https://api2.mubu.com/v3/document_image/c0677433-1b05-4c76-9e9f-5ad62a4ac906-21349260.jpg"
+      style="width: 400px;"
+      crossorigin="anonymous"
+      class="image"
+    />
+  </li>
+  </ul>
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>17.氯chlorine/'klɔːriːn/：来自PIE*ghel, 发光，照耀，词源同gall, gold. -ine, 衍生物化学名词。因其看起来呈现黄绿色而得名。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>PIE*ghel发光义后多引申为黄色、绿色义</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>gall/ɡɔl/：胆汁 怨恨 苦恼（因胆汁黄绿色）</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>choler 胆囊，胆汁：来自PIE*ghel, 发光，颜色，词源同gall, chlorine,yellow.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>gold glass</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>glitter glisten（都是n v闪光）</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>yellow yolk（蛋黄）</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>jaundice：黄疸 偏见。来自古法语jaunice,来自拉丁语galbinus。字母l软化成字母u,插入字母d.</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>18.氩argon/'ɑːgɒn/：前缀a-, 没有。词根erg, 驱动，同urge, work. 指一种惰性元素。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>19.钾potassium/pə'tæsɪəm/：来自potash,钾碱，-um,化学元素。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>potash碳酸钾 草碱 钾碱：来自pot,罐，ash,灰。即罐子里面存放的草木灰，为古代制作碱的方法。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>20.钙calcium/'kælsɪəm/：来自词根calc, 小石子。词源同calculate.</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>calculate</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>chalk</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>causeway：堤道</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>21.钪scandium/'skændɪəm/：来自 Scandia,来自 Scandinavia 的别名或诗名，-ium,元素后缀。因该金属发现于该地而得名。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>Scandinavia斯堪的纳维亚半岛：北欧挪威，瑞典等国家，来自拉丁语 Scandinavia,来自 Proto-Germanic Skathinawjo,即 Scadia Island,来自*skatho,伤害，危险，来自 PIE sket,伤害，词源同 scathe（伤害）,unscathed（未受伤的）,*awjo,水，水</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>22.钛titanium/taɪ'teɪnɪəm; tɪ-/：来自 Titan,巨人，-ium,元素后缀，命名基于 uranium,铀，来自 Uranus.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>23.钒vanadium/və'neɪdɪəm/：来自古诺斯语Vanadis,美艳女神，对应于罗马Venus，因这种金属元素绚丽多彩而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>24.铬chromium/'krəʊmɪəm/：和chroma（颜色的浓度）同源，因为离子颜色丰富</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>chrome：铬</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>chromosome：染色体</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>color</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>25.锰manganese/'mæŋgəniːz/：来自意大利语manganese,来自magnesia的拼写讹误。后将借就错，用来指两种不同的金属元素（大概说错了 应该是物质吧）。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>magnesia氧化镁：来自拉丁语magnesia,来自希腊语Magnesia lithos,即来自Magnesia的石头，lithos,石头，词源同lithology.Magnesia为古希腊地名，来自当地人的族名Magnetes.因石头中发现镁砂而得名。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>26.铁iron/'aɪən/：来自古英语isaern,铁，铁制品，铁制武器，来自PIE eis,坚硬的，坚固的。部分词源学家进一步推测来自PIE*h1esh2r,血，词源同sanguine,血红色。由血引申词义血红，铁水，铁。同时，由于血在古代观念中的神圣含义，引申词义神圣的，强烈的感情，衍生ire（愤怒）,estrus（雌性动物发情期）,hieratic（神圣的，僧侣的）等。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>27.钴cobalt/'kəʊbɔːlt; -ɒlt/：来自德语Kobald，捣蛋的妖精，来自kobe,小屋，-hold，友好的，该词义已不再使用，词源同inclined。原为矿工行话，当银矿含杂质过多时，矿工会咕哝一下这个词，表示倒霉，后来科学证明这种杂质主要元素为钴。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>28.镍nickel/'nɪk(ə)l/：来自瑞典语kopparnickel,铜矿，铜矿中的魔鬼，来自koppar,铜，即copper,nickel,魔鬼，常见名Nicholas的昵称，来自古英语Old Nick,魔鬼。一种铜矿中的杂质，被矿工戏称为魔鬼，后研究证明该杂质实为镍。镍常被用于铸造钱币，即分币，以代替更昂贵的铜钱。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>29.铜copper/'kɒpə/：来自拉丁词Cyprian, 因产自Cyprus而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>30.锌zinc/zɪŋk/：来自德语Zinke,来自PIE*edont,齿，词源同dental,tooth,orthodontics（牙齿矫正 正+牙）,因这种元素融化后呈齿状的结晶体而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>31.镓gallium/'gælɪəm/：来自Gallic, 高卢的，法国的。来自其发现者19世纪法国科学家Lecoq de Boisbaudran以祖国Gallic命名的金属元素 。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>32.锗germanium/dʒɜː'meɪnɪəm/：来自其发现者19世纪德国科学家Clemens Alexander Winkler以祖国Germany命名的金属元素。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>33.砷arsenic/'ɑːs(ə)nɪk/：词源略（确实复杂）。可能受词根ard的影响，因砷可燃。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wiki：最初源自叙利亚语中的雌黄一词ܠܐ ܙܐܦܢܝܐ（音zarniqa）。这个词来自波斯语زرنيخ（音zarnikh，意为金黄色）。传入希腊语后，被讹作ἀρσενικόν（arsenikon）（单词“雄性”，ἀρσενικός，的中性形式）。后来这个希腊词又传入拉丁语成为arsenicum，再由古法语（arsenic）传入英语（arsenic）。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>34.硒selenium/sɪ'liːnɪəm/：化学元素，命名来自 Selene,月亮，-ium,化学元素后缀，模式基于 tellurium,锝，来自拉丁语 tellus,地球。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>35.溴bromine/'brəʊmiːn/：来自希腊词bromos, 发臭。-ine, 化学名词后缀。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>36.氪krypton/'krɪptɒn/：来自希腊语krypton,隐藏的，词源同crypt（土窖，地下室）,cryptic（神秘的，含义模糊的）,grotto（岩穴，洞穴）.因这种惰性气体元素难于发现而得名。比较dysprosium（66号）.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>37.铷rubidium//：由于其发射光谱呈现出多条鲜明的红线，所以他们选择了拉丁文中意为“深红色”的“rubidus”一词为它命名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>38.锶strontium/'strɒntɪəm; 'strɒnʃ(ɪ)əm/：来自苏格兰村庄名 Strontian,该矿物发现地，-ium,元素后缀。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>39.钇yttrium/'ɪtrɪəm/：因发现自瑞典Ytterby镇而得名，该地字面意思为outer village(by).</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>40.锆zirconium/zɜː'kəʊnɪəm/：来自zircon,锆石（来自阿拉伯语zarqun,朱砂，鲜红色），因这种金属元素发现于锆石而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>41.铌niobium/naɪ'əʊbɪəm/：来自希腊神话Niobe，Tantalus之女，后来人们从金属元素钽（Tantalum 73号）进一步提取出一种新的元素，因此就命名为niobium.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>42.钼molybdenum/mə'lɪbdənəm/：金属元素，用于指铅状矿物质。来自希腊语molybdos,铅，黑色石墨，-um,化学元素后缀。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>43.锝technetium/tek'niːʃɪəm/：金属元素，来自希腊语 tekhnetos,人造的，人工的，来自 tekhne,艺术，工艺，-ium,金属元素。 因其为第一个由人为加工获取的化学元素而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>44.钌ruthenium/rʊ'θiːnɪəm/：由 19 世纪俄罗斯化学家 Karl Klauss 发现的金属元素，命名基于拉丁语 Russi,俄罗斯人，词 源同 Russian.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>45.铑rhodium/'rəʊdɪəm/：来自希腊语 rhodon,玫瑰，词源同 rose.因这种金属元素溶入水后呈玫瑰色而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>46.钯palladium/pə'leɪdɪəm/：金属元素，来自Pallas,古希腊智慧女神Pallas Athena,-ium,元素后缀。</span></div>
+    
+    
+    
+  </li>
+<li class="node collapsed">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>47.银silver/'sɪlvə/：来自中古英语 silver,银，来自古英语 seolfor,银，来自 Proto-Germanic*silubra,银。引申词义 银器，银白色等。金属元素银来自拉丁语 argentum,银，词源同 argent,Argentine.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>48.镉cadmium/'kædmɪəm/：因在希腊Cadmean发现而以其命名的金属元素，该地名来自于希腊神话人物Cadmus。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>49.铟indium//：源自在光谱中看见的靛蓝色，从拉丁文indicum而来，意思是印度。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>50.锡tin/tɪn/：来自古英语 tin,锡，来自 Proto-Germanic*tinom,锡。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>51.锑antimony/'æntɪmənɪ/：词源略。来自俗词源。前缀anti-, 相对，相反。词根mon, 单个，同monk, 和尚。据说该元素对和尚不利。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wiki上的词源</span></div>
+    <ul class="image-list">
+    <li class="image-item">
+    <img
+      src="https://api2.mubu.com/v3/document_image/60240469-05dd-42f0-ac51-ca8cf61c94fa-21349260.jpg"
+      style="width: 400px;"
+      crossorigin="anonymous"
+      class="image"
+    />
+  </li>
+  </ul>
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>52.碲tellurium/te'ljʊərɪəm/：来自拉丁语 tellus,土地，地球，-ium,化学元素后缀。字面意思即来自于地球的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>53.碘iodine/'aɪədiːn; -aɪn; -ɪn/：来自希腊语ideides,紫色的，来自io-,紫色，词源同violet（紫罗兰；堇菜；羞怯的人）,-eides,像，相似，词源同alkaloid,ovoid,idea.后1814年，英国化学家Humphrey Davy借用该希腊词来表示化学元素碘。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>54.氙xenon/'zenɒn; 'ziː-/：来自希腊语xenos,客人，陌生人，其发现者苏格兰化学家William Ramsay因这种元素发现困难而命名。比较krypton（36号）,dysprosium（66号）.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>55.铯cesium/'siːzɪəm/：词源同cerulean, 天蓝色的。因该金属元素呈天蓝色而命名。字母r,s音变。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>56.钡barium/'beərɪəm/：来自词根bar, 重，同gravity, 重力。因该金属元素在同类金属中相对较重而命名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>57.镧lanthanum/'lænθənəm/：来自PIE*ladh,隐藏，词源同latent.因该元素发现之艰难而得名。比较dysprosium.</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>latent adj. 潜在的：来自PIE*la,隐藏，遗忘</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>Lethe  遗忘河，忘却：希腊神话中的冥王哈得斯之河，饮其水则忘却前世，类似于中国神话中的忘川河，奈河桥，孟婆汤。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>lethargy n.无精打采，冷漠：来自希腊语lethargia,遗忘，忘却，lethe,忘记，词源同latent,Lethe,argos,无精神，来自a-,无，没有，-erg,工作，趋动，词源同work,synergy.即如同游魂，无精打采，冷漠。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>58.铈cerium/'sɪərɪəm/：以当时新发现的小行星Ceres命名，小行星又以罗马谷物女神Ceres命名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>59.镨praseodymium/,preɪzɪə(ʊ)'dɪmɪəm/：来自希腊语prasios,韭菜绿，来自prason,韭菜。didymium, 钕镨混合物，来自希腊语didumos,双胞胎，因该元素常与钕相联系，词源同neodymium.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>60.钕neodymium//：见59号</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>61.钷promethium/prə'miːθɪəm/：来自Prometheus,普罗米修斯，-ium,元素后缀。以此命名，一方面说明该核元素如同人类新的火种（核能），另一方面也提醒人们使用这种元素可能命临的后果。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>62.钐samarium//：由法国化学家保罗·埃米尔·勒科克·德布瓦博德兰（Paul-Émile Lecoq de Boisbaudran）于1879年发现的，并以其发现来源铌钇矿（Samarskite）命名。该矿物本身的名字是早先以一位俄罗斯矿务官员瓦西里-萨马尔斯基-别克霍夫茨上校（Vasili Samarsky-Bykhovets）之名所命名的，他因此间接成为第一个名字被用来命名化学元素的人。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>63.铕europium/jʊ(ə)r'əʊpɪəm/：以Europe命名的金属元素。比较americium.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>64.钆gadolinium/,gædə'lɪnɪəm/：纪念18世纪芬兰矿物学家和化学家Johan Gadolin并以其命名的金属元素。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>65.铽terbium/'tɜːbɪəm/：来自拉丁语 Ytterby,瑞典地名，因发现多种金属元素而闻名世界，-ium,元素后缀。比较 ytterbium.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>66.镝dysprosium/dɪs'prəʊzɪəm/：dys-, 不好的。-pros, 接近，词源同approach.因该元素极难发现而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>67.钬holmium/'həʊlmɪəm/：来自Holmia,瑞典首都Stockholm拉丁名字，该稀土元素发现者19世纪瑞典化学家Per Teodor Cleve以此命名，以纪念他的家乡。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>68.铒erbium/'ɜːbɪəm/：因发现自瑞典Ytterby而得名。以该地名命名的金属元素还有yttrium, terbium,ytterbium共四种元素，该地也被授予AN HISTORICAL LANDMARK荣誉称号。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>69.铥thulium/'θ(j)uːlɪəm/：来自古希腊语 Thule,传说中的极北之地，可能为现瑞典，-ium,金属元素后缀。该金属元素由 其发现者 19 世纪瑞典化学家 Per Teodor Cleve 命名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>70.镱ytterbium/ɪ'tɜːbɪəm/：因发现自瑞典Ytterby镇而得名，该地字面意思为outer village(by).</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>71.镥lutetium//：取自巴黎的拉丁文名卢泰西亚（Lutetia）</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>72.铪hafnium/'hæfnɪəm/：来自拉丁语Hafnia,现丹麦首都哥本哈根拉丁语名，因这种金属元素于哥本哈根首次发现而得名，字面意思为港口，词源同haven（港口）,Copenhagen（哥本哈根 丹麦首都）.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>73.钽tantalum/'tæntələm/：金属元素，命名来自拉丁语 Tantalus,因这种金属元素不溶入酸，如 Tantalus 一样干着急。另见41号</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>tantalize 招惹，使干着急：来自拉丁语 Tantalus,来自希腊语 Tantalos,古希腊神话中的人物，传说中为古希腊城邦 Phrygia 国王，宙斯在凡间的私生子，恃宠而骄，蔑视诸神，为检验诸神是否如传说中一样能未卜先 知，将自己儿子杀死做成一桌菜款待诸神，诸神识破后为对他进行惩罚，将其绑在一池深水 的铁链上，水波刚好够到他的下巴，低头要喝水，水即流走，鲜果悬荡在其额头，仰头要吃 水果，果枝即晃走。因其引申该词义。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>74.钨tungsten/'tʌŋst(ə)n/：由该金属元素发现者 18 世纪瑞典化学家 Karl Wilhelm Scheele 根据瑞典语创造出来的词，来 自 tung,重的，sten,石头，词源同 stone.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>75.铼rhenium/'riːnɪəm/：来自拉丁语 Rhenus,莱茵河，词源同 Rhine.由其发现者 20 世纪德国化学家 Walter Noddack 所 命名，以表达对母亲河的敬意。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>Rhine莱茵河：来自德语 Rhine,河流，流动，来自 PIE*reie,流动，词源同 run,derive（源于）,rivulet（小河 小溪）.</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>76.锇osmium/'ɒzmɪəm/：来自希腊语osme,闻，嗅，强烈的气味，词源同odor.因这种金属元素散发出的强烈气味而得名。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>odor气味，名声，臭味：来自拉丁语odor,气味，臭味，香味，来自PIE*od,闻，词源同olfactory（olfactory）,ozone（臭氧）.原先既可以指香味，也可以指臭味，后仅用于指臭味。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>77.铱iridium/ɪ'rɪdɪəm; aɪ-/：来自希腊语iris,彩虹，因这种金属元素散发出五彩斑斓的光泽而得名。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>iris 虹膜，鸢尾花</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>78.铂platinum/'plætɪnəm/：来自西班牙语platina,铂，白金，来自plata,银板，词源同plate（也和plan，plain，plane同源）,-ina,小词后缀。-um,表金属元素。因这种金属形如白银，当西班人18世纪初在中南美洲发现这种金属时，认为这是一种劣质白银，因而命名platina,小银，次等白银。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>79.金gold/gəʊld/：来自PIE*ghel, 照耀，发光，词源同glass, glisten.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>80.汞mercury/'mɝkjəri/：水星，水银。来自拉丁语Mercurius,古罗马神话商业保护神Mercury.来自拉丁语merx,商人，词源同market,merchant.用于指行星水星。同时，也用于指液态金属水银，把流动多变的水银比作成瞬息万变的商品市场。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>81.铊thallium/'θælɪəm/：来自 thallus,绿枝，嫩枝，-ium,金属元素。因在光谱仪上呈嫩绿色而得名。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>thallus绿枝，嫩枝：来自拉丁语 thallus,来自希腊语 thallos,绿枝，嫩枝，来自 PIE*dhal,繁荣，繁盛。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>82.铅lead/liːd/：来自Proto-Germanic*lauda,铅，可能进一步来自PIE ploud,流动，流体，词源同plumb,plumber.因铅是一种易溶易锻造的金属元素而得名，据历史记载，人们利用和使用铅的历史可追溯自公元6000多年前，该遗址位于今土耳其境内。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>83.铋bismuth/'bɪzməθ/：来自古德语，bis , 词源同white, 白色的. muth, 词源同mass, 大块。指该金属白色块状特征。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>white和wheat（小麦）同源</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>mass：来自拉丁语massa,大块，面团，来自PIE*mag,揉，捏，词源同make,massage.引申词义团，块，堆，以及用于物理学术语物质质量，原子质量等。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>84.钋polonium/pə'ləʊnɪəm/：由波兰裔法国物理学家居里夫人Marie Curie于1898年发现的放射性化学元素，以其祖国Poland命名，以表达对祖国的敬意。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>85.砹astatine/'æstətiːn/：前缀a-, 不，非。词根st, 站立，稳定。指该化学元素不稳定。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>86.氡radon/'reɪdɒn/：rad-,辐射，放射，-on,表惰性气体，词源同 neon.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>87.钫francium/'frænsɪəm/：来自法国上世纪核物理学家Marguerite Catherine Perey以其祖国命名的化学元素。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>88.镭radium/'reɪdɪəm/：rad-,辐射，-um,物理元素。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>89.锕actinium/æk'tɪnɪəm/：来自词根actino-, 射线，光线，-ium,化学元素后缀。因该元素在黑暗中发光而得名。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>actinoid：放辐射线状的；锕系元素；锕系</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>90.钍thorium/'θɔːrɪəm/：来自 Thor,雷神索尔，-ium,元素后缀。由其发现者 19 世纪瑞典化学家 Jons Jakob Berzelius 以北欧神话中的英雄人物雷神索尔命名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>91.镤protactinium//：1913年，当时法扬斯(Kasimir Fajans)和格林(Oswald Helmuth Göhring)，在他们的研究铀-238衰变链：铀-238→钍-234→镤-234→铀-234，发现了镤的231号同位素。因为它镤-231的半衰期仅只有6.7小时，他们将这个新元素命名为</span><span class="italic">Brevium</span><span>（拉丁语，意思是短暂或短期）。1917年至1918年间，两组科学家奥托·哈恩和莉泽·迈特纳，以及德国和英国的弗雷德里克·索迪和约翰·克兰斯登，发现了镤的另一个同位素231Pa，半衰期约32000年。因此，他们将名称从Brevium变更为镤（Proto-actinium）（proto，希腊文：πρῶτος，意义为之前、首先），因为镤-231在铀-235衰变链中的位置在锕-227之前，为锕-227的母同位素。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>92.铀uranium/jʊ'reɪnɪəm/：来自1789年，其发现者德国化学家和矿物学家Martin Heinrich Klaproth以当时新发现的行星Uranus（天王星）为这种金属元素命名。比较cerium, 来自谷物女神Ceres.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>93.镎neptunium/nep'tjuːnɪəm/：金属元素，来自Neptune,海王星，以与金属元素uranium相对应。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>94.钚plutonium/pluː'təʊnɪəm/：来自Pluto,冥王，冥王星，-ium,金属元素。因该金属元素元素周期位于neptunium（Neptune,海王星）之后而命名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>95.镅americium//：见62号。当时西博格重新排列了元素周期表，并将锕系置于镧系之下。因此镅位于铕以下，两者为同系物。铕（Europium）是以欧洲大陆（Europe）命名的，镅也因此以美洲大陆（America）命名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>96.锔curium/'kjʊərɪəm/：来自curie, 居里。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>97.锫berkelium//：位于美国加州伯克利的劳伦斯伯克利国家实验室在1949年12月发现锫元素，因此锫以伯克利（Berkeley）命名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>98.锎californium//：伯克利加州大学于1950年以α粒子]撞锔，首次人工合成锎元素，因此该元素是以美国加利福尼亚州及加州大学命名的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>99.锿einsteinium/aɪn'staɪnɪəm/：以20世纪著名科学家Albert Einstein命名的金属元素。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>100.镄fermium/'fɜːmɪəm/：来自其发现者20世纪美国核物理学家Enrico Fermi.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>101.钔mendelevium/,mendə'liːvɪəm; -'leɪvɪəm/：来自19世纪俄罗斯化学家Dmitri Mendeleev,即元素周斯表的建立者，以表达对他的纪念。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>102.锘nobelium/nə(ʊ)'biːlɪəm; -'bel-/：来自瑞典化学家炸药大王Alfred Nobel，以表达对他的敬意。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>103.铹lawrencium/lɒ'rensɪəm/：来自美国20世纪原子物理学家Ernest Lawrence（欧内斯特·劳伦斯 设计了回旋加速器）,以表达对他的敬意。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>104.𬬻rutherfordium：为纪念英国物理学家欧内斯特·卢瑟福Rutherford而以他命名的</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>105.𬭊dubnium：以俄罗斯杜布纳联合核研究所为名</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>106.𬭳Seaborgium：1970年，美国加州大学伯克利分校教授吉奥索领导团队发现𬭳，为了纪念伯克利校长、诺贝尔化学奖得主西博格Seaborg ，将此元素命名为𬭳Seaborgium</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>107.𬭛Bohrium：以丹麦物理学家尼尔斯·玻尔（丹麦文：Niels Henrik David Bohr）命名</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>108.𬭶hassium：发现于欧洲著名科学城——德国黑森州（Hessen）的达姆施塔特市（Darmstadt），黑森州的拉丁语名称为Hassia。该元素是迄今获得化学证据的最重元素。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>109.鿏meitnerium：以纪念核物理学家Lise Meitner（莉泽·迈特纳），莉泽·迈特纳众多成绩中最重要的是她第一个理论解释了奥托·哈恩1938年发现的核裂变。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>110.𫟼darmstadtium：以纪念发现这元素的重离子研究所(Gesellschaft für Schwerionenforschung,GSI)所在地达姆施塔特(Darmstadt)(但其实GSI位于达姆施塔特以北的一个叫Wixhausen的小区)。此外，由于110也是中国、日本、韩国、德国等国报警时所拨的号码，𫟼又有另外一个外号叫</span><span class="italic">policium</span><span>（警察元素）。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>111.𬬭roentgenium：这个名称是为了纪念1895年发现X射线的德国物理学家威廉·康拉德·伦琴（德语：Wilhelm Conrad Röntgen）</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>112.鿔copernicium：此名称是为了纪念著名天文学家哥白尼（Copernicus）而得名的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>113.鑈/鉨/⿰钅尔nihonium：日本理化学研究所仁科加速器研究中心的科研人员将第113号元素以日本国名（nihon）命名为nihonium</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>114.𫓧flerovium：纪念苏联原子物理学家乔治·格奥尔基·弗洛伊洛夫（Georgii Nikolayevich Flerov）</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>115.镆moscovium：该元素由劳伦斯利弗莫尔国家实验室、橡树岭国家实验室和俄罗斯的科学家联合合成，他们将115号元素命名为以莫斯科英文地名拼写为开头的Moscovium。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>116.𫟷/鉝livermorium：俄罗斯杜布纳核研究联合科研所和美国劳伦斯利弗莫尔国家实验室（Lawrence Livermore National Laboratory）合作于2000年合成了元素周期表上的第116号元素，纪念劳伦斯利弗莫尔国家实验室（LLNL）对元素发现作出的贡献</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>117.⿰石田tennessine：国际化学协会(IUPAC) 最终确定117号元素由美国劳伦斯利弗莫尔国家实验室、橡树岭国家实验室和俄罗斯布纳（Dubha）联合核研究所的科学家共同合成。117号元素命名为以“田纳西州”（State of Tennessee 位于美国东南部）英文地名拼写为开头Tennessine（缩写Ts）。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>118.⿹气奥/⿹气奧oganesson：该新元素由美国劳伦斯利弗莫尔国家实验室和俄罗斯的科学家联合合成，为向超重元素合成先驱者、俄罗斯物理学家尤里·奥加涅相（Yuri Oganessian）致敬，研究人员将第118号元素命名为Oganesson.</span></div>
+    
+    
+    
+  </li>
+  </ul>
+        <div class="publish" style="display: flex; align-items: center; justify-content: center;">
+        <span>by&nbsp;</span>
+        <span style="color:#dc9b04"> Leo Tian</span>
+        <span>&nbsp;由&nbsp;</span>
+        <svg width="12" height="12" viewBox="0 0 176 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M27.0026 84.7169L27.0026 84.7187C27.1543 105.515 33.9015 115.962 40.8965 126.793C41.7901 128.177 42.6878 129.567 43.5763 130.986L43.5761 130.986L43.5837 130.997C49.6561 140.131 48.6663 152.568 40.617 160.617C31.4397 169.794 16.5603 169.794 7.38299 160.617C-0.666371 152.568 -1.65605 140.131 4.41557 131.003L4.48092 130.905L4.48238 130.893L5.40506 129.434L5.40713 129.431L8.60254 124.464L8.60329 124.463C14.9616 114.519 20.7111 104.275 20.9895 85.4386L20.9895 85.4367L20.9974 84.7206L20.9974 84.7169L21 84.0018V84C21 72.0349 18.8456 63.4536 15.6833 56.2661C13.2366 50.7047 10.1829 45.976 7.093 41.1912C6.20169 39.811 5.30737 38.4261 4.42373 37.0152L4.42388 37.0151L4.41636 37.0038C-1.65613 27.8693 -0.666305 15.4323 7.38299 7.38299C16.5603 -1.79433 31.4397 -1.79433 40.617 7.38299C48.6664 15.4324 49.656 27.8693 43.5844 36.9969L43.5164 37.0992L43.515 37.1121L42.6052 38.5507L42.6032 38.5539L39.1998 43.8464L39.1988 43.848C32.8381 53.823 27.1423 64.183 27.0026 83.2793L27.0026 83.2812L27 83.9992L27 84.0028L27.0026 84.7169ZM171.584 36.9969L171.516 37.0996L171.515 37.1124L170.605 38.5507L170.603 38.5539L167.2 43.8464L167.199 43.848C160.838 53.823 155.142 64.183 155.003 83.2793L155.003 83.2812L155 83.9992L155 84.0028L155.003 84.7169L155.003 84.7187C155.154 105.515 161.901 115.962 168.896 126.793C169.79 128.177 170.688 129.567 171.576 130.986L171.576 130.986L171.584 130.997C177.656 140.131 176.666 152.568 168.617 160.617C159.44 169.794 144.56 169.794 135.383 160.617C127.334 152.568 126.344 140.131 132.416 131.003L132.481 130.905L132.482 130.893L133.405 129.434L133.407 129.431L136.603 124.464L136.603 124.463C142.962 114.519 148.711 104.275 148.989 85.4386L148.989 85.4367L148.997 84.7206L148.997 84.7169L149 84.0018V84C149 72.0349 146.846 63.4536 143.683 56.2661C141.237 50.7047 138.183 45.976 135.093 41.1912C134.202 39.811 133.307 38.4261 132.424 37.0152L132.424 37.0151L132.416 37.0038C126.344 27.8693 127.334 15.4323 135.383 7.38299C144.56 -1.79433 159.44 -1.79433 168.617 7.38299C176.666 15.4324 177.656 27.8693 171.584 36.9969ZM88 60.5C100.979 60.5 111.5 71.0213 111.5 84C111.5 96.9787 100.979 107.5 88 107.5C75.0213 107.5 64.5 96.9787 64.5 84C64.5 71.0213 75.0213 60.5 88 60.5Z" fill="rgb(143, 149, 158)" stroke="rgb(143, 149, 158)"/>
+          </svg>
+        <span style="color:#dc9b04">&nbsp;幕布</span>
+        <span>&nbsp;发布</span>
+      </div>
+      </body>
+    </html>
+  
