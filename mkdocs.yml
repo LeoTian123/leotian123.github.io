@@ -20,6 +20,7 @@ nav:
   - 数学:
     - maths/index.md
     - maths/图数据挖掘的数学基础.md
+    - maths/继续谈图的傅里叶变换.md
     - maths/不同构的简单有向图.md
     - maths/多联骨牌.md
 
