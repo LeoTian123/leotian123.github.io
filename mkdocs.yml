@@ -16,15 +16,19 @@ nav:
       - networkx: python/一些小玩具/networkx.md
       - 爬虫: python/一些小玩具/爬虫.md
       - U盘检测: python/一些小玩具/U盘检测.md
+    - Django:
+      - Django: python/Django/index.md
+      - 旅游系统: python/Django/旅游系统/旅游系统.md
+      - 校园论坛: python/Django/校园论坛/校园论坛.md
 
-  - 数学:
+  - Maths:
     - maths/index.md
-    - maths/图数据挖掘的数学基础.md
+    - maths/图数据挖掘的数学基础.md 
     - maths/继续谈图的傅里叶变换.md
     - maths/不同构的简单有向图.md
     - maths/多联骨牌.md
 
-  - 语言学:
+  - Languages:
     - linguistics/index.md
     - 英语词源:
       - 英语词源: linguistics/英语词源/index.md
@@ -112,6 +116,22 @@ nav:
       - aesthetics/英文字体/色彩体.md
     - 化学周期表（?）: aesthetics/化学周期表.md
 
+  - Thoughts:
+    - thoughts/index.md
+    - Analytic Philosophy:
+      - thoughts/分析哲学/modality-intro.md
+      - thoughts/分析哲学/mereology-1.md
+      - thoughts/分析哲学/mereology-2.md
+      - thoughts/分析哲学/mereology-3.md
+    - Ancient Philosophy:
+      - thoughts/古典哲学/Kant-intro.md
+      - thoughts/古典哲学/真善美溯源.md
+    - Ethics & Politics:
+      - thoughts/伦理与政治/index.md
+      - thoughts/伦理与政治/意识形态与政治意识形态.md
+      - thoughts/伦理与政治/政治取向和哲学取向的关系.md
+      - thoughts/伦理与政治/动机论.md
+
 theme:
   name: material
   palette:
@@ -185,6 +205,9 @@ extra:
     - name: Bilibili | 风竹云墨
       icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/262390776
+    - name: Zhihu | 大哥抽大哥
+      icon: fontawesome/brands/zhihu
+      link: https://www.zhihu.com/people/dx3906-14-72
     # - name: 小杰答疑群 QQ 796233390
     #   icon: fontawesome/brands/qq
     #   link: https://yang-xijie.github.io/ME/qq-groups/
