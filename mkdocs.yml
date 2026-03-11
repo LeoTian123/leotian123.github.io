@@ -33,6 +33,13 @@ nav:
     - DSL客服: projects/DSL客服.md
     - 校园论坛前端: projects/校园论坛前端.md
 
+  - AI:
+    - 论文阅读:
+      - 论文阅读: ai/论文阅读/index.md
+      - 辑录01: ai/论文阅读/辑录01.md
+    - 摸索实录:
+      - SAE的语言特征与干预: ai/摸索实录/SAE的语言特征与干预.md
+
   - Maths:
     - maths/index.md
     - maths/图数据挖掘的数学基础.md 
@@ -41,6 +48,8 @@ nav:
 
   - Languages:
     - linguistics/index.md
+    - linguistics/方便复制.md
+    - linguistics/假名罗马音转换器.md
     - 英语词源:
       - 英语词源: linguistics/英语词源/index.md
       - 按照意义分类的:
@@ -130,7 +139,6 @@ nav:
       - thoughts/Ethics&Politics/政治取向和哲学取向的关系.md
       - thoughts/Ethics&Politics/动机论.md
     - Aesthetics:
-      - thoughts/Aesthetics/index.md
       - 文字:
         - thoughts/Aesthetics/文字/假山.md
         - thoughts/Aesthetics/文字/图书馆知道.md
