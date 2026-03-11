@@ -13,20 +13,31 @@ nav:
       - 游戏脚本: python/一些小玩具/游戏脚本.md
       - pygame: python/一些小玩具/pygame.md
       - tkinter: python/一些小玩具/tkinter.md
-      - networkx: python/一些小玩具/networkx.md
       - 爬虫: python/一些小玩具/爬虫.md
       - U盘检测: python/一些小玩具/U盘检测.md
+    
+    - pillow:
+      - pillow: python/pillow/index.md
+      - 英语字体: python/pillow/英语字体.md
+      - 化学周期表: python/pillow/化学周期表.md
+      - 多联骨牌: python/pillow/多联骨牌.md
+
+    - networkx: python/networkx.md
+
     - Django:
-      - Django: python/Django/index.md
-      - 旅游系统: python/Django/旅游系统/旅游系统.md
-      - 校园论坛: python/Django/校园论坛/校园论坛.md
+      - 一些项目: python/Django/一些项目.md
+      - ORM笔记: python/Django/ORM笔记.md
+  
+  - Projects:
+    - 旅游系统: projects/旅游系统.md
+    - DSL客服: projects/DSL客服.md
+    - 校园论坛前端: projects/校园论坛前端.md
 
   - Maths:
     - maths/index.md
     - maths/图数据挖掘的数学基础.md 
     - maths/继续谈图的傅里叶变换.md
     - maths/不同构的简单有向图.md
-    - maths/多联骨牌.md
 
   - Languages:
     - linguistics/index.md
@@ -103,34 +114,27 @@ nav:
         - linguistics/英语词源/专项项目/来自闪米特语族 按意义分类.md
         - linguistics/英语词源/专项项目/来自闪米特语族.md
 
-  - Aesthetics:
-    - aesthetics/index.md
-    - 文字:
-      - aesthetics/文字/index.md
-      - aesthetics/文字/假山.md
-      - aesthetics/文字/图书馆知道.md
-      - aesthetics/文字/写作练习-长长的句子.md
-    - 英文字体（?）:
-      - aesthetics/英文字体/头饰体.md
-      - aesthetics/英文字体/类缅体.md
-      - aesthetics/英文字体/色彩体.md
-    - 化学周期表（?）: aesthetics/化学周期表.md
-
   - Thoughts:
     - thoughts/index.md
     - Analytic Philosophy:
-      - thoughts/分析哲学/modality-intro.md
-      - thoughts/分析哲学/mereology-1.md
-      - thoughts/分析哲学/mereology-2.md
-      - thoughts/分析哲学/mereology-3.md
+      - thoughts/AnalyticPhilosophy/modality-intro.md
+      - thoughts/AnalyticPhilosophy/mereology-1.md
+      - thoughts/AnalyticPhilosophy/mereology-2.md
+      - thoughts/AnalyticPhilosophy/mereology-3.md
     - Ancient Philosophy:
-      - thoughts/古典哲学/Kant-intro.md
-      - thoughts/古典哲学/真善美溯源.md
+      - thoughts/AncientPhilosophy/Kant-intro.md
+      - thoughts/AncientPhilosophy/真善美溯源.md
     - Ethics & Politics:
-      - thoughts/伦理与政治/index.md
-      - thoughts/伦理与政治/意识形态与政治意识形态.md
-      - thoughts/伦理与政治/政治取向和哲学取向的关系.md
-      - thoughts/伦理与政治/动机论.md
+      - thoughts/Ethics&Politics/index.md
+      - thoughts/Ethics&Politics/意识形态与政治意识形态.md
+      - thoughts/Ethics&Politics/政治取向和哲学取向的关系.md
+      - thoughts/Ethics&Politics/动机论.md
+    - Aesthetics:
+      - thoughts/Aesthetics/index.md
+      - 文字:
+        - thoughts/Aesthetics/文字/假山.md
+        - thoughts/Aesthetics/文字/图书馆知道.md
+        - thoughts/Aesthetics/文字/写作练习-长长的句子.md
 
 theme:
   name: material
@@ -199,9 +203,9 @@ extra:
   # 搜索图标：https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
   # name 会在鼠标悬浮时提示
   social: # icons
-    # - name: GitHub | Yang-Xijie
-    #   icon: fontawesome/brands/github
-    #   link: https://github.com/Yang-Xijie
+    - name: GitHub | LeoTian123
+      icon: fontawesome/brands/github
+      link: https://github.com/LeoTian123
     - name: Bilibili | 风竹云墨
       icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/262390776
