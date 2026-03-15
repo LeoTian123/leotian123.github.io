@@ -1,13 +1,5 @@
 # 《Parts》第2部分
 
----
-
-知乎原链接：
-
-[【笔记/导读】《Parts: A Study in Ontology》第2部分：最具影响力的mereology/分体论/部分学/偏全学专著之一，by Peter Simons](https://zhuanlan.zhihu.com/p/2004917453877166241)
-
----
-
 > 体，分于兼也。——《墨子 · 卷十 · 经上》  
 > 体，若二之一，尺之端也。——《墨子 · 卷十 · 经说上》  
 > A ti is a portion in a jian. — *Mozi*, Book 10, Canon I  

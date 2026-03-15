@@ -32,6 +32,8 @@ nav:
     - 旅游系统: projects/旅游系统.md
     - DSL客服: projects/DSL客服.md
     - 校园论坛前端: projects/校园论坛前端.md
+    - French-to-IPA: linguistics/French-to-IPA.md
+    - 停车场四日数据: projects/停车场四日数据.md
 
   - AI:
     - 论文阅读:
@@ -50,6 +52,7 @@ nav:
     - linguistics/index.md
     - linguistics/方便复制.md
     - linguistics/假名罗马音转换器.md
+    - linguistics/French-to-IPA.md
     - 英语词源:
       - 英语词源: linguistics/英语词源/index.md
       - 按照意义分类的:
@@ -130,19 +133,13 @@ nav:
       - thoughts/AnalyticPhilosophy/mereology-1.md
       - thoughts/AnalyticPhilosophy/mereology-2.md
       - thoughts/AnalyticPhilosophy/mereology-3.md
-    - Ancient Philosophy:
-      - thoughts/AncientPhilosophy/Kant-intro.md
-      - thoughts/AncientPhilosophy/真善美溯源.md
-    - Ethics & Politics:
-      - thoughts/Ethics&Politics/index.md
-      - thoughts/Ethics&Politics/意识形态与政治意识形态.md
-      - thoughts/Ethics&Politics/政治取向和哲学取向的关系.md
-      - thoughts/Ethics&Politics/动机论.md
     - Aesthetics:
-      - 文字:
-        - thoughts/Aesthetics/文字/假山.md
-        - thoughts/Aesthetics/文字/图书馆知道.md
-        - thoughts/Aesthetics/文字/写作练习-长长的句子.md
+      - thoughts/Aesthetics/图书馆知道.md
+      - thoughts/Aesthetics/写作练习-长长的句子.md
+
+  - Tools:
+    - tools/CLI设置环境变量.md
+    - tools/常用指令.md
 
 theme:
   name: material
@@ -210,28 +207,23 @@ extra:
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#social-links
   # 搜索图标：https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
   # name 会在鼠标悬浮时提示
-  social: # icons
+  social:
     - name: GitHub | LeoTian123
       icon: fontawesome/brands/github
       link: https://github.com/LeoTian123
-    - name: Bilibili | 风竹云墨
-      icon: fontawesome/brands/bilibili
-      link: https://space.bilibili.com/262390776
-    - name: Zhihu | 大哥抽大哥
-      icon: fontawesome/brands/zhihu
-      link: https://www.zhihu.com/people/dx3906-14-72
-    # - name: 小杰答疑群 QQ 796233390
+    # - name: Bilibili | 风竹云墨
+    #   icon: fontawesome/brands/bilibili
+    #   link: https://space.bilibili.com/262390776
+    
+    # - name: QQ
     #   icon: fontawesome/brands/qq
-    #   link: https://yang-xijie.github.io/ME/qq-groups/
-    # - name: 小杰水群 QQ 824114857
-    #   icon: fontawesome/brands/qq
-    #   link: https://yang-xijie.github.io/ME/qq-groups/
-    # - name: 小红书 | 杨希杰
+    #   link: 
+    # - name: 小红书
     #   icon: fontawesome/solid/images
-    #   link: https://www.xiaohongshu.com/user/profile/61be0cc10000000021024369
-    # - name: 打赏支持
+    #   link: 
+    # - name: 支持
     #   icon: fontawesome/solid/mug-saucer
-    #   link: https://yang-xijie.github.io/ME/support/
+    #   link: 
 
 # [Extensions]
 plugins:

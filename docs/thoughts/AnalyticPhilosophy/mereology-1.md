@@ -1,13 +1,5 @@
 # 《Parts》第1部分
 
----
-
-知乎原链接：
-
-[【笔记/导读】《Parts: A Study in Ontology》第1部分：最具影响力的mereology/分体论/部分学/偏全学专著之一，by Peter Simons](https://zhuanlan.zhihu.com/p/2001735370371523578)
-
----
-
 > Perhaps we ought to have said that the syllable is not the letters, but a single concept that has arisen from them, having a single form of its own, different from the letters. —— Plato *Theaetetus* 203e  
 > 或许我们当初应当这样说，音节并不是这些字母，而是一个从它们之中浮现的独立概念，它拥有自己的独立形式，和这些字母截然不同。——柏拉图的《泰阿泰德篇》203e
 
