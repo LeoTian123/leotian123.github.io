@@ -51,8 +51,10 @@ nav:
   - Languages:
     - linguistics/index.md
     - linguistics/方便复制.md
-    - linguistics/假名罗马音转换器.md
-    - linguistics/French-to-IPA.md
+    - 语音:
+      - linguistics/元音直觉工具.md
+      - linguistics/French-to-IPA.md
+      - linguistics/假名罗马音转换器.md
     - 英语词源:
       - 英语词源: linguistics/英语词源/index.md
       - 按照意义分类的:
