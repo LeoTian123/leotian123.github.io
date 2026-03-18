@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日语转换器 (双框版)</title>
+    <!-- 引入 WanaKana 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/wanakana@5.3.1/wanakana.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --error-color: #e74c3c;
+            --success-color: #2ecc71;
+            --bg-color: #f0f2f5;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+            --border-color: #dfe6e9;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            /* align-items: center;
+            min-height: 100vh; */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            max-width: 900px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        /* 模式选择区 */
+        .controls-top {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .mode-btn {
+            padding: 10px 20px;
+            border: 2px solid var(--border-color);
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+            color: #666;
+        }
+
+        .mode-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .mode-btn.active {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+        }
+
+        /* 双框布局区 */
+        .converter-area {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 2rem;
+            align-items: stretch;
+        }
+
+        @media (max-width: 768px) {
+            .converter-area {
+                flex-direction: column;
+            }
+        }
+
+        .box-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #555;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 15px;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            font-size: 1.2rem;
+            resize: none;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+            font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+            line-height: 1.6;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        #outputText {
+            background-color: #f8f9fa;
+            color: #333;
+            cursor: default;
+        }
+
+        /* 错误状态样式 */
+        .error-state {
+            border-color: var(--error-color) !important;
+            background-color: #fff5f5 !important;
+            color: var(--error-color) !important;
+        }
+
+        /* 底部操作区 */
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .convert-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.4);
+            transition: transform 0.1s, box-shadow 0.2s;
+        }
+
+        .convert-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(74, 144, 226, 0.5);
+        }
+
+        .convert-btn:active {
+            transform: translateY(0);
+        }
+
+        .secondary-btn {
+            background-color: transparent;
+            border: 1px solid #ccc;
+            color: #666;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        
+        .secondary-btn:hover {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .status-msg {
+            text-align: center;
+            height: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            color: #888;
+        }
+        
+        .error-text {
+            color: var(--error-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🇯🇵 日语转换器</h1>
+
+    <!-- 模式选择 -->
+    <div class="controls-top">
+        <button class="mode-btn active" onclick="setMode('hiragana')" id="btn-hiragana">转平假名</button>
+        <button class="mode-btn" onclick="setMode('katakana')" id="btn-katakana">转片假名</button>
+        <button class="mode-btn" onclick="setMode('romaji')" id="btn-romaji">转罗马音</button>
+    </div>
+
+    <!-- 双框区域 -->
+    <div class="converter-area">
+        <div class="box-wrapper">
+            <label for="inputText">输入内容 <span style="font-weight:normal; font-size:0.8em; color:#888;">(支持罗马音/假名)</span></label>
+            <textarea id="inputText" placeholder="在此输入...&#10;例如: konnichiwa 或 こんにちは"></textarea>
+        </div>
+        
+        <div class="box-wrapper">
+            <label for="outputText">转换结果</label>
+            <textarea id="outputText" readonly placeholder="结果将显示在这里..."></textarea>
+        </div>
+    </div>
+
+    <!-- 按钮区域 -->
+    <div class="actions">
+        <button class="secondary-btn" onclick="clearAll()">清空</button>
+        <button class="convert-btn" onclick="performConversion()">⚡ 开始转换</button>
+        <button class="secondary-btn" onclick="copyResult()" id="copyBtn">复制结果</button>
+    </div>
+    
+    <div class="status-msg" id="statusMsg"></div>
+</div>
+
+<script>
+    let currentMode = 'hiragana';
+    const inputEl = document.getElementById('inputText');
+    const outputEl = document.getElementById('outputText');
+    const statusEl = document.getElementById('statusMsg');
+
+    // 设置模式
+    function setMode(mode) {
+        currentMode = mode;
+        
+        // 更新按钮样式
+        document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById(`btn-${mode}`).classList.add('active');
+
+        // 更新提示文字
+        const hints = {
+            'hiragana': '模式：罗马音/片假名 → 平假名',
+            'katakana': '模式：罗马音/平假名 → 片假名',
+            'romaji': '模式：平假名/片假名 → 罗马音 (不支持汉字)'
+        };
+        statusEl.textContent = hints[mode];
+        statusEl.className = 'status-msg';
+        
+        // 清空之前的错误状态
+        outputEl.classList.remove('error-state');
+    }
+
+    // 执行转换核心逻辑
+    function performConversion() {
+        const rawInput = inputEl.value;
+        
+        // 重置状态
+        outputEl.classList.remove('error-state');
+        statusEl.textContent = '';
+        statusEl.className = 'status-msg';
+
+        if (!rawInput.trim()) {
+            outputEl.value = '';
+            return;
+        }
+
+        try {
+            let result = '';
+            let hasError = false;
+            let errorMsg = '';
+
+            // 简单的预检查：如果包含汉字，且模式是转罗马音，WanaKana 默认不会转换汉字，会原样保留
+            // 如果用户希望严格报错，我们可以手动检查
+            
+            if (currentMode === 'hiragana') {
+                // toHiragana 通常很宽容，会将合法的罗马音和片假名转过来
+                // 如果包含汉字，它会保留汉字。如果我们想报“非法输入”，可以检查是否保留了非假名字符
+                result = wanakana.toHiragana(rawInput);
+                
+                // 检查是否还有非假名、非标点的字符（主要是汉字或特殊符号）
+                // 这里我们做一个宽松策略：如果结果里还包含汉字，提示用户
+                if (containsKanji(result)) {
+                    hasError = true;
+                    errorMsg = "检测到汉字，无法转换为纯平假名。请移除汉字。";
+                }
+            } 
+            else if (currentMode === 'katakana') {
+                result = wanakana.toKatakana(rawInput);
+                if (containsKanji(result)) {
+                    hasError = true;
+                    errorMsg = "检测到汉字，无法转换为纯片假名。请移除汉字。";
+                }
+            } 
+            else if (currentMode === 'romaji') {
+                // 转罗马音时，如果遇到汉字，wanakana.toRomaji 会原样保留汉字
+                result = wanakana.toRomaji(rawInput);
+                
+                if (containsKanji(result)) {
+                    hasError = true;
+                    errorMsg = "检测到汉字，无法转换为罗马音。本工具仅支持假名和罗马音互转。";
+                }
+                
+                // 检查是否有非法的罗马音拼写导致转换失败？
+                // WanaKana 对非法罗马音通常会原样保留或部分转换。
+                // 如果输入全是奇怪的字母组合，它可能不会报错，但结果可能很奇怪。
+                // 这里主要针对“汉字”这种明确的非法输入进行拦截。
+            }
+
+            if (hasError) {
+                outputEl.value = ""; // 清空结果
+                outputEl.classList.add('error-state');
+                outputEl.placeholder = errorMsg; // 在 placeholder 显示错误，或者直接用 value
+                // 为了更明显，我们用 value 显示错误信息，并加前缀
+                outputEl.value = "❌ 错误: " + errorMsg;
+                statusEl.textContent = "转换失败";
+                statusEl.classList.add('error-text');
+            } else {
+                outputEl.value = result;
+                statusEl.textContent = "转换成功!";
+            }
+
+        } catch (e) {
+            outputEl.classList.add('error-state');
+            outputEl.value = "❌ 系统错误: " + e.message;
+            statusEl.textContent = "发生异常";
+            statusEl.classList.add('error-text');
+            console.error(e);
+        }
+    }
+
+    // 辅助函数：检查字符串是否包含汉字
+    function containsKanji(str) {
+        // 匹配常见的日文汉字范围
+        const kanjiRegex = /[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]/;
+        // 上面的正则其实包含了假名，我们需要更精确地只抓汉字
+        // 汉字范围主要是 \u4e00-\u9faf
+        const hanziRegex = /[\u4e00-\u9faf]/;
+        return hanziRegex.test(str);
+    }
+
+    function clearAll() {
+        inputEl.value = '';
+        outputEl.value = '';
+        outputEl.classList.remove('error-state');
+        statusEl.textContent = '';
+        inputEl.focus();
+    }
+
+    function copyResult() {
+        if (!outputEl.value) return;
+        
+        // 如果是错误信息，不复制
+        if (outputEl.value.startsWith("❌")) {
+            alert("无法复制错误信息，请修正输入后再试。");
+            return;
+        }
+
+        outputEl.select();
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        
+        const originalText = document.getElementById('copyBtn').textContent;
+        document.getElementById('copyBtn').textContent = "✅ 已复制";
+        setTimeout(() => {
+            document.getElementById('copyBtn').textContent = originalText;
+        }, 2000);
+    }
+
+    // 初始化
+    setMode('hiragana');
+</script>
+
+</body>
+</html>
