@@ -16,11 +16,11 @@ nav:
       - 爬虫: python/一些小玩具/爬虫.md
       - U盘检测: python/一些小玩具/U盘检测.md
     
-    - pillow:
-      - pillow: python/pillow/index.md
-      - 英语字体: python/pillow/英语字体.md
-      - 化学周期表: python/pillow/化学周期表.md
-      - 多联骨牌: python/pillow/多联骨牌.md
+    - 绘制有趣的图片:
+      - 英语字体: python/绘制有趣的图片/英语字体.md
+      - 化学周期表: python/绘制有趣的图片/化学周期表.md
+      - 多联骨牌: python/绘制有趣的图片/多联骨牌.md
+      - Banyan和Benes网络: python/绘制有趣的图片/Banyan和Benes网络.md
 
     - networkx: python/networkx.md
 
