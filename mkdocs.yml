@@ -34,6 +34,7 @@ nav:
     - 校园论坛前端: projects/校园论坛前端.md
     - French-to-IPA: linguistics/French-to-IPA.md
     - 停车场四日数据: projects/停车场四日数据.md
+    - 离散微分几何工具箱: projects/离散微分几何工具箱.md
 
   - AI:
     - 论文阅读:
@@ -44,9 +45,19 @@ nav:
 
   - Maths:
     - maths/index.md
-    - maths/图数据挖掘的数学基础.md 
-    - maths/继续谈图的傅里叶变换.md
-    - maths/不同构的简单有向图.md
+    - Graph Theory:
+      - maths/GraphTheory/图数据挖掘的数学基础.md 
+      - maths/GraphTheory/继续谈图的傅里叶变换.md
+      - maths/GraphTheory/不同构的简单有向图.md
+    - DDG:
+      - maths/DDG/index.md
+      - DDG应用引导-第2章: maths/DDG/DDG应用引导-第2章.md
+      - 关于代码的可视化: maths/DDG/关于代码的可视化.md
+      - DDG应用引导-第5章: maths/DDG/DDG应用引导-第5章.md
+      - DDG应用引导-第6章: maths/DDG/DDG应用引导-第6章.md
+      - DDG应用引导-第7章: maths/DDG/DDG应用引导-第7章.md
+      - DDG应用引导-第8章: maths/DDG/DDG应用引导-第8章.md
+
 
   - Languages:
     - linguistics/index.md
