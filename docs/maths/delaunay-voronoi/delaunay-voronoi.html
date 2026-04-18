@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Delaunay & Voronoi</title>
+<script src="https://cdn.jsdelivr.net/npm/d3-delaunay@6"></script>
+
+<style>
+html,body{
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background:#0f1115;
+  font-family:sans-serif;
+}
+
+#toolbar{
+  position:fixed;
+  top:10px;
+  left:10px;
+  z-index:10;
+  background:rgba(30,30,30,.92);
+  color:#fff;
+  padding:10px;
+  border-radius:10px;
+}
+
+button{
+  margin:2px;
+  padding:6px 10px;
+  border:none;
+  border-radius:6px;
+  background:#333;
+  color:#fff;
+  font-size:14px;
+}
+
+button.active{
+  background:#4fc3f7;
+  color:#000;
+}
+
+/* 手机仅缩小工具栏 */
+@media (max-width:768px){
+  #toolbar{
+    transform:scale(.9);
+    transform-origin:top left;
+  }
+}
+
+svg{
+  display:block;
+  width:100vw;
+  height:100vh;
+  touch-action:none;
+}
+
+.point{
+  fill:#4fc3f7;
+  stroke:#fff;
+  stroke-width:1.5;
+}
+
+.triangle{
+  stroke:#5c6bc0;
+  fill:none;
+  opacity:.6;
+}
+
+.voronoi{
+  stroke:#ff9800;
+  fill:none;
+}
+</style>
+</head>
+
+<body>
+
+<div id="toolbar">
+  <div>
+    <button id="addBtn">创建</button>
+    <button id="moveBtn" class="active">拖动</button>
+    <button id="delBtn">删除</button>
+  </div>
+  <div style="margin-top:6px;">
+    <label><input type="checkbox" id="tri" checked> Delaunay</label>
+    <label><input type="checkbox" id="vor" checked> Voronoi</label>
+  </div>
+</div>
+
+<svg id="svg"></svg>
+
+<script>
+const svg=document.getElementById("svg")
+const addBtn=document.getElementById("addBtn")
+const moveBtn=document.getElementById("moveBtn")
+const delBtn=document.getElementById("delBtn")
+const triToggle=document.getElementById("tri")
+const vorToggle=document.getElementById("vor")
+
+let mode="move"
+let points=[]
+let draggingIndex=null
+
+/* 点大小固定，恢复PC观感 */
+const POINT_RADIUS = 7
+
+function setMode(m){
+  mode=m
+  addBtn.classList.remove("active")
+  moveBtn.classList.remove("active")
+  delBtn.classList.remove("active")
+
+  if(m==="add") addBtn.classList.add("active")
+  if(m==="move") moveBtn.classList.add("active")
+  if(m==="delete") delBtn.classList.add("active")
+}
+
+addBtn.onclick=()=>setMode("add")
+moveBtn.onclick=()=>setMode("move")
+delBtn.onclick=()=>setMode("delete")
+
+function resize(){
+  const w=window.innerWidth
+  const h=window.innerHeight
+  svg.setAttribute("width",w)
+  svg.setAttribute("height",h)
+  svg.setAttribute("viewBox",`0 0 ${w} ${h}`)
+}
+
+function getPoint(e){
+  const pt=svg.createSVGPoint()
+  pt.x=e.clientX
+  pt.y=e.clientY
+  return pt.matrixTransform(svg.getScreenCTM().inverse())
+}
+
+function clamp(v,min,max){
+  return Math.max(min,Math.min(max,v))
+}
+
+/* 修复移动端聚集：等待真实尺寸后生成 */
+function createResponsivePoints(){
+  const w = window.innerWidth
+  const h = window.innerHeight
+
+  points = [
+    [w*0.20, h*0.25],
+    [w*0.45, h*0.18],
+    [w*0.72, h*0.32],
+    [w*0.32, h*0.60],
+    [w*0.65, h*0.72]
+  ]
+}
+
+function keepInside(){
+  const w=window.innerWidth
+  const h=window.innerHeight
+
+  points = points.map(p=>[
+    clamp(p[0],POINT_RADIUS,w-POINT_RADIUS),
+    clamp(p[1],POINT_RADIUS,h-POINT_RADIUS)
+  ])
+}
+
+function render(){
+  const w=svg.viewBox.baseVal.width
+  const h=svg.viewBox.baseVal.height
+
+  svg.innerHTML=""
+  if(points.length===0) return
+
+  const d=d3.Delaunay.from(points)
+  const v=d.voronoi([0,0,w,h])
+
+  if(triToggle.checked){
+    const p=document.createElementNS("http://www.w3.org/2000/svg","path")
+    p.setAttribute("d",d.render())
+    p.setAttribute("class","triangle")
+    svg.appendChild(p)
+  }
+
+  if(vorToggle.checked){
+    const p=document.createElementNS("http://www.w3.org/2000/svg","path")
+    p.setAttribute("d",v.render())
+    p.setAttribute("class","voronoi")
+    svg.appendChild(p)
+  }
+
+  points.forEach((pt,i)=>{
+    const c=document.createElementNS("http://www.w3.org/2000/svg","circle")
+    c.setAttribute("cx",pt[0])
+    c.setAttribute("cy",pt[1])
+    c.setAttribute("r",POINT_RADIUS)
+    c.setAttribute("class","point")
+
+    c.addEventListener("pointerdown",e=>{
+      e.stopPropagation()
+
+      if(mode==="move") draggingIndex=i
+
+      if(mode==="delete"){
+        points.splice(i,1)
+        render()
+      }
+    })
+
+    svg.appendChild(c)
+  })
+}
+
+/* 添加点 */
+svg.addEventListener("pointerdown",e=>{
+  if(mode!=="add") return
+
+  const p=getPoint(e)
+
+  points.push([
+    clamp(p.x,POINT_RADIUS,window.innerWidth-POINT_RADIUS),
+    clamp(p.y,POINT_RADIUS,window.innerHeight-POINT_RADIUS)
+  ])
+
+  render()
+})
+
+/* 拖动点 */
+svg.addEventListener("pointermove",e=>{
+  if(mode!=="move" || draggingIndex===null) return
+
+  const p=getPoint(e)
+
+  points[draggingIndex]=[
+    clamp(p.x,POINT_RADIUS,window.innerWidth-POINT_RADIUS),
+    clamp(p.y,POINT_RADIUS,window.innerHeight-POINT_RADIUS)
+  ]
+
+  render()
+})
+
+svg.addEventListener("pointerup",()=>draggingIndex=null)
+svg.addEventListener("pointerleave",()=>draggingIndex=null)
+
+triToggle.addEventListener("change",render)
+vorToggle.addEventListener("change",render)
+
+window.addEventListener("resize",()=>{
+  resize()
+  keepInside()
+  render()
+})
+
+window.addEventListener("orientationchange",()=>{
+  setTimeout(()=>{
+    resize()
+    keepInside()
+    render()
+  },200)
+})
+
+/* 关键修复：页面加载完成后再初始化 */
+window.addEventListener("load",()=>{
+  resize()
+  createResponsivePoints()
+  render()
+})
+</script>
+
+</body>
+</html>
