@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+        <title>归类 意义类 旋转弯曲2</title>
+
+        <style>
+          html {
+            margin: 0;
+            padding: 0;
+          }
+
+          @font-face {
+  font-family: 'mm-iconfont';
+  src: url('data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAVcAA0AAAAADSAAAAUHAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GVgCCShEICo0IigYLGAABNgIkAx4EIAWFLAd0G58KyI7S1LBNkiTFr/P/+6Z638ziLBkIQ8wrsxwEKUmBA4Dwlfarxzy8f+PP7b21ZXFa6IFleXg1a60AqO3LF3jX79fq2xMRxM/jDd1CpYX3FxcP1SqJuY6YNU3FUiQ2jtU11Up8H/EkAATA3TXpGgA83rt/vfLZBDABYQCGcAKRAAxAFXRBBnayKwD+gZ+nPyqFBjBygXL/DlvTIWjwo3cVuK8s9Sl++AEEEjlOjElBk3hilJIMpUKKY21LyxouyaqeWOQjuRrUI+IKdQAY7d9DwI5a04k3MIQFzgG2AOwIKjVqJIrYTsbHABOn6EE+VdOSA1gHO0CS9GBxkMQUvqKqmhP23oxVltyoYu+7Facuv129xJ6zAUpuNJw/Noer8zbl/7HRtyFEqCv9mw2LZ3VXCfF7ULGQwXk1E0zFkant5pHX+SO069xIZQFP7GuSunhzT+uPuaGY8wjz93lhNH9+VyPuCPieEDFvrGZaKEn8By0/Xn3v0RVHUmC89ZOhDlh3jGjeou4WwZ4VRP5wFNIcni96pNDC/qa/zwFLw/qDuH+eGGTtvRnLltyoYu67FceX3+5qwVyZ4I0Xa9BhhYiSnsziTU5ZezSSLTiSYq47FsUXHwcvFjNkwu3NBXzMKiJ/15BtsMQ1xgy5e7/7/fvd7t3pcudO16737nWjDd3v3u16ULnTY0/s1yP0/Scmui+Y0HDii4p2hF3JmehUsiKsiv/3cSrHVX6R/IJJdzYQ9r9pP26TdOc/zP6LnbKg9ZkfiIwv+XOzYQe94qkIvdk05Kn/lyMsmm8KPh98KGQVX3h25WBxRS+vXRVyjG6mfDgvpohyqM+M8zOu6OX0K63v9aXZ8EOl+hM99FbLkGeTpl4Nig85BNS98ahbdCwAz502byvV8h3Wg/UjvlpDaulHWXJ45xmpkR+vfH/c0lR+U6qRDFPFMasTvr+qVeUxFMVUJpGYeohQqEP2nPx5SKO4ooVwruVuCjlnklU9Hy5kSay6LNeiYqv7PjU71+oQWCgHdmB+QcB1t5V7+623sbeXXsGLgy+EbAxegxZ1XtyouW5Ld5F9q9GtCZ11Z2HDJg27dS5c0djIMyrvwL1Elbgmbkv3nTmpbTx5a58ZEeHlIiJmhEeUCw87OCNCZSJMkqK4nWJa+E70KviUNnlpz8pnolu0atLWPDd5Ye+6N0Latm/RSb7VtNuTc6v4gwfcUq568CBa6AgAAAnf3mlYOr2/U+eHZkg41F2gtCyzuA+AhmkRcXiKqLkGv0G0LKl6EWquoiXD9ua35Kvrb/DSahlAIBNQhmOQZyAoDJUTmoihl4lRjTZxhnkgcQ+BzH1GFGkwk5AdnosNwXEIHFUdQBaAiYRpZGJsHhMXZjJI3FUgc8+Bwv1kErqFfbIhLWZBaGw410AjbdshEgwyzrnAYKW8POuMJEDcicMjIvxjg+tAiRK5pAole26Fi4FOXHlGKTbQcPjt4uTbTV5w7sY13AgFgxNUVE4FuIWzBBXLVegDmsd7+xlrL3oZYbQ8lXKUI3lyPYaTxhIJmrG5rmK9vlSCoflfKeQabKRy8CCw7YjReZVGjvRc/8Gn3vEiLOr74PlAfv+1Q9VSHs/l6Tm/nMFjJuLiPNHTGI9vR5xALUQwYDyIsGDESSKZFFJJI908y2iXWzJq0Cj5RDdOO6nFE954+YIpXx1UcFoaLx+TN/EhpYPVt1cBAA==') format('woff2'),
+      url('data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAfMAA0AAAAADSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAHsAAAABoAAAAcjQ+WV0dERUYAAAeQAAAAHgAAAB4AKQART1MvMgAAAaAAAABCAAAAVjxwSCNjbWFwAAAB/AAAAEkAAAFK5m7pl2dhc3AAAAeIAAAACAAAAAj//wADZ2x5ZgAAAmAAAAN8AAAGiB3BA0toZWFkAAABMAAAADAAAAA2GiKzS2hoZWEAAAFgAAAAHQAAACQHcAOFaG10eAAAAeQAAAAYAAAAHg2lAQZsb2NhAAACSAAAABgAAAAYB5YI6G1heHAAAAGAAAAAHwAAACABHQB6bmFtZQAABdwAAAFNAAACrJtyy2Nwb3N0AAAHLAAAAFkAAAB0hhp62HjaY2BkYGAA4iTORQfi+W2+MnCzMIDA7a3bl8Nptv8NzJOYG4BcDgYmkCgASEMMAXjaY2BkYGBu+N/AEMPCAALMkxgYGVABCwBRzAL+AAAAeNpjYGRgYOBmyGPgYAABJiDmAkIGhv9gPgMAFOkBmAB42mNgZGFgnMDAysDA1Ml0hoGBoR9CM75mMGLkAIoysDIzYAUBaa4pDA7PGJ8ZMDf8b2CIYW5kaAQKM4LkAN52DA4AAHjaY2GAABYIZmPwBMI8MPRkaAAAEskCuHjaY2BgYGaAYBkGRgYQcAHyGMF8FgYNIM0GpBkZmJ4xPjP4/5+BAUhr/f8vxSR5C6oeCBjZGOAcRiYgwcSAChgZhj0AAM5gCc8AAAAAAAAAAAAAAACYAPQBjgH2Al4CugMSA0R42o1UT2zTdhR+z26c2ooduXbiEIdkjhtnKzRMThuXqI34syKlaDBp1ZD2hwMMkJAojAPigKAwDrtsmjggDcSFcoALEtzWy05rx20r5VAEhx2oYOyI2CVxeT+7JU0h0RTne9/zTy953/f8DL0grFzjv+DPQhxysAU82A374Ss4BoBZNFQFo1YJi2oNvYilYELVk2XLrXhqCdFN6kLULuFQhW61uMf4Fsw7xO11vNDhPvfv4Cji6GDzchi5c83LcV2Pc+fiOqLucyyxGeBthq/fwn8MfmTQ3zrecJM/iyMDjecDI0iRT1HchX1K47miaQqfUvqaM3qW/U1WX4uLIQ+vtgQAeqC+Ms1P8dPQC2kYgCr5ZKmWaued4YLl5jDJPLMtSskzjXwxEmFeHK6hUXaTmzF0iuXcT36C+25KUpr/cOO6cimGaGrN7VoG03N4WJIRZcm/EcZ5SQ6AOG83ZrlfFWlB+UHWGs9009T5m3raPyhL20SFQJJfyFIprKNAfQttfY/Bp/ANnHindxqvEPY+VNFo5Fmk+SfKWQybTqxrfwxL6FlhzkrGaPRGkIdyW3nrnOTq3OmTIpNb15XzciYQmzmDW/P0lBVyVTEWE6shpm05/gRjgigK/quoKEYZx951yepB4MasLD6Mf6/0Nf5edcP0B/PbED/eMSi4GBM1UcZvFQpksbPphfzBhCRUBCmAW2J0WOgVo+WoyCj7eQLm2RR5dmXVsw9hBEZhR8uz4ns8ywuU0jZQ4tgFq32DDCtheaqtcvdp6qdP0niaL8kH+bxs6s0q9f2Y4yNYjfCcP4dVx6UNc/y5IKp4xL++uLuT1KNU8iASQY/jJ1nRg7AYPcf9c2LZv4JTAO16TPgIttNzsLOrnvL/EJSwh98VlNaaI7qZ1v7oruj6rg2KtExa429pmW6KrtbjCwsb9aQhCyVwodJ9PnTyPhHs03Eqj/AT/w4eNwuI/Rn/ahBzrHv27TgR/zfcOckKfsn0s0I8ZhbG68t16jvStosOdV3rvomWS1tEGe2QsZ6XGae3KPFOq3UXf06l/FOGsRbvsatT1zNGKZUqGbP0JbYagIdpAH6aZ47LsAlAxGTFq2HREaIK5uhFUAzeFYaC3Ev/4pe/18flC1//ta8u7Hk6s9TTszQTIFf0Dw1l9u6bv1ZLfPb5wwPzaweEbwCNs0tEeNqNkT9OwzAYxZ/7D9FIHUAwe2IAmv4ZO1Kp7Awd2NrUCa2SOHLcSl04BAMH4Bg9AMfgAD0Fr+HrUpbGyqefn5/fl9gArvADhb/nBo/CCgFehWu4wEa4Tv1TuEHeCTfJx5wWAlUTbuNBxcIBrtWOCapxydl9lXZghVs8CdfQQSxcp/4u3CB/CTfJ38It8l64janqCAe4Ux9UxnAwmMGzLqAxx5Z1iQgWOTsdqqcP7bEzM28Wer7Vy8jmsc095Yyj+8+PLOseTcALsxOskbKP49Qk63Tmztt7jmfKfIeSrsOqxgAh+pSNK5c214Owf17OM3PyKuv0PEreb4IhVc+9mq9jQkaaSJLh36VkjaJaW1GJqIeMNblxx6MrN8nQ+1jHzmZ6wrYmTa0unF2ZyNP8VvUoMEKPIz5JD6vvz2jzvhj1erEEhJHN8AuKq3jTAAAAeNpdiEsOgCAQxXgogp+reChxJnESgUTQ86u4s4smrdLqY6iG+jPWq6HRoIVBBwuHfgoci6Q4h9Ofhg652AWJFFNhkzfmYr2Uxe9P7ULcUFotSX7PDa0DFeMAAAAAAAAB//8AAgABAAAADAAAABYAAAACAAEAAwAKAAEABAAAAAIAAAAAeNpjYGBgZACCq0vUOUD07a3bl8NoAEb7B4YAAA==') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.mm-iconfont::before {
+  font-family: 'mm-iconfont', sans-serif !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+          .mention[data-type='1']::before,
+          .mention[data-type='3']::before,
+          .mention[data-type='8']::before,
+          .mention[data-type='11']::before,
+          .mention[data-type='12']::before,
+          .mention[data-type='15']::before,
+          .mention[data-type='16']::before {
+            content: '\e62f';
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -4px;
+            font-size: inherit;
+          }
+          .mention[data-type='3']::before {
+            content: '\e62c';
+          }
+          .mention[data-type='8']::before {
+            content: '\e62d';
+          }
+          .mention[data-type='11']::before {
+            content: '\e62b';
+          }
+          .mention[data-type='12']::before {
+            content: '\e62a';
+          }
+          .mention[data-type='15']::before {
+            content: '\e62e';
+          }
+          .mention[data-type='22']::before {
+            content: '\e602';
+          }
+
+          body {
+            margin: 50px 20px;
+            padding: 0;
+            color: #333;
+            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'PingFang SC',
+                  Helvetica, Arial, 'Microsoft YaHei', 微软雅黑, 黑体, Heiti, sans-serif,
+                  SimSun, 宋体, serif,
+                  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+          }
+
+          body.narrow {
+            max-width: 790px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+
+          .title {
+            min-height: 40px;
+            padding-left: 10px;
+            padding-bottom: 24px;
+            margin-bottom: 20px;
+            line-height: 40px;
+            font-size: 26px;
+            font-weight: 500;
+            border-bottom: 1px solid #e5e6e8;
+          }
+
+          .node-list {
+            margin: 0 0 0 28px;
+            padding: 0;
+            list-style: none;
+          }
+
+          .node {
+            position: relative;
+          }
+
+          .node.drill-node > .content {
+            margin-bottom: 15px;
+            font-size: 20px;
+            line-height: 28px;
+          }
+
+          .node.drill-node > .note {
+            margin-bottom: 10px;
+          }
+
+          .content {
+            min-height: 24px;
+            padding-top: 2px;
+            padding-bottom: 3px;
+            line-height: 24px;
+            font-size: 16px;
+          }
+
+          .note {
+            position: relative;
+            padding-bottom: 2px;
+            line-height: 22px;
+            font-size: 14px;
+            color: #888;
+            white-space: pre-wrap;
+          }
+
+          .content > *,
+          .note > * {
+            padding-top: 2px;
+            padding-bottom: 2px;
+          }
+
+          .note:empty {
+            padding-bottom: 0;
+          }
+
+          .node.finished .content,
+          .node.finished .note {
+            opacity: 0.5;
+          }
+
+          .node.finished > .content {
+            text-decoration: line-through;
+          }
+
+          .heading1 > .content {
+            min-height: 34px;
+            line-height: 34px;
+            font-size: 24px;
+            font-weight: 500;
+          }
+
+          .heading2 > .content {
+            min-height: 30px;
+            line-height: 30px;
+            font-size: 21px;
+            font-weight: 500;
+          }
+
+          .heading3 > .content {
+            min-height: 27px;
+            line-height: 27px;
+            font-size: 19px;
+            font-weight: 500;
+          }
+
+          .mention {
+            padding-left: 2px;
+            padding-right: 2px;
+            color: #5856d5;
+            word-break: break-all;
+            text-decoration: none;
+          }
+
+          .content-link {
+            color: unset;
+            opacity: 0.6;
+            word-break: break-all;
+          }
+
+          .tag {
+            text-decoration: underline;
+            opacity: 0.6;
+          }
+
+          .bold {
+            font-weight: bold;
+          }
+
+          .italic {
+            font-style: italic;
+          }
+
+          .underline {
+            text-decoration: underline;
+          }
+
+          .content .highlight-red,
+          .highlight-red > .content > * {
+            background-color: #ff8c8c99;
+          }
+
+          .content .highlight-yellow,
+          .highlight-yellow > .content > * {
+            background-color: #ffff2699;
+          }
+
+          .content .highlight-blue,
+          .highlight-blue > .content > * {
+            background-color: #8ce5ff99;
+          }
+
+          .content .highlight-cyan,
+          .highlight-cyan > .content > * {
+            background-color: #a3ffca99;
+          }
+
+          .content .highlight-pink,
+          .highlight-pink > .content > * {
+            background-color: #f3a6ff99;
+          }
+
+          .content .highlight-olive,
+          .highlight-olive > .content > * {
+            background-color: #c8ff8c99;
+          }
+
+          .content .highlight-grey,
+          .highlight-grey > .content > * {
+            background-color: #b1b6be99;
+          }
+
+          .text-color-red {
+            color: #dc2d1e;
+          }
+
+          .text-color-yellow {
+            color: #ffaf38;
+          }
+
+          .text-color-green {
+            color: #75c940;
+          }
+
+          .text-color-blue {
+            color: #3da8f5;
+          }
+
+          .text-color-purple {
+            color: #797ec9;
+          }
+
+          .bullet {
+            position: absolute;
+            left: -25px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            border-radius: 9px;
+          }
+
+          .node.collapsed > .bullet {
+            background-color: #dee0e3;
+          }
+
+          .heading1 > .bullet {
+            top: 10px;
+          }
+
+          .heading2 > .bullet {
+            top: 8px;
+          }
+
+          .heading3 > .bullet {
+            top: 6px;
+          }
+
+          .bullet-dot {
+            position: absolute;
+            left: 6px;
+            top: 6px;
+            width: 6px;
+            height: 6px;
+            background-color: rgb(100, 106, 115);
+            border-radius: 3px;
+          }
+
+          .image-list {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          }
+
+          .image-item {
+            padding-top: 2px;
+            padding-bottom: 8px;
+          }
+
+          .image {
+            display: block;
+            max-width: 100%;
+          }
+
+          .children {
+            position: relative;
+          }
+
+          .note::before,
+          .image-list::before,
+          .children::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -17px;
+            width: 1px;
+            height: 100%;
+            background-color: #dee0e3;
+          }
+
+          .node.drill-node > .note::before,
+          .node.drill-node > .image-list::before,
+          .node.drill-node > .children::before,
+          body.noline .note::before,
+          body.noline .image-list::before,
+          body.noline .children::before {
+            display: none;
+          }
+
+          .node.drill-node > .note,
+          .node.drill-node > .content,
+          .node.drill-node > .image-list,
+          .node.drill-node > .children {
+            margin-left: 10px;
+          }
+
+          body.noline .node-list {
+            margin-right: 20px;
+          }
+
+          .publish {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+          }
+
+          .publish-link {
+            color: #4694FF;
+          }
+
+          .node .mention.mm-iconfont::before {
+            content: '\e601';
+          }
+
+          .node .mention.mm-iconfont {
+             color: #5856d5;
+          }
+
+          @media print {
+            body {
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+          }
+
+          @page {
+            margin-left: 0.25in;
+            margin-right: 0.25in;
+            margin-top: 0.5in;
+            margin-bottom: 0.5in;
+          }
+        </style>
+        <style>
+        @font-face{font-family:KaTeX_AMS;src:url(fonts/KaTeX_AMS-Regular.woff2) format("woff2"),url(fonts/KaTeX_AMS-Regular.woff) format("woff"),url(fonts/KaTeX_AMS-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Bold.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Bold.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Regular.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Regular.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Bold.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Bold.woff) format("woff"),url(fonts/KaTeX_Fraktur-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Regular.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Regular.woff) format("woff"),url(fonts/KaTeX_Fraktur-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Bold.woff2) format("woff2"),url(fonts/KaTeX_Main-Bold.woff) format("woff"),url(fonts/KaTeX_Main-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Main-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Main-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Italic.woff2) format("woff2"),url(fonts/KaTeX_Main-Italic.woff) format("woff"),url(fonts/KaTeX_Main-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Regular.woff2) format("woff2"),url(fonts/KaTeX_Main-Regular.woff) format("woff"),url(fonts/KaTeX_Main-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Math-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Math-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-Italic.woff2) format("woff2"),url(fonts/KaTeX_Math-Italic.woff) format("woff"),url(fonts/KaTeX_Math-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Bold.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Bold.woff) format("woff"),url(fonts/KaTeX_SansSerif-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Italic.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Italic.woff) format("woff"),url(fonts/KaTeX_SansSerif-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Regular.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Regular.woff) format("woff"),url(fonts/KaTeX_SansSerif-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Script;src:url(fonts/KaTeX_Script-Regular.woff2) format("woff2"),url(fonts/KaTeX_Script-Regular.woff) format("woff"),url(fonts/KaTeX_Script-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size1;src:url(fonts/KaTeX_Size1-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size1-Regular.woff) format("woff"),url(fonts/KaTeX_Size1-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size2;src:url(fonts/KaTeX_Size2-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size2-Regular.woff) format("woff"),url(fonts/KaTeX_Size2-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size3;src:url(fonts/KaTeX_Size3-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size3-Regular.woff) format("woff"),url(fonts/KaTeX_Size3-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size4;src:url(fonts/KaTeX_Size4-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size4-Regular.woff) format("woff"),url(fonts/KaTeX_Size4-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Typewriter;src:url(fonts/KaTeX_Typewriter-Regular.woff2) format("woff2"),url(fonts/KaTeX_Typewriter-Regular.woff) format("woff"),url(fonts/KaTeX_Typewriter-Regular.ttf) format("truetype");font-weight:400;font-style:normal}.katex{font:normal 1.21em KaTeX_Main,Times New Roman,serif;line-height:1.2;text-indent:0;text-rendering:auto;border-color:currentColor}.katex *{-ms-high-contrast-adjust:none!important}.katex .katex-version:after{content:"0.12.0"}.katex .katex-mathml{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}.katex .katex-html>.newline{display:block}.katex .base{position:relative;white-space:nowrap;width:min-content}.katex .base,.katex .strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathnormal{font-family:KaTeX_Math;font-style:italic}.katex .mathit{font-family:KaTeX_Main;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-weight:700;font-style:italic}.katex .amsrm,.katex .mathbb,.katex .textbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak,.katex .textfrak{font-family:KaTeX_Fraktur}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr,.katex .textscr{font-family:KaTeX_Script}.katex .mathsf,.katex .textsf{font-family:KaTeX_SansSerif}.katex .mathboldsf,.katex .textboldsf{font-family:KaTeX_SansSerif;font-weight:700}.katex .mathitsf,.katex .textitsf{font-family:KaTeX_SansSerif;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{display:inline-table;table-layout:fixed;border-collapse:collapse}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;vertical-align:bottom;position:relative}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;vertical-align:bottom;font-size:1px;width:2px;min-width:2px}.katex .vbox{-ms-flex-direction:column;flex-direction:column;align-items:baseline}.katex .hbox,.katex .vbox{display:-ms-inline-flexbox;display:inline-flex}.katex .hbox{-ms-flex-direction:row;flex-direction:row;width:100%}.katex .thinbox{display:inline-flex;flex-direction:row;width:0;max-width:0}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline,.katex .hline,.katex .mfrac .frac-line,.katex .overline .overline-line,.katex .rule,.katex .underline .underline-line{min-height:1px}.katex .mspace{display:inline-block}.katex .clap,.katex .llap,.katex .rlap{width:0;position:relative}.katex .clap>.inner,.katex .llap>.inner,.katex .rlap>.inner{position:absolute}.katex .clap>.fix,.katex .llap>.fix,.katex .rlap>.fix{display:inline-block}.katex .llap>.inner{right:0}.katex .clap>.inner,.katex .rlap>.inner{left:0}.katex .clap>.inner>span{margin-left:-50%;margin-right:50%}.katex .rule{display:inline-block;border:0 solid;position:relative}.katex .hline,.katex .overline .overline-line,.katex .underline .underline-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline{display:inline-block;width:100%;border-bottom-style:dashed}.katex .sqrt>.root{margin-left:.27777778em;margin-right:-.55555556em}.katex .fontsize-ensurer.reset-size1.size1,.katex .sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .sizing.reset-size2.size1{font-size:.83333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .sizing.reset-size2.size3{font-size:1.16666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .sizing.reset-size2.size4{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .sizing.reset-size2.size6{font-size:1.66666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .sizing.reset-size2.size10{font-size:3.45666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .sizing.reset-size2.size11{font-size:4.14666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .sizing.reset-size3.size1{font-size:.71428571em}.katex .fontsize-ensurer.reset-size3.size2,.katex .sizing.reset-size3.size2{font-size:.85714286em}.katex .fontsize-ensurer.reset-size3.size3,.katex .sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .sizing.reset-size3.size4{font-size:1.14285714em}.katex .fontsize-ensurer.reset-size3.size5,.katex .sizing.reset-size3.size5{font-size:1.28571429em}.katex .fontsize-ensurer.reset-size3.size6,.katex .sizing.reset-size3.size6{font-size:1.42857143em}.katex .fontsize-ensurer.reset-size3.size7,.katex .sizing.reset-size3.size7{font-size:1.71428571em}.katex .fontsize-ensurer.reset-size3.size8,.katex .sizing.reset-size3.size8{font-size:2.05714286em}.katex .fontsize-ensurer.reset-size3.size9,.katex .sizing.reset-size3.size9{font-size:2.46857143em}.katex .fontsize-ensurer.reset-size3.size10,.katex .sizing.reset-size3.size10{font-size:2.96285714em}.katex .fontsize-ensurer.reset-size3.size11,.katex .sizing.reset-size3.size11{font-size:3.55428571em}.katex .fontsize-ensurer.reset-size4.size1,.katex .sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .sizing.reset-size5.size1{font-size:.55555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .sizing.reset-size5.size2{font-size:.66666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .sizing.reset-size5.size3{font-size:.77777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .sizing.reset-size5.size4{font-size:.88888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .sizing.reset-size5.size6{font-size:1.11111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .sizing.reset-size5.size7{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .sizing.reset-size5.size10{font-size:2.30444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .sizing.reset-size5.size11{font-size:2.76444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .sizing.reset-size7.size1{font-size:.41666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .sizing.reset-size7.size3{font-size:.58333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .sizing.reset-size7.size4{font-size:.66666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .sizing.reset-size7.size6{font-size:.83333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .sizing.reset-size7.size10{font-size:1.72833333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .sizing.reset-size7.size11{font-size:2.07333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .sizing.reset-size8.size1{font-size:.34722222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .sizing.reset-size8.size2{font-size:.41666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .sizing.reset-size8.size3{font-size:.48611111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .sizing.reset-size8.size4{font-size:.55555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .sizing.reset-size8.size6{font-size:.69444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .sizing.reset-size8.size7{font-size:.83333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .sizing.reset-size8.size10{font-size:1.44027778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .sizing.reset-size8.size11{font-size:1.72777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .sizing.reset-size9.size1{font-size:.28935185em}.katex .fontsize-ensurer.reset-size9.size2,.katex .sizing.reset-size9.size2{font-size:.34722222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .sizing.reset-size9.size3{font-size:.40509259em}.katex .fontsize-ensurer.reset-size9.size4,.katex .sizing.reset-size9.size4{font-size:.46296296em}.katex .fontsize-ensurer.reset-size9.size5,.katex .sizing.reset-size9.size5{font-size:.52083333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .sizing.reset-size9.size6{font-size:.5787037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .sizing.reset-size9.size7{font-size:.69444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .sizing.reset-size9.size8{font-size:.83333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .sizing.reset-size9.size10{font-size:1.20023148em}.katex .fontsize-ensurer.reset-size9.size11,.katex .sizing.reset-size9.size11{font-size:1.43981481em}.katex .fontsize-ensurer.reset-size10.size1,.katex .sizing.reset-size10.size1{font-size:.24108004em}.katex .fontsize-ensurer.reset-size10.size2,.katex .sizing.reset-size10.size2{font-size:.28929605em}.katex .fontsize-ensurer.reset-size10.size3,.katex .sizing.reset-size10.size3{font-size:.33751205em}.katex .fontsize-ensurer.reset-size10.size4,.katex .sizing.reset-size10.size4{font-size:.38572806em}.katex .fontsize-ensurer.reset-size10.size5,.katex .sizing.reset-size10.size5{font-size:.43394407em}.katex .fontsize-ensurer.reset-size10.size6,.katex .sizing.reset-size10.size6{font-size:.48216008em}.katex .fontsize-ensurer.reset-size10.size7,.katex .sizing.reset-size10.size7{font-size:.57859209em}.katex .fontsize-ensurer.reset-size10.size8,.katex .sizing.reset-size10.size8{font-size:.69431051em}.katex .fontsize-ensurer.reset-size10.size9,.katex .sizing.reset-size10.size9{font-size:.83317261em}.katex .fontsize-ensurer.reset-size10.size10,.katex .sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .sizing.reset-size10.size11{font-size:1.19961427em}.katex .fontsize-ensurer.reset-size11.size1,.katex .sizing.reset-size11.size1{font-size:.20096463em}.katex .fontsize-ensurer.reset-size11.size2,.katex .sizing.reset-size11.size2{font-size:.24115756em}.katex .fontsize-ensurer.reset-size11.size3,.katex .sizing.reset-size11.size3{font-size:.28135048em}.katex .fontsize-ensurer.reset-size11.size4,.katex .sizing.reset-size11.size4{font-size:.32154341em}.katex .fontsize-ensurer.reset-size11.size5,.katex .sizing.reset-size11.size5{font-size:.36173633em}.katex .fontsize-ensurer.reset-size11.size6,.katex .sizing.reset-size11.size6{font-size:.40192926em}.katex .fontsize-ensurer.reset-size11.size7,.katex .sizing.reset-size11.size7{font-size:.48231511em}.katex .fontsize-ensurer.reset-size11.size8,.katex .sizing.reset-size11.size8{font-size:.57877814em}.katex .fontsize-ensurer.reset-size11.size9,.katex .sizing.reset-size11.size9{font-size:.69453376em}.katex .fontsize-ensurer.reset-size11.size10,.katex .sizing.reset-size11.size10{font-size:.83360129em}.katex .fontsize-ensurer.reset-size11.size11,.katex .sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .op-limits>.vlist-t{text-align:center}.katex .accent>.vlist-t{text-align:center}.katex .accent .accent-body{position:relative}.katex .accent .accent-body:not(.accent-full){width:0}.katex .overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;min-width:1px}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{display:block;position:absolute;width:100%;height:inherit;fill:currentColor;stroke:currentColor;fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1}.katex svg path{stroke:none}.katex img{border-style:none;min-width:0;min-height:0;max-width:none;max-height:none}.katex .stretchy{width:100%;display:block;position:relative;overflow:hidden}.katex .stretchy:after,.katex .stretchy:before{content:""}.katex .hide-tail{width:100%;position:relative;overflow:hidden}.katex .halfarrow-left{position:absolute;left:0;width:50.2%;overflow:hidden}.katex .halfarrow-right{position:absolute;right:0;width:50.2%;overflow:hidden}.katex .brace-left{position:absolute;left:0;width:25.1%;overflow:hidden}.katex .brace-center{position:absolute;left:25%;width:50%;overflow:hidden}.katex .brace-right{position:absolute;right:0;width:25.1%;overflow:hidden}.katex .x-arrow-pad{padding:0 .5em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox,.katex .fcolorbox{box-sizing:border-box;border:.04em solid}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap{margin-left:-.2em;margin-right:-.2em}.katex .sout{border-bottom-style:solid;border-bottom-width:.08em}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:block;text-align:center;white-space:nowrap}.katex-display>.katex>.katex-html{display:block;position:relative}.katex-display>.katex>.katex-html>.tag{position:absolute;right:0}.katex-display.leqno>.katex>.katex-html>.tag{left:0;right:auto}.katex-display.fleqn>.katex{text-align:left;padding-left:2em}
+        </style>
+      </head>
+      <body >
+        <div class="title">归类 意义类 旋转弯曲2</div>
+        <ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>PIE*wer2 转 弯曲（extrovert worm weird worry wrestle</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>词根vert vers 书500</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>adverse/'ædvɜːs/不利的：前缀ad-, 去，往。词根verse, 转。转走的，对着干的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>anniversary/ænɪ'vɜːs(ə)rɪ/周年纪念日：词根ann, 年。词根verse,转。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>avert/ə'vɜːt/避免：前缀a-同ab-, 从，从...离开。词根vert, 转，见convert, 皈依。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>controversy/'kɒntrəvɜːsɪ; kən'trɒvəsɪ/争议：contra-, 相对，相反。-verse, 转，词源同versus.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>converse/kən'vɜːs/谈话；反转：con-, 强调。-verse, 转，词源同versus, advertise. 指转到一起的，交谈的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>convert/kən'vɜːt/转化，皈依：con-, 强调。-vert, 转，词源同versus, invert. 该词主要用于宗教用语，意为皈依。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>divert/daɪ'vɜːt; dɪ-/转移：来自diverse, 转开，转移。-t,过去分词后缀。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>diverse [daɪ'vɝs]多样的：di-, 分开，散开，来自dis-变体。-verse, 转，词源同converse, versus. 即转开，多样的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>divorce [dɪ'vɔːs]离婚：词源同divert, 转开。引申词义离婚。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>extro- intro-</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>extrovert/'ekstrəvɜːt/外向：extra-, 外面的，超过的。-vert, 转，词源同versus, introvert.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>introvert/'ɪntrəvɜːt/内向的：intra-,在内，-vert,转，词源同extrovert,convert.即向内转，引申词义内向的。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>invert/ɪn'vɜːt/颠倒，倒置：in-,进入，使，-vert,转，词源同versus,convert.即转过去的，颠倒，倒置。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>obverse/'ɒbvɜːs/对立面，正面：ob-,向前，朝向，-verse,转，词源同versus,converse.即向前转，引申词义对立面，正面。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>pervert/pə'vɜːt/使堕落 堕落者：per-,完全的，-vert,转，词源同divert,convert.即转过去，颠倒，引申词义误导，堕落，变态等。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>perverse：堕落的</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>peevish/'piːvɪʃ/生气的，易怒的：词源不详，可能来自perverse受-ish影响的俗化形式，词义由“任性的，无理取闹的”引申为生气的，易怒的等。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>revert/rɪ'vɜːt/回转，回复，恢复：re-,向后，往回，-vert,转，词源同 pervert,perverse.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>subvert/səb'vɜːt/颠覆，暗中破坏：sub-,在下，-vert,转，词源同 verse,convert.引申词义颠覆，暗中破坏等。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>universe/'juːnɪvɜːs/宇宙：来自拉丁语universum, 所有，全人类，全世界，uni-, 一，-verse, 转。即转为一体的，引申义宇宙。比较cosmos.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>versatile/'vɜːsətaɪl/多面手的：来自拉丁语versus,转，翻转，来自PIE*wer,转，弯，词源versus,toward。引申词义反复的，精通的，多面手的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>vertigo/'vɜːtɪgəʊ/眩晕：来自拉丁语vertigo,旋转，眩晕，来自vert-,转，词源同convert,versus,-ig,做，驱使，词源同agent.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>versus/'vɜːsəs/对，相比：来自拉丁语versus,转，来自PIE*wer,转，弯，词源converse,toward。引申词义转向对方的，相对，相比。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>词根变体verge</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>converge/kən'vɜːdʒ/汇集：con-, 强调。-verge, 转，词源同diverge, versus. 即转到一起，汇集。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>diverge/daɪ'vɜːdʒ; dɪ-/分叉：di-, 分开，散开，来自dis-变体。-verge, 转，词源同converge, versus. 即转开，分叉。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>-ward</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>二书486</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>awkward 笨拙的：awk-,错误方向，-ward,朝向。引申词义笨拙的。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>名词儿</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>文本</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>verse/vɜːs/诗，韵文：来自拉丁语versus,转，翻转，词源versus,toward。引申词义诗行，韵文。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>prose/prəʊz/散文：来自古法语prose,故事，叙述，来自拉丁语prosa oratio,直白的叙述，没有诗意的话，来自provorsus,直接向前转，来自pro-,向前，-vorse,转，词源同verse,versus.oratio,叙述，讲述，词源同orator.后用于指书写文体散文。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>version/'vɜːʃ(ə)n/版本：来自拉丁语versus,转，翻转，词源versus,toward。引申词义版本。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>虫子</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>worm/wɜːm/虫：来自PIE*wrmi,虫，来自PIE*wer,弯，转，扭曲，词源同wring,wriggle.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>vermicelli/,vɜːmɪ'tʃelɪ; ,veəm-; -'selɪ/意大利细面条：来自意大利语，来自verm-,虫，词源同worm,-cell,小词后缀，因这种面条形如小长虫而得名。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>vermin/'vɜːmɪn/害虫：来自拉丁语vermis,虫，词源同worm,引申词义害虫。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>vertebra/'vɜːtɪbrə/脊椎：来自拉丁语vertebra,关节，脊椎，来自PIE*wer,转，弯，词源convert,toward,-bra,工具格后缀，词源同vestibule.引申词义连接关节的脊椎。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>vertex/'vɜːteks/顶点：来自拉丁语vertex,顶点，最高点，来自vert-,转，词源同convert,versus,-ax,最高级后缀，词源同apex,next, approximate.</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>vertical 垂直的，直立的；头顶的：1550年代，“顶点的或在顶点的正上方”，源自法语，源自晚期拉丁语 verticalis “在头顶上方”，源自拉丁语 vertex（属格 verticis）“最高点”。意为“垂直的”首次记录于1704年。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>vortex/'vɔːteks/漩风，漩涡，涡流：来自拉丁语vertere,转，旋转，词源同versus,convert。引申义漩风，漩涡，涡流。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wrap/ræp/包裹：词源有争议，来自PIE*werp,弯，转，缠绕，来自PIE</span><span class="escaped">*</span><span>wer的扩大形式，弯，转，词源同versus,environment。引申词义裹住，包裹。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>形容词</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>ribald/'rɪb(ə)ld; 'raɪbɔːld/粗俗的，下流的：来自古法语 ribalt,无赖，浪荡子，可能来自 riber,鬼混的，来自 PIE*wer,弯，转，词 源同 wring,wrap.幽默用法，在床上鬼混的姿势,引申词义粗俗的，下流的。拼写受贬义后缀 -ald 影响俗化。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>weird/wɪəd/奇异的，怪异的：来自PIE*wer,弯，转，纺织，词源同versus,wreath。原指北欧神话中编织人命运之线的三女神，又称weird sisters,但这三姐妹在传说和文学作品中都被描绘成无比怪异的女巫形象，因此引申词义怪异的，奇怪的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>worry/'wʌrɪ/担忧：来自PIE*wergh,弯，转，缠绕，词源同wring,wriggle。其原义为扭打，缠绕，后用于心理学揪心，担忧，烦扰。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>worth/wɜːθ/价值：来自PIE*wert,弯，转，相对，词源同convert,versus。引申义等价，对等，匹配，力量，价值。词义演变比较fit,match.</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>stalwart/'stɔːlwət; 'stæl-/坚定的，忠实的：拼写变体形式自 stalworth,坚定的，坚决的，等同于 stall,固定位置，地方，worth,价值。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wrong/rɒŋ/错误的：来自PIE*wrengh,弯，转，偏离，来自PIE*wer的鼻音形式，弯，转，词源同wry,wring。引申义错误的。比较right,来自PIE*reg,直，词源同rectitude,regulate.</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wr-</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wry/raɪ/ 啼笑皆非的，揶揄的，讽刺的挖苦的：来自PIE*wer,弯，转，词源同wring,wriggle。引申义扭曲的，啼笑皆非的。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>awry/ə'raɪ/adj. 错误的；扭曲的：来自短语on wry . wry, 歪斜，扭曲，来自zero-grade 根wr, 弯，转，词源同verse, 转。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>动作</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>warp/wɔːp/弯曲，扭曲，经线：来自PIE*werp，弯，转，缠绕，来自PIE wer的扩大格，弯，转，词源同wring,versus.同时用于指经线，比较weft.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wriggle/'rɪg(ə)l/扭动：来自PIE*wer,弯，转，扭动，词源同wring,worm.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wring/rɪŋ/拧，扭：来自PIE*wer,弯，转，拧，词源同wrench,wrist.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wrest/rest/拧，扭，攫取，抢夺：来自PIE*wer,弯，转，拧，词源同wring,wrench。引申义猛拉，抢夺，攫取。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wrestle/'res(ə)l/摔跤v n：来自wrest,拧，扭，用于指摔跤。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>writhe/raɪð/扭曲：来自PIE*wer,弯，转，扭曲，词源同wring,wriggle.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wrench/ren(t)ʃ/猛拉：来自PIE*wer,弯，转，拧，词源同wring,wrest。引申义猛拉。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wrangle/'ræŋg(ə)l/争吵n v：来自PIE*wrengh,弯，转，来自PIEwergh的鼻音形式，词源同wring,wriggle。引申词义纠缠，扭打，争吵。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>名词</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wrist/rɪst/手腕：来自PIE*wer,弯，转，拧，词源同wring,wrest,用于指手腕。比较carpal.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wrath/ræθ/愤怒：来自PIE*wreit,弯，转，扭曲，词源同wreath,writhe。引申词义愤怒，尤指神的愤怒。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wrinkle/'rɪŋk(ə)l/皱纹：来自PIE*wer,弯，转，拧，词源同wring,wrench。用于指皱纹。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wreath/riːθ/花环，花冠：来自PIE*wer,弯，转，编织，词源同wring,versus。引申义编成的花环，花冠。词义演变比较crown，coronal.</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>PIE*kwerp 转动 旋转（wharf whirl）</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wharf/wɔrf/码头; 停泊处：晚期古英语 hwearf “海岸，船只可以系泊的岸边”，早期意为“水坝，堤坝”，源自原始日耳曼语 *hwarfaz，源自 PIE 词根 *kwerp- “转动，旋转”。意思联系可能是繁忙的劳动。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>whirl/wɜːl/n v旋转：大约在1300年，可能源自古诺尔斯语 hvirfla “绕着走，旋转”，与 hvirfill “圆圈，环，冠”有关，也与古英语 hweorfan “转动”有关。give sth a whirl试一下</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）twirl/twɜːl/旋转：可能来自 twist 和 whirl 的合成词。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>warble/'wɔːb(ə)l/颤音：可能来自拟声词，或来自PIE*wer,弯，转，词源同vibrate,wring。用于指颤音，莺啼鸟啭。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>whirligig/'wɜːlɪgɪg/风车，旋转木马，变迁：whirl,旋转，gig,旋转，两轮马车。引申词义风车，儿童玩具木马，变迁。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>whirlpool/'wɜːlpuːl/漩涡：比喻用法。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>whirlwind/'wɜːlwɪnd/旋风：比喻用法。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>whorl/wɔːl; wɜːl/螺纹：15世纪中期，“纺锤的小飞轮”，可能是 whirl 的改变。指“植物茎周围的叶子或花的圆形排列”首次记录于1550年代。关于海贝壳或其他螺旋结构，最早见于1828年。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*wel 旋转</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>拉丁语volvere卷，过去分词volutus</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>convoluted/,kɒnvə'l(j)uːtɪd/晦涩难懂的：con-, 强调。-vol, 转，旋转，词源同Volvo, volume.</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）convolution/,kɒnvə'luːʃ(ə)n/错综复杂</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>devolve/dɪ'vɒlv/转交：de-, 向下。-volv, 转，词源同evolve, revolve. 即向下转，转交。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>evolve/ɪ'vɒlv/进化：e-, 向外。-vov, 卷，词源同volume, voluble. 后用于进化义，并通过达尔文的使用使该词广泛传播。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>evolution/,iːvə'luːʃ(ə)n; 'ev-/进化论：来自evolve，进化。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>involve/ɪn'vɒlv/卷入，参与：in-,进入，使，-volve,卷入，词源同involve,evolve.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>revolve/rɪ'vɒlv/旋转，转动，环绕：re-,向后，往回，再次，-volv,转动，词源同 devolve,evolve,involve.</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>revolt/rɪ'vəʊlt/反抗，叛乱，起义：1540年代，“放弃忠诚，反抗统治者，脱离既定权威”，源自15世纪的法语 revolter，该词源自或同源于意大利语 rivoltare “推翻，颠覆”，源自通俗拉丁语 *revolvitare “推翻，颠覆”，是拉丁语 revolvere（过去分词 revolutus)“转动，回滚”的频率形式</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>revolution/revə'luːʃ(ə)n/革命，大变革：来自 revolve,旋转，-ute,过去分词格，-ion,名词后缀。引申词义革命，大变革。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>rev /rev/ v使加速；增加 n发动机的旋转："使（发动机）快速运转"，尤其是在没有挂档时，始于1916年，源自更早的名词（1901年），缩写自 revolution，指内燃机。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>voluble/'vɒljʊb(ə)l/滔滔不绝的：来自拉丁语volvere,旋转，来自PIE*wel,转，来自PIE*wei的扩大格，词源同wind,volume。引申词义滔滔不绝的。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>拉丁语volvere的不太规则的</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>valve/vælv/阀门 气门：拉丁语 valva（复数 valvae）“折叠或旋转门的一部分”，字面意思为“旋转的东西”，与 volvere “滚动”有关</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>vault/vɔːlt/</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>1拱顶，保险库，墓穴：约1300年， vaute，源自古法语 voute “拱形，拱顶屋顶或房间”，来自通俗拉丁语 *volta，缩写自 *volvita， *volvitus 的女性名词用法，是拉丁语 volutus 的变形。</span><span class=" text-color-blue">-l- 于约1400年出现在英语中，是模仿早期形式的词源插入（比较 fault（名词）， assault（名词））。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>2跳跃 腾跃：源自法语 volter “蹦跳，跳跃”，源自意大利语 voltare “转动”，源自通俗拉丁语 *volvitare “转动，跳跃”，是拉丁语 volvere “转动，旋转，滚动”的频率形式</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>volte-face/,vɔltə'fɑ:s/大转变：出自1819年的法语词汇（17世纪），源于意大利语的 volta faccia，即““转脸”的意思</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>volume/'vɒljuːm/体积，容积，卷，册：14世纪后期，“包含文字的羊皮纸卷； 一本装订的书”，源自于古法语 volume “卷轴，书籍； 作品，卷； 腰围，大小”（13世纪），直接源自拉丁语 volumen（属格 voluminis）“（手稿的）卷轴； 卷，花环”，字面意思是“被卷起来的东西”，源自于 volvere “旋转，卷起”。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）voluminous/və'ljuːmɪnəs/庞大的;浩繁的;宽松的;长篇的;很大的;冗长的;大部头的;肥大的;用布料多的</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>vulva/'vʌlvə/外阴：源自拉丁语 vulva，早期为 volva，意为“子宫，女性生殖器官”，可能字面意思为“包裹者”，来自 volvere。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>希腊语helix螺旋，源自 PIE *wel-ik-</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>helicopter/'helɪkɒptə/直升机：helico-,螺旋，-pter,翅膀，词源同feather,pterodactyl.比喻用法。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>helix/'hiːlɪks/螺旋形：来自拉丁语helix,螺旋的，来自PIE*wel,转，旋转，词源同involve,whelk.引申词义螺旋形。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>希腊语elyein缠绕 扭转 挤压</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）elytra/'ɛlɪtrɑ/昆虫的鞘翅：希腊语 elytron “鞘”，源自 elyein “缠绕”</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）ileus/'ɪlɪəs/肠梗阻：希腊语 eileos 的“肠绞痛”，源自 eilein</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>日耳曼</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>walk/wɔːk/步行：公元1200年左右，是两个动词的合并，1. 古英语 wealcan "抛，滚，移动"（过去式 weolc，过去分词 wealcen），和2. wealcian "卷起，卷曲"，来自原始日耳曼语 *welk-，可能来自这里。</span><span class=" text-color-yellow">意义上的转变可能来自于古英语单词的口语用法或通过"踩踏"（布料）的意义，尽管这个意义直到意义转变后才出现。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wallet/'wɒlɪt/钱包：可能来自未记录的古北法语 *walet “卷，背包”，或类似的盎格鲁-法语或古法语日耳曼语词汇，源自原始日耳曼语 *wall- “卷”</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wallow/'wɒləʊ/打滚：古英语 wealwian “滚动”，来自西日耳曼语 *walwon</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>waltz/wɔːl(t)s; wɒl-/华尔兹：源自德语“Walzer”，源自“转动，跳舞”的意思，源自古高地德语“waltan”，源自原始日耳曼语“*waltaną”</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>well 源泉，水井，喷出：古英语 Anglian 方言中称为 wiellan（盎格鲁-撒克逊方言称为 wællan），是 weallan 的使动形式，意为“沸腾，起泡，涌出（指河流）”，原始日耳曼语言 *wellanan 的“滚动”。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>welter/'weltə/杂乱的一堆：来自中古荷兰语或中古低地德语 welteren "滚动"，源自原始日耳曼语 *waltijan。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>whelk/welk/螺旋壳海螺，蛾螺：古英语中称为 weoloc， wioloc，源于原始日耳曼语 *weluka-，可能来自这里。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>willow柳树：古英语 welig “柳树”，源自原始日耳曼语 *wel-，可能源自 PIE 词根 *wel-（3）“旋转，转动”，其派生词指曲线，封闭物。</span><span class=" text-color-blue">形式上的变化到 -ow（14世纪）与 bellow 和 fellow 的变化相似。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*streb(h)- 缠绕 弯曲 旋转（-strophe</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>乐儿</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）anastrophe/ə'næstrəfɪ/倒置法</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）antistrophe/æn'tɪstrəfɪ/对照乐节,反用</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）epistrophe/ɪ'pɪstrəfi/结句反覆</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）strabismus/strə'bɪzməs/斜视</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）boustrophedon/,baʊstrə'fiːd(ə)n; ,buː-/古代一种左右交替书写的文字形式：来自1783年的希腊语，字面意思是“耕牛犁地时转向”，由 bous（来源于 PIE 词根 *gwou- "公牛，牛，母牛"）和 strephein</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>apostrophe/ə'pɒstrəfɪ/撇号：前缀apo-, 从，从...离开。-strophe, 转，同stir, 搅动。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>catastrophe/kə'tæstrəfɪ/大灾难：cata-, 向下。-strophe, 转，词源同turn, tropical,storm.即急转而下的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>streptococcus/,streptə(ʊ)'kɒkəs/链球菌：strepto-,成链的，-coccus,球形细菌，来自希腊语 kokkos,浆果，词源同 coccus,cocoon.因这种 细菌常呈链形成得名。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）strep/strep/缩写形式</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>streptomycin/,streptə(ʊ)'maɪsɪn/链霉素：strepto-,成链的，-mycin,真菌，词源同 mucus,mycology.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>strobe/strəʊb/频闪闪光灯：缩写自 stroboscopic lamp,频闪闪光灯。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>stroboscope/'strəʊbəskəʊp/频闪观测仪：来自希腊语 strobos,扭曲，旋转，来自 PIE*streb,旋转，弯，转，词源同 strophe,turn.-scope, 仪器，词源同 telescope.用于指一种频闪观测仪器。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>strophe/'strəʊfɪ/诗节：来自希腊语 strophe,诗节，字面意思为转折或起承转合，来自 strephein,转，PIE*streb,转，词 源同 catastrophe,tropic,turn.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>strap/stræp/带子，肩带，系，捆绑，包扎，鞭打，抽打：拼写变体形式自 strope,带子，马具，挽马带，来自拉丁语 stroppus,带子，绑带，来自希腊语 strophos,带子，绳子，来自 strephein,弯，转，缠绕，来自 PIE*streb,弯，转，缠绕，词源同 strop,strophe,tropical,turn.引申诸相关词义。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>OE网：17世纪初，“皮带”一词源于苏格兰语或航海术语中的变体 strope，意为“马具上的环或带子”，大约来自古法语 estrop，意为“带子”，源于拉丁语 stroppus，意为“带子、带”，可能经由伊特鲁里亚语，最终源于希腊语 strophos，“扭曲的带子； 一根绳索、绳子”，源于 strephein “旋转”（来自原始印欧语根 *streb(h)-，“缠绕、旋转”）。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少见）strop/strɒp/1带索，环索，磨刀皮带：来自 strap 拼写变体，是 strap（名词）的更古老和更正确的形式，自16世纪被后者所取代。后在词义上两个词产生了分化。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少见）（暂附于此）2恼怒，懊恼：回构自 stroppy,恼怒的，懊恼的，蛮横的，刁蛮的。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>stroppy：1943年，英国海员俚语，可能是对 obstreperous 的俚语曲解。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>obstreperous 喧嚣的,喧闹的；不服约束的：约1600年，源自拉丁语 obstreperus "喧闹的"，源自 obstrepere "用噪音淹没和反对”，strepere "发出噪音"，源自 PIE *strep-, 据说是模拟的（比较拉丁语 stertare "打鼾"，古诺尔斯语 þrefa "争吵"， þrapt "喋喋不休，闲话"，古英语 þræft "争吵"）。但德·范写道："不能确定 *strep- 是否追溯到 PIE，因为它只在拉丁语和日耳曼语中发现。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*lug-to- 弯曲的（reluctance luxury）</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>reluctance/rɪ'lʌkt(ə)ns/n. 不愿意；勉强：来自废弃的动词 reluct “奋斗，反抗”（15世纪），源自拉丁语 reluctari, reluctare “反抗，抵抗，反对”，来自 re- “向后，反对，反抗”（见 re-）+ luctari “斗争，摔跤”，源自原意语族 *lukto-，源自原始印欧语。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span class=" text-color-green">show reluctance to do sth.表示不愿作某事。she sensed his reluctance to continue.她察觉到他不愿继续下去。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>reluctant/rɪ'lʌkt(ə)nt/勉强的，不情愿的：拉丁语 reluctantem（主格 reluctans）， reluctari 的现在分词。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>ineluctable/,ɪnɪ'lʌktəb(ə)l/无可避免的：法语 inéluctable（15世纪）或直接源自拉丁语 ineluctabilis，意为“无法通过挣扎逃脱”，由 in- 和 eluctabilis “可以逃脱”的组合而成，后者源自 eluctari “挣扎着逃脱”，由 ex “出，从...中出来”（见 ex-）和 luctari “挣扎”。即打不出来的，引申词义无可避免的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>lock/lɒk/（1锁）2 (头发的)一绺：古英语 locc “一缕头发，卷发”（复数形式为 loccas），源自原始日耳曼语 *lukkoz，这个词的起源不确定。据《牛津英语词典》称，可能源自原始印欧语言的 *lugnos-</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>luxury/'lʌkʃ(ə)rɪ/奢华，奢侈：约于1300年，“性交”； 14世纪中期，“放荡，罪恶的自我放纵”； 14世纪晚期，“感官的快乐”，源自古法语 luxurie “放荡，放纵，欲望”，源自拉丁语 luxuria “过度，奢侈的生活，丰富； 美味”，源自 luxus “过度，奢侈； 华丽”，</span><span class=" text-color-yellow">可能是 luxus（形容词）“脱臼”的比喻用法</span><span>，与 luctari “摔跤，努力”有关。</span><span class=" text-color-yellow">英语单词在17世纪失去了其贬义。指“沉溺于选择或昂贵物品的习惯”始于1630年代； 指“奢华的环境”始于1704年； 指“超越生活必需品的选择或舒适之物”始于1780年。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）deluxe/də'lʌks/adj. 豪华的，奢华的；高级的：</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>luxuriate/lʌg'ʒʊərɪeɪt; lʌg'zjʊə-; lʌk'sjʊə-/纵情享乐 茂盛的生长,生活奢侈,沉溺：来自luxury,奢华，奢侈。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>luxurious/lʌg'ʒʊərɪəs; lʌg'zjʊə-; lʌk'sjʊə-/舒适的，奢侈的：来自luxury,奢华，奢侈。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*kenk-1 环绕 包围</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>cinch/sɪn(t)ʃ/小菜一碟：1859年，美国英语，“马鞍带”，源自西班牙语 cincha “腰带”，源自拉丁语 cingulum “腰带，剑带”，源自 cingere “环绕，包围”，源自 PIE 词根。</span><span class=" text-color-yellow">1895年出现了“容易的事情”的意思（在 lead-pipe cinch 中），通过“牢固或确定的掌握”的概念（1888年）。</span><span class=" text-color-green">cinch a victory.确保胜利the program was a cinch to use.这个程序使用起来太容易了。he was a cinch to take a prize.他肯定会得奖。It's a cinch that the horse will win the race.那匹马必胜无疑。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）surcingle/'sɜːsɪŋg(ə)l/</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）cincture/'sɪŋktʃə/</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）enceinte/ɔŋ'sæŋt/</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>precinct/'priːsɪŋ(k)t/街区，商业区：约于1400年， prasaynt（15世纪中期为 precincte），“为政府或代表目的而定义的区域”，尤其是在城市或城镇中，源自于中世纪拉丁语 precinctum “围墙，边界线”，是拉丁语 praecingere 的过去分词中性名词用法，“环绕，包围”，由 prae “之前”和 cingere “环绕，包围”组成。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>shingles/'ʃɪŋg(ə)lz/带状疱疹：来自拉丁语 cingulus,带子，来自 cingulum,带子，来自 cingere,包围，围住，用带子缠绕。</span><span class=" text-color-yellow">在中世纪拉丁语中，这个词的医学用法是希腊语 zōstēr 的借译，字面意思是"腰带"。这种炎症之所以被称为带状疱疹，是因为它经常扩展到身体的中部，就像一个腰带。</span><span class=" text-color-blue">也许它在英语中得到了加强，因为法语 cengle 的复数形式是"shingles"，字面意思是"腰带，围栏"，来自同样的拉丁词。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>succinct/sək'sɪŋ(k)t/简明的：拉丁语 succinctus “准备好的； 收缩的，短小的”，是 succingere “（为行动）卷起（衣服），从下面束紧”的过去分词，由 sub “从下面”和 cingere “束紧”的同化形式组成。“简短，简洁”的意义首次记录于1530年代。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*weng- 弯曲（wink）</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wink/wɪŋk/眨眼：古英语 wincian “眨眼、眨眼睛”，源自原始日耳曼语 *wink-，是古高地德语 wankon “蹒跚、摇晃”、古挪威语 vakka “迷路、徘徊”词根的变体，源自原始印欧语 *weng- 弯曲 的词根。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>hoodwink/'hʊdwɪŋk/欺诈，欺骗：1560年代，“用眼罩蒙住眼睛，使之失明”，源于 hood（n.1）+ wink（n.）； 引申义为“使心智失明，通过伪装欺骗，误导”约为1600年。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>gauche/gəʊʃ/笨拙的：1751年，源自法语 gauche "左"（15世纪，代替 senestre 在那个意义上），最初的意思是"笨拙的，歪曲的"，来自 gauchir "转向一边，偏离"，源自原始日耳曼语 *wankjan，源自 PIE *weng- 。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>lapwing/'læpwɪŋ/凤头麦鸡，田凫：Middle English lappewinke (late 14c.), lapwyngis (early 15c.), folk etymology alteration of Old English hleapewince "lapwing," probably literally "leaper-winker," from hleapan "to leap" (see leap (v.)) + wince "totter, waver, move rapidly," related to wincian "to wink" (see wink (v.)).</span><span class=" text-color-purple">据说这种鸟被称为“飞行方式”[OED]“指其不规则拍打的飞行方式”[Barnhart]，但千鸟也会在地面上拍打翅膀，假装有受伤，以引诱寻找蛋的人离开它的巢，这似乎是一个更合理的解释。它的希腊名字是 polyplagktos “欺骗性地引诱”。</span></div>
+    <ul class="image-list">
+    <li class="image-item">
+    <img
+      src="https://api2.mubu.com/v3/document_image/a67b5558-bce3-40dc-8334-1bad730df576-21349260.jpg"
+      style="width: 176px;"
+      crossorigin="anonymous"
+      class="image"
+    />
+  </li>
+  </ul>
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>periwinkle/'perɪwɪŋk(ə)l/</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（1蔓长春花：约始于1500年，起源于</span><span class=" highlight-yellow">中古英语 pervinkle</span><span>（ 14世纪早期作为姓氏），是 parvink, pervink（12世纪）的一个爱称词，源自古英语 perwince, pervince，出自拉丁晚期的 pervinca “periwinkle”，可能源自拉丁语的 pervincire “缠绕，绑定”，还有从 per “彻底”（见 per）加上 vincire “捆绑，脚镣”（见 wind（v.1））的可能性。）</span></div>
+    <ul class="image-list">
+    <li class="image-item">
+    <img
+      src="https://api2.mubu.com/v3/document_image/cd6e7145-608d-491b-83e8-307d29b18b3b-21349260.jpg"
+      style="width: 181px;"
+      crossorigin="anonymous"
+      class="image"
+    />
+  </li>
+  </ul>
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>2玉黍螺(食用海螺)，滨螺：1520年代，显然是古英语 pinewincle 的改变（可能受到</span><span class=" highlight-yellow">中古英语 parvink </span><span>的影响），来自古英语 pine-, 可能源自拉丁语 pina “贻贝”，来自希腊语 pine。第二个元素是 wincel “角落； 螺旋壳”，来自原始日耳曼语 *winkil-, 源自 PIE 词根 *weng- “弯曲”。</span><span class=" text-color-purple">但是没有发现中古英语形式。</span></div>
+    <ul class="image-list">
+    <li class="image-item">
+    <img
+      src="https://api2.mubu.com/v3/document_image/b841139e-45d0-41fe-855c-a53c31969995-21349260.jpg"
+      style="width: 182px;"
+      crossorigin="anonymous"
+      class="image"
+    />
+  </li>
+  </ul>
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wench/wen(t)ʃ/少妇，少女：13世纪晚期， wenche “女孩，年轻女子”，尤其是未婚女子，也指“女婴”，缩写自 wenchel “孩子”，在中古英语中也指“女孩，少女”，源自古英语 wencel，可能与 wancol “不稳定的，易变的，虚弱的”有关，源自原始日耳曼语 *wankila-，源自原始印欧语 *weng-。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>wince/wɪns/皱眉蹙额；畏缩，退避：约于1300年， wincen； 13世纪中期， winchen，意为“突然后退”，源自盎格鲁-法语 *wenchir，古北法语 *wenchier（古法语 guenchir）“转向，避免”，来自法兰克语 *wenkjan，源自原始日耳曼语 *wankjan（也是古高地德语 wankon “摇晃，蹒跚”，古诺尔斯语 vakka “迷路，徘徊”的来源； 参见 wink（v.））。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>winch/wɪn(t)ʃ/卷扬机：13世纪晚期，源自古英语 wince “绞盘，滑轮”，来自原始日耳曼语 *winkja-, 源自原始印欧语 *weng- “弯曲”。</span></div>
+    <ul class="image-list">
+    <li class="image-item">
+    <img
+      src="https://api2.mubu.com/v3/document_image/c619444c-513d-454f-912e-d988a70970fc-21349260.jpg"
+      style="width: 166px;"
+      crossorigin="anonymous"
+      class="image"
+    />
+  </li>
+  </ul>
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>拉丁语 orbem 圆圈 盘 环 轨道，可能与 orbita 车辙 有关</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>orb/ɔːb/球,天体,圆形物：源自于古法语 orbe “球体，球形物”（13世纪），直接源自拉丁语 orbem（主格 orbis)“圆圈，盘，环，轨道”</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>orbicular/ɔː'bɪkjʊlə/圆的,环状的,完整的,球形的,圆满的：古法语 orbiculaire，晚期拉丁语 orbicularis "圆形的，球形的"，源自拉丁语 orbiculus，是 orbis "圆"的小型形式</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>orbit/ˈɔːbɪt/轨道；眼眶；势力范围；生活常规：14世纪晚期，“眼眶，颅骨中容纳眼睛的骨腔”，源自古法语 orbite 或直接源自中世纪拉丁语 orbita，是拉丁语 orbita “车轮轨迹，被踏出的路，车辙，路线”（见 orb）的引申用法。</span><span class=" text-color-yellow">天文学上“行星或彗星的圆形或椭圆形轨道”（1690年代开始出现在英语中； 后来也用于人造卫星）在古典拉丁语中已有记录，并在克雷莫纳的杰拉德的阿维森纳翻译中得以复兴。</span><span class=" text-color-purple">古英语中“眼眶”的词是 eaghring。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul>
+        <div class="publish" style="display: flex; align-items: center; justify-content: center;">
+        <span>by&nbsp;</span>
+        <span style="color:#dc9b04"> Leo Tian</span>
+        <span>&nbsp;由&nbsp;</span>
+        <svg width="12" height="12" viewBox="0 0 176 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M27.0026 84.7169L27.0026 84.7187C27.1543 105.515 33.9015 115.962 40.8965 126.793C41.7901 128.177 42.6878 129.567 43.5763 130.986L43.5761 130.986L43.5837 130.997C49.6561 140.131 48.6663 152.568 40.617 160.617C31.4397 169.794 16.5603 169.794 7.38299 160.617C-0.666371 152.568 -1.65605 140.131 4.41557 131.003L4.48092 130.905L4.48238 130.893L5.40506 129.434L5.40713 129.431L8.60254 124.464L8.60329 124.463C14.9616 114.519 20.7111 104.275 20.9895 85.4386L20.9895 85.4367L20.9974 84.7206L20.9974 84.7169L21 84.0018V84C21 72.0349 18.8456 63.4536 15.6833 56.2661C13.2366 50.7047 10.1829 45.976 7.093 41.1912C6.20169 39.811 5.30737 38.4261 4.42373 37.0152L4.42388 37.0151L4.41636 37.0038C-1.65613 27.8693 -0.666305 15.4323 7.38299 7.38299C16.5603 -1.79433 31.4397 -1.79433 40.617 7.38299C48.6664 15.4324 49.656 27.8693 43.5844 36.9969L43.5164 37.0992L43.515 37.1121L42.6052 38.5507L42.6032 38.5539L39.1998 43.8464L39.1988 43.848C32.8381 53.823 27.1423 64.183 27.0026 83.2793L27.0026 83.2812L27 83.9992L27 84.0028L27.0026 84.7169ZM171.584 36.9969L171.516 37.0996L171.515 37.1124L170.605 38.5507L170.603 38.5539L167.2 43.8464L167.199 43.848C160.838 53.823 155.142 64.183 155.003 83.2793L155.003 83.2812L155 83.9992L155 84.0028L155.003 84.7169L155.003 84.7187C155.154 105.515 161.901 115.962 168.896 126.793C169.79 128.177 170.688 129.567 171.576 130.986L171.576 130.986L171.584 130.997C177.656 140.131 176.666 152.568 168.617 160.617C159.44 169.794 144.56 169.794 135.383 160.617C127.334 152.568 126.344 140.131 132.416 131.003L132.481 130.905L132.482 130.893L133.405 129.434L133.407 129.431L136.603 124.464L136.603 124.463C142.962 114.519 148.711 104.275 148.989 85.4386L148.989 85.4367L148.997 84.7206L148.997 84.7169L149 84.0018V84C149 72.0349 146.846 63.4536 143.683 56.2661C141.237 50.7047 138.183 45.976 135.093 41.1912C134.202 39.811 133.307 38.4261 132.424 37.0152L132.424 37.0151L132.416 37.0038C126.344 27.8693 127.334 15.4323 135.383 7.38299C144.56 -1.79433 159.44 -1.79433 168.617 7.38299C176.666 15.4324 177.656 27.8693 171.584 36.9969ZM88 60.5C100.979 60.5 111.5 71.0213 111.5 84C111.5 96.9787 100.979 107.5 88 107.5C75.0213 107.5 64.5 96.9787 64.5 84C64.5 71.0213 75.0213 60.5 88 60.5Z" fill="rgb(143, 149, 158)" stroke="rgb(143, 149, 158)"/>
+          </svg>
+        <span style="color:#dc9b04">&nbsp;幕布</span>
+        <span>&nbsp;发布</span>
+      </div>
+      </body>
+    </html>
+  

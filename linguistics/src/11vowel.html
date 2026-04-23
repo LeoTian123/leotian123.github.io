@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交互式元音合成器</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            user-select: none; /* 防止拖动时选中文本 */
+        }
+        h1 { color: #333; margin-bottom: 10px; }
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        canvas {
+            border: 2px solid #333;
+            cursor: crosshair;
+            background: #fff;
+            touch-action: none;
+            outline: none;
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            min-width: 250px;
+        }
+        .control-group {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #555;
+            display: flex;
+            justify-content: space-between;
+        }
+        input[type="range"] {
+            width: 100%;
+            cursor: pointer;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 10px;
+        }
+        button:hover { background-color: #0056b3; }
+        button.active { background-color: #dc3545; animation: pulse 1.5s infinite; }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+        }
+
+        .value-display { color: #007bff; font-family: monospace; }
+        .info {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+        .status {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎹 交互式元音合成器</h1>
+    
+    <div class="container">
+        <canvas id="vowelChart" width="600" height="550"></canvas>
+
+        <div class="controls">
+            <button id="toggleBtn">🔊 点击开启声音</button>
+            <div id="statusText" class="status">状态：已静音</div>
+
+            <div class="control-group">
+                <label>基频 (Pitch): <span id="f0Val" class="value-display">120 Hz</span></label>
+                <input type="range" id="f0Slider" min="80" max="400" value="120">
+            </div>
+
+            <div class="control-group">
+                <label>第三共振峰 (F3): <span id="f3Val" class="value-display">2500 Hz</span></label>
+                <input type="range" id="f3Slider" min="1000" max="4000" value="2500">
+            </div>
+
+            <div class="control-group">
+                <label>当前 F1: <span id="f1Val" class="value-display">0 Hz</span></label>
+                <label>当前 F2: <span id="f2Val" class="value-display">0 Hz</span></label>
+            </div>
+            
+            <div style="font-size: 13px; color: #666; line-height: 1.4; margin-top:10px;">
+                <p>💡 <strong>操作指南:</strong></p>
+                <ol style="padding-left: 20px; margin: 5px 0;">
+                    <li>先点上方蓝色按钮<b>开启声音</b>。</li>
+                    <li>在左侧图中<b>拖动红点</b>改变元音。</li>
+                    <li>Y轴=F1 (开口度)，X轴=F2 (舌位)。</li>
+                </ol>
+            </div>
+
+            <div style="font-size: 13px; color: #666; line-height: 1.4; margin-top:10px;">
+                <p>💡 <strong>提示:</strong></p>
+                <ol style="padding-left: 20px; margin: 5px 0;">
+                    <li>F3越小，元音越具有卷舌色彩。</b>。</li>
+                    <li>圆唇降低F2（左移），舌位后移也降低F2。二者区别是，<br>
+                        圆唇的F3降低，舌位后移的F3升高。</li>
+                    <li>基频设置音色，男声典型120Hz，女声典型220Hz，童声更高。<br>
+                        需注意基频更高意味着对应的F1、F2、F3也更高，<br>
+                        图中梯形提示为120Hz设置，不随着基频变化而变化。
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+
+    <p class="info">基于 Web Audio API。原理：锯齿波源 + 级联二阶谐振滤波器。<br>如果没声音，请确保电脑未静音，并尝试点击页面任意位置唤醒浏览器。</p>
+
+<script>
+/**
+ * 配置与状态
+ */
+const canvas = document.getElementById('vowelChart');
+const ctx = canvas.getContext('2d');
+const width = canvas.width;
+const height = canvas.height;
+const statusText = document.getElementById('statusText');
+const toggleBtn = document.getElementById('toggleBtn');
+
+// 坐标映射配置
+const F1_MIN = 50;
+const F1_MAX = 1100;
+const F2_MIN = 500;
+const F2_MAX = 2700;
+
+let state = {
+    f1: 300,
+    f2: 2200,
+    f0: 120,
+    f3: 2500,
+    isPlaying: false,
+    dragging: false
+};
+
+// 标准元音位置
+const vowels = [
+    { symbol: '/i/', f1: 270, f2: 2290 },
+    { symbol: '/e/', f1: 530, f2: 1840 },
+    { symbol: '/a/', f1: 730, f2: 1090 },
+    { symbol: '/o/', f1: 570, f2: 840 },
+    { symbol: '/u/', f1: 300, f2: 870 }
+];
+
+// 音频全局变量
+let audioCtx = null;
+let sourceNode = null;
+let gainNode = null;
+let formantFilters = []; 
+
+/**
+ * 坐标转换工具
+ */
+function f1ToY(f1) {
+    const ratio = (f1 - F1_MIN) / (F1_MAX - F1_MIN);
+    return ratio * height;
+}
+function yToF1(y) {
+    const ratio = y / height;
+    return F1_MIN + ratio * (F1_MAX - F1_MIN);
+}
+function f2ToX(f2) {
+    const ratio = (f2 - F2_MIN) / (F2_MAX - F2_MIN);
+    return ratio * width;
+}
+function xToF2(x) {
+    const ratio = x / width;
+    return F2_MIN + ratio * (F2_MAX - F2_MIN);
+}
+
+/**
+ * 音频引擎初始化与更新
+ */
+function initAudio() {
+    if (audioCtx) return;
+
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContext) {
+        alert("您的浏览器不支持 Web Audio API");
+        return;
+    }
+    
+    audioCtx = new AudioContext();
+    
+    // 创建增益节点
+    gainNode = audioCtx.createGain();
+    gainNode.gain.value = 0;
+    gainNode.connect(audioCtx.destination);
+
+    // 创建三个滤波器
+    for(let i=0; i<3; i++) {
+        const filter = audioCtx.createBiquadFilter();
+        filter.type = 'peaking';
+        filter.Q.value = 5; 
+        formantFilters.push(filter);
+    }
+
+    // 连接滤波器链: F1 -> F2 -> F3 -> Gain
+    formantFilters[0].connect(formantFilters[1]);
+    formantFilters[1].connect(formantFilters[2]);
+    formantFilters[2].connect(gainNode);
+}
+
+function startOscillator() {
+    if (!audioCtx) initAudio();
+    
+    // 如果已有振荡器，先停止并断开
+    if (sourceNode) {
+        try { sourceNode.stop(); } catch(e){}
+        sourceNode.disconnect();
+    }
+
+    sourceNode = audioCtx.createOscillator();
+    sourceNode.type = 'sawtooth';
+    sourceNode.frequency.value = state.f0;
+    
+    // 连接源到第一个滤波器
+    sourceNode.connect(formantFilters[0]);
+    sourceNode.start();
+    
+    console.log("振荡器已启动");
+}
+
+function updateAudioParams() {
+    if (!audioCtx || !sourceNode) return;
+
+    // 确保上下文是运行的
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume().then(() => {
+            console.log("AudioContext 已唤醒");
+        });
+    }
+
+    const now = audioCtx.currentTime;
+    const rampTime = 0.03; // 30ms 平滑过渡，防止爆音
+
+    // 更新基频
+    sourceNode.frequency.setTargetAtTime(state.f0, now, rampTime);
+
+    // 更新共振峰
+    // F1
+    formantFilters[0].frequency.setTargetAtTime(state.f1, now, rampTime);
+    formantFilters[0].gain.setTargetAtTime(15, now, rampTime); // 增加增益以突出共振峰
+    
+    // F2
+    formantFilters[1].frequency.setTargetAtTime(state.f2, now, rampTime);
+    formantFilters[1].gain.setTargetAtTime(15, now, rampTime);
+
+    // F3
+    formantFilters[2].frequency.setTargetAtTime(state.f3, now, rampTime);
+    formantFilters[2].gain.setTargetAtTime(10, now, rampTime);
+}
+
+function toggleSound() {
+    initAudio();
+
+    // 关键：必须在这里 resume，否则浏览器可能拦截
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume().then(() => {
+            finishToggle(true);
+        }).catch(err => {
+            console.error("无法唤醒音频:", err);
+            alert("无法启动音频，请检查浏览器设置或再次点击页面。");
+        });
+    } else {
+        finishToggle(!state.isPlaying);
+    }
+}
+
+function finishToggle(shouldPlay) {
+    state.isPlaying = shouldPlay;
+    
+    if (state.isPlaying) {
+        startOscillator();
+        // 确保参数是最新的
+        updateAudioParams();
+        // 淡入
+        gainNode.gain.cancelScheduledValues(audioCtx.currentTime);
+        gainNode.gain.setTargetAtTime(0.25, audioCtx.currentTime, 0.1);
+        
+        toggleBtn.textContent = "🔇 关闭声音";
+        toggleBtn.classList.add('active');
+        statusText.textContent = "状态：正在播放 (拖动红点听变化)";
+        statusText.style.color = "#dc3545";
+    } else {
+        // 淡出
+        gainNode.gain.cancelScheduledValues(audioCtx.currentTime);
+        gainNode.gain.setTargetAtTime(0, audioCtx.currentTime, 0.1);
+        
+        setTimeout(() => {
+            if (!state.isPlaying && sourceNode) {
+                try { sourceNode.stop(); } catch(e){}
+            }
+        }, 200);
+
+        toggleBtn.textContent = "🔊 开启声音";
+        toggleBtn.classList.remove('active');
+        statusText.textContent = "状态：已静音";
+        statusText.style.color = "#888";
+    }
+}
+
+/**
+ * 绘图逻辑
+ */
+function draw() {
+    ctx.clearRect(0, 0, width, height);
+
+    // 背景网格
+    ctx.strokeStyle = '#f0f0f0';
+    ctx.lineWidth = 1;
+    for(let i=0; i<=10; i++) {
+        let y = (i/10) * height;
+        ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(width, y); ctx.stroke();
+        let x = (i/10) * width;
+        ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, height); ctx.stroke();
+    }
+
+    // 元音梯形
+    ctx.strokeStyle = '#ccc';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([5, 5]);
+    ctx.beginPath();
+    const pts = vowels.map(v => ({x: f2ToX(v.f2), y: f1ToY(v.f1)}));
+    // 简单连接成多边形
+    ctx.moveTo(pts[0].x, pts[0].y); // i
+    ctx.lineTo(pts[1].x, pts[1].y); // e
+    ctx.lineTo(pts[2].x, pts[2].y); // a
+    ctx.lineTo(pts[3].x, pts[3].y); // o
+    ctx.lineTo(pts[4].x, pts[4].y); // u
+    ctx.closePath();
+    ctx.stroke();
+    ctx.setLineDash([]);
+    
+    ctx.fillStyle = 'rgba(0, 123, 255, 0.05)';
+    ctx.fill();
+
+    // 标注
+    ctx.fillStyle = '#666';
+    ctx.font = 'bold 14px Arial';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    vowels.forEach(v => {
+        ctx.fillText(v.symbol, f2ToX(v.f2), f1ToY(v.f1));
+    });
+
+    // 当前点
+    const curX = f2ToX(state.f2);
+    const curY = f1ToY(state.f1);
+
+    // 十字线
+    ctx.strokeStyle = 'rgba(220, 53, 69, 0.4)';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([2, 2]);
+    ctx.beginPath();
+    ctx.moveTo(curX, 0); ctx.lineTo(curX, height);
+    ctx.moveTo(0, curY); ctx.lineTo(width, curY);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // 红点
+    ctx.fillStyle = '#dc3545';
+    ctx.beginPath();
+    ctx.arc(curX, curY, 8, 0, Math.PI*2);
+    ctx.fill();
+    
+    // 外圈光晕
+    ctx.strokeStyle = 'rgba(220, 53, 69, 0.3)';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.arc(curX, curY, 15, 0, Math.PI*2);
+    ctx.stroke();
+}
+
+/**
+ * 交互处理
+ */
+function handleInput(clientX, clientY) {
+    const rect = canvas.getBoundingClientRect();
+    const x = clientX - rect.left;
+    const y = clientY - rect.top;
+
+    // 计算频率
+    let newF2 = xToF2(x);
+    let newF1 = yToF1(y);
+
+    // 软限制，防止极端值导致耳朵不适，但允许超出梯形
+    newF1 = Math.max(150, Math.min(1200, newF1));
+    newF2 = Math.max(400, Math.min(3200, newF2));
+
+    state.f1 = newF1;
+    state.f2 = newF2;
+
+    // 更新显示
+    document.getElementById('f1Val').textContent = Math.round(state.f1) + ' Hz';
+    document.getElementById('f2Val').textContent = Math.round(state.f2) + ' Hz';
+
+    // 更新音频
+    updateAudioParams();
+    
+    draw();
+}
+
+// 绑定事件
+canvas.addEventListener('mousedown', (e) => {
+    state.dragging = true;
+    handleInput(e.clientX, e.clientY);
+});
+window.addEventListener('mousemove', (e) => {
+    if (state.dragging) handleInput(e.clientX, e.clientY);
+});
+window.addEventListener('mouseup', () => state.dragging = false);
+
+// 触摸支持
+canvas.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    state.dragging = true;
+    handleInput(e.touches[0].clientX, e.touches[0].clientY);
+}, {passive: false});
+canvas.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+    if (state.dragging) handleInput(e.touches[0].clientX, e.touches[0].clientY);
+}, {passive: false});
+window.addEventListener('touchend', () => state.dragging = false);
+
+// 控件绑定
+toggleBtn.addEventListener('click', toggleSound);
+
+document.getElementById('f0Slider').addEventListener('input', (e) => {
+    state.f0 = parseInt(e.target.value);
+    document.getElementById('f0Val').textContent = state.f0 + ' Hz';
+    updateAudioParams();
+});
+
+document.getElementById('f3Slider').addEventListener('input', (e) => {
+    state.f3 = parseInt(e.target.value);
+    document.getElementById('f3Val').textContent = state.f3 + ' Hz';
+    updateAudioParams();
+});
+
+// 初始化显示
+draw();
+document.getElementById('f1Val').textContent = Math.round(state.f1) + ' Hz';
+document.getElementById('f2Val').textContent = Math.round(state.f2) + ' Hz';
+
+</script>
+</body>
+</html>

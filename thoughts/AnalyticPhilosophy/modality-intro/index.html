@@ -1,0 +1,5797 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Leo Tian的个人网站">
+      
+      
+        <meta name="author" content="Leo Tian">
+      
+      
+        <link rel="canonical" href="https://leotian123.github.io/thoughts/AnalyticPhilosophy/modality-intro/">
+      
+      
+        <link rel="prev" href="../../">
+      
+      
+        <link rel="next" href="../mereology-1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>模态逻辑与模态形而上学入门 - Leo Tian的个人网站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../mkdocs/css/no-footer.css">
+    
+      <link rel="stylesheet" href="../../../mkdocs/css/unordered-list-symbols.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Leo Tian的个人网站" class="md-header__button md-logo" aria-label="Leo Tian的个人网站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Leo Tian的个人网站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              模态逻辑与模态形而上学入门
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../python/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../projects/%E6%97%85%E6%B8%B8%E7%B3%BB%E7%BB%9F/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ai/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  AI
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../maths/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Maths
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../linguistics/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Languages
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Thoughts
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../tools/CLI%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Leo Tian的个人网站" class="md-nav__button md-logo" aria-label="Leo Tian的个人网站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Leo Tian的个人网站
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../python/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../python/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%8E%A9%E5%85%B7/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    一些小玩具
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    一些小玩具
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%8E%A9%E5%85%B7/%E6%B8%B8%E6%88%8F%E8%84%9A%E6%9C%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    游戏脚本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%8E%A9%E5%85%B7/pygame/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pygame
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%8E%A9%E5%85%B7/tkinter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    tkinter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%8E%A9%E5%85%B7/%E7%88%AC%E8%99%AB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    爬虫
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%8E%A9%E5%85%B7/U%E7%9B%98%E6%A3%80%E6%B5%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    U盘检测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    绘制有趣的图片
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    绘制有趣的图片
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/%E7%BB%98%E5%88%B6%E6%9C%89%E8%B6%A3%E7%9A%84%E5%9B%BE%E7%89%87/%E8%8B%B1%E8%AF%AD%E5%AD%97%E4%BD%93/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    英语字体
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/%E7%BB%98%E5%88%B6%E6%9C%89%E8%B6%A3%E7%9A%84%E5%9B%BE%E7%89%87/%E5%8C%96%E5%AD%A6%E5%91%A8%E6%9C%9F%E8%A1%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    化学周期表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/%E7%BB%98%E5%88%B6%E6%9C%89%E8%B6%A3%E7%9A%84%E5%9B%BE%E7%89%87/%E5%A4%9A%E8%81%94%E9%AA%A8%E7%89%8C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    多联骨牌
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/%E7%BB%98%E5%88%B6%E6%9C%89%E8%B6%A3%E7%9A%84%E5%9B%BE%E7%89%87/Banyan%E5%92%8CBenes%E7%BD%91%E7%BB%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Banyan和Benes网络
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/networkx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    networkx
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Django
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Django
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/Django/%E4%B8%80%E4%BA%9B%E9%A1%B9%E7%9B%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    一些项目
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/Django/ORM%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ORM笔记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projects/%E6%97%85%E6%B8%B8%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    旅游系统
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projects/DSL%E5%AE%A2%E6%9C%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSL客服
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projects/%E6%A0%A1%E5%9B%AD%E8%AE%BA%E5%9D%9B%E5%89%8D%E7%AB%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    校园论坛前端
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/French-to-IPA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    French-to-IPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projects/%E5%81%9C%E8%BD%A6%E5%9C%BA%E5%9B%9B%E6%97%A5%E6%95%B0%E6%8D%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    停车场四日数据
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projects/%E7%A6%BB%E6%95%A3%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95%E5%B7%A5%E5%85%B7%E7%AE%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    离散微分几何工具箱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../ai/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    论文阅读
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    论文阅读
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/%E8%BE%91%E5%BD%9501/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    辑录01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    摸索实录
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    摸索实录
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai/%E6%91%B8%E7%B4%A2%E5%AE%9E%E5%BD%95/SAE%E7%9A%84%E8%AF%AD%E8%A8%80%E7%89%B9%E5%BE%81%E4%B8%8E%E5%B9%B2%E9%A2%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SAE的语言特征与干预
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../maths/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maths
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maths
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Graph Theory
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Graph Theory
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/GraphTheory/%E5%9B%BE%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图数据挖掘的数学基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/GraphTheory/%E7%BB%A7%E7%BB%AD%E8%B0%88%E5%9B%BE%E7%9A%84%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    继续谈图的傅里叶变换
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/GraphTheory/%E4%B8%8D%E5%90%8C%E6%9E%84%E7%9A%84%E7%AE%80%E5%8D%95%E6%9C%89%E5%90%91%E5%9B%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    不同构的简单有向图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../maths/DDG/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DDG
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DDG
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/DDG/DDG%E5%BA%94%E7%94%A8%E5%BC%95%E5%AF%BC-%E7%AC%AC2%E7%AB%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DDG应用引导-第2章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/DDG/%E5%85%B3%E4%BA%8E%E4%BB%A3%E7%A0%81%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    初步可视化的pyOpenGL方案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/DDG/DDG%E5%BA%94%E7%94%A8%E5%BC%95%E5%AF%BC-%E7%AC%AC5%E7%AB%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DDG应用引导-第5章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/DDG/DDG%E5%BA%94%E7%94%A8%E5%BC%95%E5%AF%BC-%E7%AC%AC6%E7%AB%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DDG应用引导-第6章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/DDG/DDG%E5%BA%94%E7%94%A8%E5%BC%95%E5%AF%BC-%E7%AC%AC7%E7%AB%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DDG应用引导-第7章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/DDG/%E5%9C%A8%E7%AC%AC8%E7%AB%A0%E4%B9%8B%E5%89%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    在第8章之前
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/DDG/DDG%E5%BA%94%E7%94%A8%E5%BC%95%E5%AF%BC-%E7%AC%AC8%E7%AB%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DDG应用引导-第8章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/delaunay-voronoi/delaunay-voronoi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    delaunay-voronoi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../linguistics/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Languages
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Languages
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E6%96%B9%E4%BE%BF%E5%A4%8D%E5%88%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    方便复制
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    语音
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    语音
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E5%85%83%E9%9F%B3%E7%9B%B4%E8%A7%89%E5%B7%A5%E5%85%B7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    元音直觉工具
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/French-to-IPA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    French-to-IPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E5%81%87%E5%90%8D%E7%BD%97%E9%A9%AC%E9%9F%B3%E8%BD%AC%E6%8D%A2%E5%99%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    假名罗马音转换器
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    英语词源
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    英语词源
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4_2" id="__nav_6_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    按照意义分类的
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    按照意义分类的
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E4%BB%A3%E8%AF%8D%E5%92%8C%E4%BB%8B%E8%AF%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 代词和介词
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%88%86%E5%90%88%20%E5%88%86%E7%A6%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 分合 分离
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%88%86%E5%90%88%20%E5%AE%8C%E6%95%B4%E4%B8%80%E5%90%8C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 分合 完整一同
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%88%86%E5%90%88%20%E5%B1%95%E5%BC%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 分合 展开
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%88%86%E5%90%88%20%E8%81%9A%E5%90%88%E9%97%AD%E5%90%88%E6%94%B6%E7%BC%A9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 分合 聚合闭合收缩
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%88%86%E5%90%88%20%E8%86%A8%E8%83%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 分合 膨胀
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E4%BD%9C%20%E4%B8%87%E9%87%91%E6%B2%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动作 万金油
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E4%BD%9C%20%E4%B8%87%E9%87%91%E6%B2%B92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动作 万金油2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E4%BD%9C%20%E4%B8%87%E9%87%91%E6%B2%B93/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动作 万金油3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E4%BD%9C%20%E5%88%87%E7%A0%8D%E5%8A%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动作 切砍劈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E4%BD%9C%20%E5%9D%90%E7%AB%99%E8%B7%B3%E7%9D%A1%E5%91%BC%E5%90%B8%E7%AD%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动作 坐站跳睡呼吸等
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E4%BD%9C%20%E6%89%93%E4%BC%A4%E6%88%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动作 打伤战
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E4%BD%9C%20%E6%8A%93%E4%BD%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动作 抓住
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E4%BD%9C%20%E6%91%A9%E6%93%A6%E5%88%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动作 摩擦刮
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E4%BD%9C%20%E7%B3%BB%E7%B4%A7%E8%81%94%E7%BB%93/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动作 系紧联结
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E4%BD%9C%20%E9%81%AE%E8%94%BD%E8%A6%86%E7%9B%96%E4%BF%9D%E6%8A%A4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动作 遮蔽覆盖保护
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8F%A3%20%E5%90%83%E5%92%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 口 吃咬
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8F%A3%20%E5%96%8A%E8%AF%B4%E5%94%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 口 喊说唱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%90%8D%E8%AF%8D%20%E4%BA%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 名词 人
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%90%8D%E8%AF%8D%20%E5%99%A8%E5%AE%98%20%E4%BA%94%E5%AE%98%20%E5%85%B6%E4%BB%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 名词 器官 五官 其他
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%90%8D%E8%AF%8D%20%E5%99%A8%E5%AE%98%20%E4%BA%94%E5%AE%98%20%E7%9C%BC%E7%9D%9B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 名词 器官 五官 眼睛
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%90%8D%E8%AF%8D%20%E5%99%A8%E5%AE%98%20%E8%BA%AB%E4%BD%93%E5%9B%9B%E8%82%A2%E5%86%85%E8%84%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 名词 器官 身体四肢内脏
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%90%8D%E8%AF%8D%20%E5%9C%B0%E7%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 名词 地点
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%90%8D%E8%AF%8D%20%E6%B0%94%E8%B1%A1%E5%A4%A9%E8%B1%A1%E4%B8%8E%E5%8E%86%E6%B3%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 名词 气象天象与历法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%90%8D%E8%AF%8D%20%E7%94%9F%E5%91%BD%20%E5%85%B6%E4%BB%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 名词 生命 其他
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%90%8D%E8%AF%8D%20%E7%94%9F%E5%91%BD%20%E5%8A%A8%E7%89%A9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 名词 生命 动物
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%90%8D%E8%AF%8D%20%E7%94%9F%E5%91%BD%20%E6%A4%8D%E7%89%A9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 名词 生命 植物
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%BD%A2%E5%AE%B9%E8%AF%8D%20%E7%BB%8F%E5%85%B8%E5%8A%9B%E5%AD%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 形容词 经典力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%BD%A2%E5%AE%B9%E8%AF%8D%20%E9%95%BF%E7%9F%AD%E5%A4%9A%E5%B0%91%E5%A4%A7%E5%B0%8F%E5%A5%BD%E5%9D%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 形容词 长短多少大小好坏
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%BF%83%E7%90%86%20%E4%B8%AD%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 心理 中性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%BF%83%E7%90%86%20%E4%B8%AD%E6%80%A72/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 心理 中性2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%BF%83%E7%90%86%20%E6%B6%88%E6%9E%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 心理 消极
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%BF%83%E7%90%86%20%E7%A7%AF%E6%9E%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 心理 积极
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E6%84%8F%E4%B9%89%E7%B1%BB%201.1%E4%BF%A1%E7%94%A8%20%E5%B8%82%E5%9C%BA%20%E5%88%86%E9%85%8D%20%E8%B4%A2%E4%BA%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 意义类 1.1信用 市场 分配 财产
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E6%84%8F%E4%B9%89%E7%B1%BB%201.2%E7%94%9F%E4%BA%A7%E7%94%9F%E6%B4%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 意义类 1.2生产生活
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E6%84%8F%E4%B9%89%E7%B1%BB%202%E6%9D%83%E5%8A%9B%E4%B8%8E%E5%AE%97%E6%95%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 意义类 2权力与宗教
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E6%84%8F%E4%B9%89%E7%B1%BB%20%E5%85%89%E8%8A%92%E7%85%A7%E8%80%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 意义类 光芒照耀
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E6%84%8F%E4%B9%89%E7%B1%BB%20%E5%88%BA%E4%B8%8E%E7%AA%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 意义类 刺与突
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E6%84%8F%E4%B9%89%E7%B1%BB%20%E6%94%BE%E4%B8%8B%E7%95%99%E4%B8%8B%E6%BB%9E%E7%95%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 意义类 放下留下滞留
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E6%84%8F%E4%B9%89%E7%B1%BB%20%E6%97%8B%E8%BD%AC%E5%BC%AF%E6%9B%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 意义类 旋转弯曲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E6%84%8F%E4%B9%89%E7%B1%BB%20%E6%97%8B%E8%BD%AC%E5%BC%AF%E6%9B%B22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 意义类 旋转弯曲2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E6%84%8F%E4%B9%89%E7%B1%BB%20%E7%81%AB%E7%84%B0%E7%87%83%E7%83%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 意义类 火焰燃烧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E6%84%8F%E4%B9%89%E7%B1%BB%20%E7%94%9F%E8%82%B2%E7%94%9F%E9%95%BF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 意义类 生育生长
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E7%A7%BB%E5%8A%A8%20%E4%B8%8A%E4%B8%8B%E6%96%B9%E5%90%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 移动 上下方向
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E7%A7%BB%E5%8A%A8%20%E4%BA%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 移动 人
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E7%A7%BB%E5%8A%A8%20%E4%BD%BF%E5%8A%A8%20%E6%8E%A8%E6%8B%89%E6%8B%96%E6%8A%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 移动 使动 推拉拖投
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E7%A7%BB%E5%8A%A8%20%E4%BD%BF%E5%8A%A8%20%E6%90%BA%E5%B8%A6%E6%94%AF%E6%92%91%E5%BC%95%E5%AF%BC%E9%A9%BE%E9%A9%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 移动 使动 携带支撑引导驾驶
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E7%A7%BB%E5%8A%A8%20%E7%89%A9%E5%93%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 移动 物品
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E7%A7%BB%E5%8A%A8%20%E7%89%A9%E5%93%812/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 移动 物品2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E7%AE%80%E6%98%8E%E4%BB%8B%E8%AF%8D%E4%B8%8E%E6%96%B9%E4%BD%8D%E8%AF%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 简明介词与方位词
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4_3" id="__nav_6_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    按照词性分类的
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    按照词性分类的
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E8%AF%8D%E6%80%A7%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E8%AF%8D%E5%85%B7%E4%BD%93/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动词具体
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E8%AF%8D%E6%80%A7%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E8%AF%8D%E5%85%B7%E4%BD%932/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动词具体2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E8%AF%8D%E6%80%A7%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E8%AF%8D%E6%8A%BD%E8%B1%A11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动词抽象1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E8%AF%8D%E6%80%A7%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%8A%A8%E8%AF%8D%E6%8A%BD%E8%B1%A12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 动词抽象2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E8%AF%8D%E6%80%A7%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%90%8D%E8%AF%8D%20%E4%BA%BA%E9%80%A0%E7%89%A91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 名词 人造物1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E8%AF%8D%E6%80%A7%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%90%8D%E8%AF%8D%20%E4%BA%BA%E9%80%A0%E7%89%A92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 名词 人造物2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E8%AF%8D%E6%80%A7%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%90%8D%E8%AF%8D%20%E8%87%AA%E7%84%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 名词 自然
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E6%8C%89%E7%85%A7%E8%AF%8D%E6%80%A7%E5%88%86%E7%B1%BB%E7%9A%84/%E5%BD%92%E7%B1%BB%20%E5%BD%A2%E5%AE%B9%E8%AF%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归类 形容词
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4_4" id="__nav_6_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    专项项目
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    专项项目
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E4%B8%93%E9%A1%B9%E9%A1%B9%E7%9B%AE/PIE-per/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PIE per
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E4%B8%93%E9%A1%B9%E9%A1%B9%E7%9B%AE/PIE-pere/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PIE pere
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E4%B8%93%E9%A1%B9%E9%A1%B9%E7%9B%AE/%E4%B8%80%E7%BD%91%E7%AB%99%E7%9A%84onomatopoeia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    一网站的onomatopoeia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E4%B8%93%E9%A1%B9%E9%A1%B9%E7%9B%AE/%E5%85%83%E7%B4%A0%E8%AF%8D%E6%BA%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    元素词源
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E4%B8%93%E9%A1%B9%E9%A1%B9%E7%9B%AE/%E5%85%83%E7%B4%A0%E8%AF%8D%E6%BA%90%E7%9A%84%E5%88%86%E7%B1%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    元素词源的分类
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E4%B8%93%E9%A1%B9%E9%A1%B9%E7%9B%AE/%E6%9C%89%E8%B6%A3%E7%9A%84%E4%B8%93%E9%A2%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    有趣的专题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E4%B8%93%E9%A1%B9%E9%A1%B9%E7%9B%AE/%E6%9C%89%E8%B6%A3%E7%9A%84%E4%B8%93%E9%A2%982/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    有趣的专题2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E4%B8%93%E9%A1%B9%E9%A1%B9%E7%9B%AE/%E6%9D%A5%E8%87%AA%E9%97%AA%E7%B1%B3%E7%89%B9%E8%AF%AD%E6%97%8F%20%E6%8C%89%E6%84%8F%E4%B9%89%E5%88%86%E7%B1%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    来自闪米特语族 按意义分类
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linguistics/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%BA%90/%E4%B8%93%E9%A1%B9%E9%A1%B9%E7%9B%AE/%E6%9D%A5%E8%87%AA%E9%97%AA%E7%B1%B3%E7%89%B9%E8%AF%AD%E6%97%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    来自闪米特语族
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thoughts
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Thoughts
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analytic Philosophy
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Analytic Philosophy
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    模态逻辑与模态形而上学入门
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    模态逻辑与模态形而上学入门
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本情况
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        模态逻辑的形式直观与公理系统
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可能世界语义学
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="可能世界语义学">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可能世界的直观
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可能世界的本体地位
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可能世界语义学的形式化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        量化模态逻辑的考虑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本质属性与本质主义
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mereology-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    《Parts》第1部分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mereology-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    《Parts》第2部分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mereology-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    《Parts》第3部分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aesthetics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aesthetics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Aesthetics/%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%9F%A5%E9%81%93/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图书馆知道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Aesthetics/%E5%86%99%E4%BD%9C%E7%BB%83%E4%B9%A0-%E9%95%BF%E9%95%BF%E7%9A%84%E5%8F%A5%E5%AD%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    写作练习 长长的句子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/CLI%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI设置环境变量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常用指令
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本情况
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        模态逻辑的形式直观与公理系统
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可能世界语义学
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="可能世界语义学">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可能世界的直观
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可能世界的本体地位
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可能世界语义学的形式化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        量化模态逻辑的考虑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本质属性与本质主义
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">模态逻辑与模态形而上学入门<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>模态逻辑与模态形而上学旨在用哲学的、形式化的方式，研究可能性与必然性问题，本文尽量通俗地引入这门学问的最基本的一些考量，注重直觉的引导，注重直觉和推理对建模这个问题的共同重要作用。</p>
+<h2 id="_2">基本情况<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>一般的论断判断实际发生的事实是什么样子，而模态论断说的不是实际如何如何，而是涉及可能、不可能、必然、偶然等等。模态，英文形容词modal，名词modality。</p>
+<p><img alt="图片" src="https://pic2.zhimg.com/v2-56f170c3d29fb2b83270454bdb72b52b.jpg" /></p>
+<ul>
+<li>可能命题的真命题如：猪可能会飞、天鹅可能为白色、明天可能下雨、<strong>2+2=4是可能的</strong></li>
+<li>可能命题的假命题如：可能存在四条边的三角形、酒可能不含酒精</li>
+<li>不可能命题的真命题如：不可能存在圆的方形</li>
+<li>不可能命题的假命题如：人类不可能治愈癌症、<strong>2+2=4是不可能的</strong></li>
+<li>必然命题的真命题如：必然有2+2=4</li>
+<li>必然命题的假命题如：必然有明天下雨/明天必然下雨、小明一定成为医生、<strong>必然有2+2=5</strong></li>
+<li>偶然命题的真命题：天鹅是白色是偶然的、天鹅是黑色是偶然的、猪会飞是偶然的、猪不会飞是偶然的</li>
+<li>偶然命题的假命题：2+2=5是偶然的、2+2=4是偶然的、天鹅是白色、黑色或者其他某种颜色这件事是偶然的</li>
+</ul>
+<p>有几点还是值得注意的：</p>
+<ul>
+<li>必然命题有时候是必然真命题的简称，所以我们也可以有必然假这个概念，<strong>必然假指的就是不可能</strong>。</li>
+<li>那么，偶然这个概念，同时和必然真与必然假是对立的。这里刁钻的地方是，直觉上，必然真和必然假的命题，和其对应的普通逻辑的命题真值总是对应的（虽然这在形式系统中需要公理保证，见后文），也就是说“必然如何如何”“必然不如此”是真的那么直觉上“如何如何”“不如此”也是真的——偶然命题不是这样，偶然命题为真，这件事现实中可真可假。</li>
+<li>从概念上讲，“2+2=4是可能的”这件事确实是可能命题的真命题，尽管，更强的“2+2=4是必然的”也确实是必然命题的真命题。</li>
+</ul>
+<p>读者可能觉得“猪可能会飞”这件事怎么可能是真的，这是因为“可能性”有多种含义，至少应该区分以下两种：</p>
+<ul>
+<li>monological possibility说的是根据自然规律是可能的，</li>
+<li><strong>逻辑可能性/logical possibility</strong>则更加宽松。monologically possible的命题显然是逻辑可能的命题的子集。</li>
+</ul>
+<p>“猪可能会飞”为真，是在逻辑可能性的角度下说的。类似地，假设接受狭义相对论的说法，那么“有可能造出比光速还快的车”在monological可能性的角度下就是假的，然而，逻辑可能性的角度下是真的。</p>
+<p>我们后文的形式化系统优先刻画的是逻辑可能性。</p>
+<p>有一个二分：</p>
+<ul>
+<li><strong>de dicto modality/从言模态</strong>：有些时候我们关注的是<strong>命题的模态</strong>，关注的是命题必然成立还是偶然成立，例如“有人早餐吃恐龙”的可能性问题，这叫做从言模态。</li>
+<li><strong>de re modality/从物模态</strong>：有些时候我们关注的是<strong>事物的模态</strong>，关注的是事物的<strong>本质属性（事物必然持有的属性）和偶然属性</strong>，例如数字3是奇数吗、苏格拉底本质上很聪明吗这样的问题，这叫做从物模态。</li>
+</ul>
+<hr />
+<p>对于这种论断的形式化来自1912年C. I. Lewis的工作，他引入了后人沿用的“方框/box/ <span class="arithmatex">\(\Box\)</span> ”和“菱形/diamond/ <span class="arithmatex">\(\Diamond\)</span> ”符号，它们分别表示“必然性”和“可能性”，使用方法如下，假设p是常规的命题逻辑的一个命题：</p>
+<ul>
+<li>命题“necessarily p”“必然地，p”被形式化为 <span class="arithmatex">\(\Box p\)</span></li>
+<li>命题“possibly p”“可能地，p”被形式化为 <span class="arithmatex">\(\Diamond p\)</span></li>
+</ul>
+<p>两个算子可以相互定义，这两个公式可以说是模态逻辑“商标”般的地位：</p>
+<ul>
+<li><span class="arithmatex">\(\Box p \equiv \sim \Diamond \sim p\)</span> ，也就是说，三角形<strong>必然</strong>有三条边，等价于三角形<strong>不可能没有</strong>三条边</li>
+<li><span class="arithmatex">\(\Diamond p \equiv \sim \Box \sim p\)</span> ，也就是说，明天<strong>可能</strong>下雨，等价于明天<strong>不</strong>下雨并<strong>不是必然</strong>的</li>
+</ul>
+<p>或者更清晰地</p>
+<ul>
+<li><span class="arithmatex">\(\sim \Box p \equiv  \Diamond  \sim p\)</span> ，也就是说，明天<strong>不一定</strong>下雨，等价于明天<strong>可能不</strong>下雨</li>
+<li><span class="arithmatex">\(\sim\Diamond p \equiv  \Box  \sim p\)</span> ，也就是说，猪<strong>不可能</strong>会飞，等价于猪<strong>必然不</strong>会飞</li>
+</ul>
+<p>后来大量逻辑学家发展这件事。以上只是说明了最基本的两个符号什么意思，代表最基本的什么意思，下面简单介绍后来的<strong>公理系统</strong>情况和<strong>语义学</strong>。这里应该区分不使用谓词、量词等等的模态逻辑，与使用谓词、量词等等的<strong>量化模态逻辑</strong>/Quantified Modal Logic/QML，就像我们区分命题逻辑和一阶谓词逻辑那样。这里先关注前者。</p>
+<h2 id="_3">模态逻辑的形式直观与公理系统<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>逻辑学家把一类模态逻辑的公理系统叫做<strong>正规</strong>的，我们只介绍它们。</p>
+<p>“三角形有三条边”总是为真，我们直觉会觉得“三角形必然有三条边”也为真，这就是<strong>Necessitation rule/N/必然化规则</strong>，形式化地说， <span class="arithmatex">\(p\)</span> <strong>可以推理出</strong> <span class="arithmatex">\(\Box p\)</span> 。请注意，这里的 <span class="arithmatex">\(p\)</span> 必须是无前提的，例如系统的定理、重言式、数学公式，它不能是有前件的。所以这件事建模的是“逻辑有效性蕴含了必然性”，不能说“我有手，所以我必然有手”，因为人没手是可能的。</p>
+<p>再看“必然地，如果明天晴天我就出门”这句话，我们直觉觉得其可以得出“如果明天必然晴天，那么我必然出门”，这就是<strong>Distribution Axiom/K/分配公理</strong>，形式化为：<span class="arithmatex">\(\Box(p\supset q ) \supset (\Box p\supset \Box q )\)</span>。</p>
+<p>最小的正规模态逻辑，被称为<strong>K</strong>，它说的是常规的命题逻辑系统加上上面两条公式。这个名字是为了纪念Saul Kripke。</p>
+<p>读者可能注意到上面一个叫<strong>规则</strong>，一个叫<strong>公理</strong>。推理规则极其有限，除了上面的规则，常规的逻辑还有的，就是Modus Ponens/MP和Universal Generalization/UG（一阶谓词逻辑、量化模态逻辑才有UG）了，它们说的是一种操作方法。而公理限制了模型的结构，是公理表现出了逻辑系统的性质。由于<strong>正规模态逻辑一般就MP、UG、N三个推理规则</strong>，这里面让人感到复杂的其实说的是公理的区别。</p>
+<p>另外，正规模态逻辑中，都是使用公理首先描写 <span class="arithmatex">\(\Box\)</span> ，至于 <span class="arithmatex">\(\Diamond\)</span> ，是被 <span class="arithmatex">\(\Box\)</span> 定义的。</p>
+<p>继续添加公理，“三角形必然有三条边”似乎也蕴含了“三角形有三条边”，这就是<strong>Reflexivity Axiom/T/自反公理：</strong> <span class="arithmatex">\(□p \supset p\)</span> 。这也是一条很多系统都加入的公理。</p>
+<p>其他的还是看维基百科的介绍吧，这些公理进一步的直觉我们后文建立：</p>
+<p><img alt="图片" src="https://pica.zhimg.com/v2-1c0fa08547b8cc98eeaff7966e45f182.jpg" /></p>
+<p>这也比较有趣，逻辑学家还使用数字命名了几个公理</p>
+<p>还有：</p>
+<p><img alt="图片" src="https://pic2.zhimg.com/v2-257f979b0f72fd1d8b8bd5bdde2f22e1.jpg" /></p>
+<p>可以看到图片左上形成的链条，K是最宽松的系统，S5是最严格的系统，后文会解释这个问题。</p>
+<h2 id="_4">可能世界语义学<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_5">可能世界的直观<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>让我们从抽象的游戏中回来，看看我们到底怎么理解这些系统中的公式。模态逻辑的这些公式肯定有多种理解方法，最平凡的一点是，模态逻辑这些公式不止可以建模上面所谓模态问题，它也可以建模<strong>道德推理、信念系统</strong>等等，这些应用上显然和建模模态问题的理解不一样了。</p>
+<p>回到这里模态问题，怎么理解一个模态命题的含义？</p>
+<p>逻辑学、形而上学基本的一个观点是，<strong>一个命题为真，当且仅当世界中存在某个事物、事实符合这个命题，这个事物、事实就叫做truthmaker/真理缔造项</strong>。例如我们认为“雪是白的”为真，当且仅当世界上的雪有白色这个属性。那么<strong>模态命题的真理缔造项</strong>是什么？</p>
+<p>看“水必然是 $H_2O $ ”这个论断，我们大可以直接说，世界上水这个事物有一种特别的属性，也许可以称之为“本质结构”之类，这正是这个命题的真理缔造项。</p>
+<p>不过逻辑学家和形而上学家更多选择了另一种理解，即<strong>可能世界语义学</strong>，也只有先理解这个思想，我们才能更好理解其他关于模态的学说。我们先建立直觉，经过大量简化，可能世界语义学核心思想是：</p>
+<ul>
+<li><span class="arithmatex">\(\Diamond p\)</span> 为真，当且仅当<strong>在一个可能世界中</strong>， <span class="arithmatex">\(p\)</span> 为真。</li>
+<li><span class="arithmatex">\(□p\)</span> 为真，当且仅当<strong>在所有可能世界中</strong>， <span class="arithmatex">\(p\)</span> 为真。</li>
+</ul>
+<p>“人可能是友善的”，只要有一个可能世界中，人是友善的，这个命题就是真的——不管我们现实世界是不是真的有人友善。“肯定没有圆的方形”，由于所有世界中都没有圆的方形，这个命题就是对的。</p>
+<p><img alt="图片" src="https://pic4.zhimg.com/v2-c9c0f84a76bfce88e2d9bd851e52df99.jpg" /></p>
+<p>这种观点来看，偶然性与必然性不再是最根本的东西，他们其实描写的是可能世界中如何如何，可能世界更加根本一些。</p>
+<p>这个事情不是二十世纪的独创，至少莱布尼茨就这样思考了。神义学/Theodicy要回答“既然上帝全能全善，那么为什么世界存在邪恶”这个问题，他在思考神义学的时候，引入可能世界去解释必然性与偶然性，然后认为“上帝可以创造的各种可能世界中的一种”，上帝的全能全善导致的是“上帝创造世界时，选择了最完美的可能世界”。</p>
+<p>可以看到这件事直觉上蛮有道理，假设我们接受这个语义学，我们谈两个问题，</p>
+<ul>
+<li>第一，怎么形式化可能世界（偏向逻辑学角度），</li>
+<li>第二，可能世界是什么（偏向本体论角度）。</li>
+</ul>
+<p>先看后者，可能世界是什么？这是个复杂的本体论问题。</p>
+<h3 id="_6">可能世界的本体地位<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>一个倾向是，既然我们是在思考真理缔造项的时候引入了可能世界，那么也许世界上就确确实实存在了可能世界，这就是<strong>模态实在论/modal realism</strong>，这是一个听起来非常夸张的本体论主张，他要求我们不仅承认我们现实世界的存在，还要承认一大群可能世界的存在，这由David Lewis提出。那么在这种观点看来，“现实”这个词索引到我们这个可能世界，就像是“我”这个词索引到我这个人一样。我们还是采取上面的直觉，那么可能性必然性就被还原为：</p>
+<ul>
+<li><span class="arithmatex">\(\Diamond p \equiv \exists w (p在世界w为真)\)</span></li>
+<li><span class="arithmatex">\(□p \equiv \forall w (p在世界w为真)\)</span></li>
+</ul>
+<p>这后面的量词具有本体论意义。</p>
+<p>这个东西还是太夸张了，所以有思想家提出ersatz modal realism，ersatz有“代用品”的意思。他们觉得可能世界本体地位上并不是什么异在于我们这个世界的其他世界，而<strong>是存在于我们这个唯一的世界中的抽象物</strong>。什么抽象物呢？一些语言项，即，“可能世界”其实是<strong>描述世界其他可能样子的一个很长很长的合取式句子</strong>，这被称为maximal consistent sentences/极大一致句，所有这些句子统称造世语言/worldmaking language。那么，</p>
+<ul>
+<li>命题p可能为真，当且仅当造世语言中某个极大一致句说到了p。</li>
+<li>命题p必然为真，当且仅当造世语言中每个极大一致句说到了p。</li>
+</ul>
+<p>这样模态的理解就被还原到造世语言的理解上，我们看看怎么理解造世语言，这时候我们<strong>不能反过来循环使用模态去规定造世语言</strong>了（循环论说）。这种造世语言的构造有两种方法。</p>
+<p>第一种是<strong>丰饶造世语言</strong>，列出某个世界所有成立的命题，然后全部 <span class="arithmatex">\(\wedge\)</span> 起来。问题是“小红是世界级网球运动员，但她一生没有碰过球拍”具有逻辑矛盾，应该不能有句子说到“小红是世界级网球运动员 <span class="arithmatex">\(\wedge\)</span> 小红一生没有碰过球拍”。可是，这件事怎么限定呢？请注意这件事被形式化为 <span class="arithmatex">\(A\wedge  B\)</span> 而不是 <span class="arithmatex">\(A\ \wedge \sim A\)</span> ，逻辑不允许出现 <span class="arithmatex">\(A\ \wedge \sim A\)</span> ，但是，没有逻辑规则限定不能出现 <span class="arithmatex">\(A\wedge  B\)</span> 啊。这时候<strong>语义的限制</strong>又是不可能的，因为语义就是模态，前文说了不要循环论证。除非，句子里还有一个命题，“如果有人是网球运动员，那么此人碰过球拍”，这倒是可以限定。那么接下来问题是，我们不仅要考虑什么命题在这个世界正确，还要<strong>指出所有</strong>类似“如果有人是网球运动员，那么此人碰过球拍”的规则，这不知道是不是可行。</p>
+<p>要么就是<strong>贫瘠造世语言</strong>。例如列出基本对象，然后用谓述指明他们的属性和关系，或者，用实数表达时空位置，然后有序数对儿第一个位置是实数表达位置、第二个位置是一些离散指标表达被什么占据。但是这就要解决这种句子<strong>是不是确实言说到了</strong>“有说话的驴”这样的命题，我们只能继续推设说，其实是说到了，是这些基本命题蕴含了“有说话的驴”。那么这件事怎么做呢？这是要对世界建模啊，要<strong>指出这些合取式如何的模式</strong>蕴含了独角兽、蕴含了驴、蕴含了驴的生理能力，这件事同样过于艰巨，以至于难以说清到底行不行了。</p>
+<p>也有人虽然承认使用可能世界去分析模态真的很方便，却不承认它们进一步的本体地位，或者说回避该问题，他们把可能世界当作一种<strong>言说方式</strong>，把可能世界语义学的形式系统（后文）当作一种<strong>纯粹的形式工具</strong>。例如奠定可能世界分析的最重要的思想家Saul Kripke。</p>
+<p>可能世界的本体论问题实在困难，以至于有人使用<strong>模态虚构主义/modal fictionalism、约定主义/conventionalism</strong>重新理解模态，但这些方法还不如可能世界成功。</p>
+<p>虚构主义说（同样很夸张地），</p>
+<ul>
+<li>命题p可能为真，当且仅当，根据内有可能世界的虚构作品，其中有一个可能世界，p成立。</li>
+<li>命题p必然为真，当且仅当，根据内有可能世界的虚构作品，其中所有的可能世界，p成立。</li>
+</ul>
+<p>这里确实也没承认现实中的可能世界，这样的虚构作品也存在，但争议显然很大。</p>
+<p>约定主义把模态问题还原到我们语言的约定机制上，模态问题不是我们世界的问题，而是我们语言的问题。</p>
+<p>不论可能世界的本体地位如何，可能世界分析法已经是模态问题上的一个标准方法了。我们现在看看可能世界的形式化问题。</p>
+<h3 id="_7">可能世界语义学的形式化<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>以上我们用一种<strong>绝对化</strong>的方法理解可能性和必然性。大家觉得可能性和必然性能够<strong>相对化</strong>吗？就是说，对于一个世界中模态命题的真假，我们要看一簇世界（而不是全部世界），对于另一个世界中模态命题的真假，我们要看另一簇世界（而不是全部世界）。</p>
+<p>这件事在形而上学的讨论中意义会小一些，但是，例如说，如果我们使用这个事情建模信念推理，情况就会发生变化，一个人所知道的、所需要考虑的所有可能情况/可能世界中某件事都会发生，这件事就可以被他认为是必然的，无需考虑过于“渺远”的可能情况/可能世界了。</p>
+<p>至少奠基了这件事的Kripke看来我们确实应该这样做，即，认为<strong>世界之间具有结构</strong>，每个世界中模态命题的真假看的不是所有可能世界，而是<strong>要看该世界模态问题上所应该关注的那些世界</strong>，这被叫做<strong>可达世界/accessible worlds</strong>。而认为世界之间平等，每个世界应该关注所有世界的绝对化观点，是相对化观点的一个特例，绝对化观点的世界间结构，是各个世界的结构地位平等的结构。</p>
+<p>Kripke表达世界间结构的方法是离散化的，使用了二元关系去建模。所以他把系统建模为三元组 <span class="arithmatex">\(\mathcal{M} = (W,R,V)\)</span> ，</p>
+<ul>
+<li>可能世界： <span class="arithmatex">\(W\)</span> 是世界的集合，</li>
+<li>可达关系： $R $ 是定义在 $W $ 上的二元关系，表示世界之间的可达关系， <span class="arithmatex">\(wRv\)</span> 说的是从 <span class="arithmatex">\(w\)</span> 可以到达 <span class="arithmatex">\(v\)</span> ， <span class="arithmatex">\(w\)</span> 所有可以到达的世界就是 <span class="arithmatex">\(w\)</span> 的可达世界。</li>
+<li>解释函数： <span class="arithmatex">\(V\)</span> 接收两个参数，第一个参数是世界，第二个参数是命题，返回这个命题在这个世界上的取值是1还是0</li>
+</ul>
+<p>前文所说的那些公理系统，我故意让大家觉得那些是一些纯形式的问题，其实不然：那些公理系统和上面这个语义形式系统是一起发展出来的。也就是说，那些公理不是纯粹从形式中得出来的，而是有着这里深刻的<strong>直观含义</strong>。请看这个语义学的后续定义：</p>
+<p><img alt="图片" src="https://pica.zhimg.com/v2-9acc15d2c71e0b7978722981ed12273e.jpg" /></p>
+<p>尤其是后两条，我们现在重新思考T公理 <span class="arithmatex">\(□p \supset p\)</span> 的含义。如果某个世界 <span class="arithmatex">\(w\)</span> 中有 <span class="arithmatex">\(□p\)</span> ，或者说，所有 <span class="arithmatex">\(w\)</span> 的可达世界中有 <span class="arithmatex">\(p\)</span> ，这蕴含自己世界中也有 <span class="arithmatex">\(p\)</span> ，这说的就是自己就是自己可达世界的一份子。也就是说， <span class="arithmatex">\(wRw\)</span> ，这是T公理叫做<strong>自反</strong>公理的更深层的意思：他要求 <span class="arithmatex">\(R\)</span> 是一个<strong>自反关系</strong>。</p>
+<p>然后是<strong>4公理</strong>， <span class="arithmatex">\(□p \supset □□p\)</span> ，<strong>4公理等价于R传递性</strong>。证明如下：</p>
+<ul>
+<li>R传递性蕴含4公理。这比较显然，我的可达世界有 <span class="arithmatex">\(p\)</span> ，蕴含了我的可达世界的可达世界也有 <span class="arithmatex">\(p\)</span> ，这就是4公理。</li>
+<li>4公理蕴含R传递性。假设4公理成立， <span class="arithmatex">\(wRv\)</span> ， <span class="arithmatex">\(vRu\)</span> ，反证法，假设R没有传递性。假设其中 <span class="arithmatex">\(w\)</span> 中有 <span class="arithmatex">\(□p\)</span> ， <span class="arithmatex">\(wRv\)</span> ，所以 <span class="arithmatex">\(v\)</span> 中有 <span class="arithmatex">\(p\)</span> ，由于R没有传递性，所以<strong>不能断言</strong> <span class="arithmatex">\(u\)</span> 一定有 <span class="arithmatex">\(p\)</span> 。现在，4公理说既然 $ w $ 有 $□p $ 就应该有 <span class="arithmatex">\(□□p\)</span> ，那么 <span class="arithmatex">\(v\)</span> 就要有 <span class="arithmatex">\(□p\)</span> ，那么 <span class="arithmatex">\(u\)</span> <strong>就要有</strong> <span class="arithmatex">\(p\)</span> 。现在， <span class="arithmatex">\(u\)</span> 既不能被断言有 <span class="arithmatex">\(p\)</span> ，又被4公理要求一定有 <span class="arithmatex">\(p\)</span> ，也就是说，对于非R传递性模型，存在一个赋值（ <span class="arithmatex">\(u\)</span> 没有 <span class="arithmatex">\(p\)</span> ），使得该模型并不满足4公理，出现矛盾，反证法成立。</li>
+</ul>
+<p>然后是<strong>B公理</strong>， <span class="arithmatex">\(p \supset □\Diamond p\)</span> ，<strong>B公理等价于R对称性</strong>。证明如下：</p>
+<ul>
+<li>R对称性蕴含B公理： <span class="arithmatex">\(w\)</span> 有 <span class="arithmatex">\(p\)</span> ，蕴含了<span class="arithmatex">\(w\)</span> 的所有可达世界中有 <span class="arithmatex">\(\Diamond p\)</span> ，即这些可达世界有一个可达世界有 <span class="arithmatex">\(p\)</span> ，由于对称性，它们总有一个可达世界 <span class="arithmatex">\(w\)</span> ，其中有 <span class="arithmatex">\(p\)</span> ，成立。</li>
+<li>B公理蕴含R对称性：反证法，假设没有对称性，那么可达世界的可达世界不能是自己。设 <span class="arithmatex">\(w\)</span> 上有 <span class="arithmatex">\(p\)</span> ，显然，我们<strong>不能断言</strong>说可达世界的可达世界有 <span class="arithmatex">\(p\)</span> 。现在公理要求可达世界都有 <span class="arithmatex">\(\Diamond p\)</span> ，也就是说可达世界的可达世界<strong>至少有</strong> <span class="arithmatex">\(p\)</span> 。我们既不能断言可达世界的可达世界是不是有 <span class="arithmatex">\(p\)</span> ，又被公理要求一定有 <span class="arithmatex">\(p\)</span> ，也就是说，对于非R对称性模型，存在一个赋值（可达世界的可达世界没有 <span class="arithmatex">\(p\)</span> ），使得该模型并不满足B公理，出现矛盾，反证法成立。</li>
+</ul>
+<p>然后是<strong>5公理</strong>， <span class="arithmatex">\(\Diamond p \supset □\Diamond p\)</span> ， <span class="arithmatex">\(w\)</span> 的一个可达世界 <span class="arithmatex">\(v\)</span> 有 <span class="arithmatex">\(p\)</span> ，蕴含了 <span class="arithmatex">\(w\)</span> 的所有可达世界中有 <span class="arithmatex">\(\Diamond p\)</span> 。这里和上面推理类似，上面说的是R有 <span class="arithmatex">\(wRu \supset uRw\)</span> ，这里多套了一层，说的是 <span class="arithmatex">\(wRv \wedge wRu \supset uRv\)</span> ，这被叫做<strong>欧几里得性</strong>。</p>
+<p>二元关系中，</p>
+<ul>
+<li>自反性与欧几里得性蕴含了对称性： <span class="arithmatex">\(wRv \wedge wRu \supset uRv\)</span> 中v换为w</li>
+<li>自反性与欧几里得性蕴含了传递性：已有对称性，请把 <span class="arithmatex">\(wRv \wedge wRu \supset uRv\)</span> 第一个R两侧换位置，再把第三个R两侧换位置）。</li>
+</ul>
+<p>总之，<strong>引入T公理和5公理的S5系统</strong>中R是自反、对称、传递的，即<strong>S5系统的R是等价关系</strong>。这就是前文一直说的绝对化的世界间关系：按照等价关系做等价类商，我们这个世界的等价类中，任意两个世界之间都有R关系，即我们这一簇世界里任意两个世界都可达。假设我们W和R的<strong>选取足够合适，使得整个R的等价类商只有一个结果，那么我们就会有W中任意两个世界都可达。这意味着，考虑一个世界的模态问题，就要考虑所有世界的情况</strong>。这就是最强的S5系统。</p>
+<p>S5系统最强，也比较简洁，也符合我们前文论述的形而上学动机，以至于<strong>形而上学家讨论模态问题的时候经常会使用S5系统</strong>。</p>
+<p>这个系统可以看做一个受限的一阶模型，我们自己的世界是w，那么：</p>
+<p>$□p\equiv \forall v (wRv \supset V(v,p) ) $</p>
+<p>还有$\Diamond p\equiv \exists v (wRv \wedge V(v,p) ) $ 除了Kripke使用二元关系建模世界间可达结构，也有使用邻域关系的，当然也有更加数学化的、连续性的世界间结构，例如使用拓扑学进行建模，是这样的画风：</p>
+<p><img alt="图片" src="https://pica.zhimg.com/v2-6bf659c927ce4ccc07a63eedfce6e044.jpg" /></p>
+<p>不太热门，且核心思想没有变化。</p>
+<h2 id="_8">量化模态逻辑的考虑<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>回顾一阶模态逻辑，相比命题逻辑，主要是两个大变化，一个是命题被谓述替换了，命题可以看做是零个参数的谓述，另一个就是加入了量词。</p>
+<p>谓述形式上是一些符号，谓述的参数形式上也是一些符号，所以严格从模型的角度来说，我们需要一个符号到事物的对应关系。这就是解释函数，解释函数可以被形式化，但是我们这里没必要这么做，讲清思路就够了。对于<strong>变元</strong>，我们把这些符号指派到论域 <span class="arithmatex">\(D\)</span> 中的一个元素。对于<strong>谓述</strong>，我们要指出一个谓述限定出了论域 <span class="arithmatex">\(D\)</span> 中的哪些元素，也就是说，外延是什么。</p>
+<p>比如说论域 <span class="arithmatex">\(\{小红、小粉、小明、小刚\}\)</span> ，我们指派符号 <span class="arithmatex">\(a,b,c,d\)</span> 按着顺序对应到这四个元素。</p>
+<p>然后有一个一元谓述 <span class="arithmatex">\(F\)</span> ，我们就需要指认这个谓述指出了论域中的什么元素对儿的集合，比如说这个谓述的外延可以被指派为 <span class="arithmatex">\(\{(小红)、(小粉)\}\)</span> 。 <span class="arithmatex">\(F\)</span> 的语义可以是女性、体重如何等等，这是内涵，是相关的另一回事。还有一个二元谓述 <span class="arithmatex">\(couple\)</span> ，比如说它的外延可以被指派为 <span class="arithmatex">\(\{(小红,小明)、 (小明,小红)、 (小粉,小刚)、 (小刚,小粉)  \}\)</span> ，它的内涵也许是情侣也许是朋友。</p>
+<p>这个模型 <span class="arithmatex">\(M\)</span> 就先到这里。然后我们要定义真值，这里就提到谓述和量词的真值问题。</p>
+<p>给一个符号的赋值 <span class="arithmatex">\(g\)</span> ，对于谓述的真值，在 <span class="arithmatex">\(M,g\)</span> 下， <span class="arithmatex">\(F(t_1,...,t_2)\)</span> 为真，当且仅当 <span class="arithmatex">\(g\)</span> 对于 <span class="arithmatex">\(t_1,...,t_2\)</span> 的赋值正是 <span class="arithmatex">\(F\)</span> 被 <span class="arithmatex">\(M\)</span> 指派的外延。也就是说，继续四人组的例子，假设指派 <span class="arithmatex">\(t_1=a,t_2=c\)</span> ，我们说 <span class="arithmatex">\(Ft_1t_2\)</span> 真值是真，假设指派 <span class="arithmatex">\(t_1=a,t_2=b\)</span> ，我们说 <span class="arithmatex">\(Ft_1t_2\)</span> 真值是假。</p>
+<p>然后是量词，其实就是Universal Generalization，在 <span class="arithmatex">\(M,g\)</span> 下， <span class="arithmatex">\(\forall x (p)\)</span> 为真，当且仅当对于 <span class="arithmatex">\(D\)</span> 的任意一个元素，把 <span class="arithmatex">\(p\)</span> 中的 <span class="arithmatex">\(x\)</span> 符号替换为这个元素， <span class="arithmatex">\(p\)</span> 都为真。</p>
+<hr />
+<p>那么量化模态逻辑也要按照上面的过程进行扩展，有很多种方法，我们简单提几个考量角度与可能方案。</p>
+<p>首先就是符号指派的问题。这首先需要确认一个形而上学问题，即，<strong>跨世界同一性</strong>的问题。</p>
+<p>就是说，一个世界有我，另一个世界似乎有一个人和我很相似，但凭什么说二者同一呢？我不知道大家看到这里有没有感觉可能世界的问题和时间的问题其实很像，考虑时间的时候，我们也会</p>
+<ul>
+<li>量化时间，</li>
+<li>谓述加上时间参数（后文我们会看到谓述的“世界参数”），</li>
+<li>也面临了跨时间同一性的问题</li>
+</ul>
+<p>我们已经量化了世界，一会儿还要考虑谓述在不同世界的指派情况不同，现在，我们还面临同一性的问题。</p>
+<p>面对时间，我们有大把直觉说，同一性肯定跨时间，不会随着时间做相对化，因为，我一直是我啊，我活着这么久还是我。同样，可能世界中也有这样的观点，这就是<strong>认为同一个个体真的跨越了可能世界而同一</strong>。如果我们坚持时间和可能世界的类比，这一点似乎可以接受。</p>
+<p>当然也有人不这么认为，还记得前文的Lewis吗，不是提出了模态逻辑的Lewis，是提出了模态实在论的那个Lewis，他就认为没有跨世界同一性，事物在其他世界有<strong>counterpart/对应物</strong>，对应物足够相似，足够处理模态问题，但是——没有同一性。</p>
+<p>不管形而上学怎么认为，至少逻辑学上，一般会采取前者策略。Kripke提出了Rigid Designators原则，<strong>一个变元符号跨世界地指认了同一个事物</strong>。</p>
+<hr />
+<p>论域怎么办？这是另一个复杂的问题，以下不是标准方法，而是一种思路进路的展示，其中并不一定是思想家实际如此处理，只是为了引出我们可能的考量角度。</p>
+<p>首先，显而易见，有些事物一个世界存在另一个世界不存在。所以，可以论域相对化解决这个事情，论域 $D_w $ 现在要接收一个世界参数 <span class="arithmatex">\(w\)</span> 了，这些 $D_w $ 之间比较独立，它是这个世界所有存在的事物（至少，我们考虑的、在这个存在的事物）的集合。这<strong>更接近否定跨世界同一性</strong>，需要额外说明论域之间的关系。</p>
+<p>那么，我们在世界 <span class="arithmatex">\(w\)</span> 用量词量化一些事物，这就可以按照蒯因的原则那样，认为这个量化具有本体论意义了。按照蒯因的原则，假设谓述 <span class="arithmatex">\(F\)</span> 指认了事物 <span class="arithmatex">\(a\)</span> ，我们表示事物 <span class="arithmatex">\(a\)</span> 存在的方法就是 <span class="arithmatex">\(\exists x Fx\)</span> 。</p>
+<p>这种方法怎么表达事物 <span class="arithmatex">\(a\)</span> 在世界 <span class="arithmatex">\(w\)</span> 存在，在世界 <span class="arithmatex">\(v\)</span> 不存在？我们发现这很麻烦，论域彻底相对化的问题是量词范围变动不居，数学上很难受，有点难以想象量化也有世界参数，而且不知道怎么量化所有可能存在的事物。</p>
+<p>更接近<strong>承认跨世界同一性</strong>的人可以怎么做？所有世界共享一个论域。这就需要<strong>不遵循量化意味着本体承诺</strong>的蒯因方法。那么怎么表达存在和不存在呢？这要求<strong>存在谓述</strong>，我们这里记作 <span class="arithmatex">\(E\)</span> ，假设谓述 <span class="arithmatex">\(F\)</span> 指认了事物 <span class="arithmatex">\(a\)</span> ，我们表示事物 <span class="arithmatex">\(a\)</span> 存在的方法就是 <span class="arithmatex">\(\exists x (Fx \wedge Ex)\)</span> 。</p>
+<p>请注意存在和属性在形式上的区别这里就被泯灭了。而且更大的考虑是，引入存在谓述，就意味着有些变元符号可能并不指称一个事物，它到底是不是指称了事物要另外有一些语义上特别的谓述去保证，这完全不同于经典逻辑，经典逻辑每个变元符号肯定指称了唯一一个事物。这实际上意味着对于<strong>自由逻辑/free logic</strong>的采纳。</p>
+<p>为了表达某事物有的世界中存在、其他一些不存在，共享论域中，存在谓述本身也需要加入世界参数。</p>
+<p>折中方法，也是有的，先给出一个所有可能事物的总论域 <span class="arithmatex">\(D\)</span> ，然后，本质上是引入了一个函数，这个函数接纳世界存在，从 <span class="arithmatex">\(D\)</span> 中指认一个子集作为世界的“论域”。而这种系统采取量词还是存在谓述表达存在，是另一件事。</p>
+<p>后面的介绍更加倾向后者，更容易操作一些。</p>
+<p>以上是一些关于跨时间变元指派、论域、量词等问题考量角度的展示。</p>
+<hr />
+<p>接下来看谓述，之前只有一个世界，谓述指派一个外延就够了，它现在要<strong>在所有世界都各自指派出外延</strong>。显然，谓述的内涵是一致的，只是在各个世界的外延不一样，这在之前一阶谓词逻辑的时候是难以想象的，那时，内涵和外延是对应起来的。</p>
+<p>最后是“命题的世界参数”，或者说就是把一个世界中，不带着世界参数的命题，<strong>翻译</strong>到一个已经设计好的量化模态逻辑系统中。我们肯定是只能在一个世界去谈这个世界的模态命题成不成立，虽然，这个世界参数通常就是我们自己这个世界了。这个工作长得会比较像这种画风，可以看到这个系统是自由逻辑的，存在谓述是世界化的，总论域是共享的，这个图旨在把 <span class="arithmatex">\(A\)</span> 翻译为 <span class="arithmatex">\([A]^{w}\)</span> ：</p>
+<p><img alt="图片" src="https://picx.zhimg.com/v2-60f29352009e6c09e741730af4712c65.jpg" /></p>
+<p>一种量化的S5系统的“翻译”</p>
+<p>假设我们要求论域跨世界地一致，我们通常还倾向下面四件事成立：</p>
+<ul>
+<li><span class="arithmatex">\(\Diamond\exists x Fx \supset  \exists x \Diamond Fx\)</span> ：Barcan Formula（存在版）</li>
+<li>$\forall x  \Box Fx \supset \Box \forall x Fx $ ：Barcan Formula（全称版，和上一条等价）</li>
+<li><span class="arithmatex">\(\exists x \Diamond Fx \supset \Diamond\exists x  Fx\)</span> ：Converse Barcan Formula（存在版）</li>
+<li>$\Box \forall x Fx \supset \forall x \Box Fx $ ：Converse Barcan Formula（全称版，和上一条等价）</li>
+</ul>
+<p>这个进路还要考虑一个问题，假设 <span class="arithmatex">\(x\)</span> 在这个世界就是不存在了，但是形式上我们还是可以写出诸如 <span class="arithmatex">\(Fx\)</span> 的谓述出来，这个谓述应该真还是假？如果回答假，那么，这个 <span class="arithmatex">\(F\)</span> 是自我同一性这种谓述，这个回答还这么安心吗？这件事本身有不同规范的方法，取决于系统之外的问题，例如形而上学倾向、实用性等等。</p>
+<p>以上就是量化模态逻辑的形式化系统（的考量角度）的介绍。请注意，形而上学实际使用量化模态逻辑的时候，并不会天天和世界参数之类的东西打交道，以上更多是形式<strong>系统</strong>的设计介绍，更加模型基础一些。</p>
+<h2 id="_9">本质属性与本质主义<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p><strong>本质主义/essentialism</strong>可以追溯到亚里士多德，认为事物具有本质属性，本质属性，说的是事物一旦不具有这种属性，它就不复存在了。也就是说，事物<strong>必然</strong>持有本质属性。当然，也有反本质主义。</p>
+<p>事物<strong>必然</strong>持有本质属性，这个问题就和<strong>从物模态</strong>挂上了。也有哲学家反思这件事，认为本质和模态没有关系，本质可能更接近某种定义。不过总得来说，更多对本质的讨论还是集中在模态中的。</p>
+<p>如果某人是数学家，那么他必然有理性。考虑下面两个可能的形式化：</p>
+<ul>
+<li>第一： <span class="arithmatex">\(□\forall x (Mx \supset Rx)\)</span> 我们还假定这个等价于 <span class="arithmatex">\(\forall x □(Mx \supset Rx)\)</span></li>
+<li>第二： <span class="arithmatex">\(\forall x (Mx \supset □Rx)\)</span></li>
+</ul>
+<p>第一个是从言理解，数学家有理性是一种必然真理。这要求所有世界中，数学家都有理性。</p>
+<p>第二个是从物理解，这种必然性划到的辖域更小，这说的是我们这个世界假设有一个数学家存在，那么这个数学家本质上就必然具有理性。</p>
+<p>看看推理中的区别吧。考虑<strong>论证1</strong>：</p>
+<blockquote>
+<p>每个人必然有头，我是人，我必然有头。</p>
+</blockquote>
+<p>这个前提都很好，结论也是对的，那么推理呢？也是正确的。这是一种从物理解，说的是人有一种“有头”的本质：</p>
+<p><span class="arithmatex">\(\forall x (人x \supset □有头x)\)</span></p>
+<p>得到</p>
+<p><span class="arithmatex">\(人(我) \supset □有头(我)\)</span></p>
+<p>又因为</p>
+<p><span class="arithmatex">\(人(我)\)</span></p>
+<p>再用MP，就得到了</p>
+<p><span class="arithmatex">\(□有头(我)\)</span></p>
+<p>即“我必然有头”这个对于我本质属性的描写。</p>
+<p>再考虑<strong>论证2</strong>：</p>
+<blockquote>
+<p>每个拳击手必然有手，我是拳击手，我必然有手。</p>
+</blockquote>
+<p>前提对，结论错（有手不是我们本质属性，没手也可以活着），那么推理错，哪里呢？</p>
+<p>每个拳击手必须有手只能形式化为</p>
+<p><span class="arithmatex">\(\forall  x□ (拳击手x \supset 有手x)\)</span></p>
+<p>得到</p>
+<p><span class="arithmatex">\(□ (拳击手(我) \supset 有手(我))\)</span></p>
+<p>分配律</p>
+<p><span class="arithmatex">\(□ 拳击手(我) \supset □有手(我)\)</span></p>
+<p>（如果我必然是拳击手，那么我必然有手）但是我们只有</p>
+<p><span class="arithmatex">\(拳击手(我)\)</span></p>
+<p>没有</p>
+<p><span class="arithmatex">\(□ 拳击手(我)\)</span></p>
+<p>（用不了N规则）所以没有MP了，推理不成立。</p>
+<hr />
+<p>如果引入存在谓述，对于事物 <span class="arithmatex">\(a\)</span> ，它本质上是 <span class="arithmatex">\(F\)</span> 的，这件事我们可以表达为 <span class="arithmatex">\(□(Ea\supset Fa)\)</span> 。前面那句“每个人必须有头”也可以表达为比如说 <span class="arithmatex">\(\forall x (人x \supset (Ex \supset□有头x))\)</span> ，当然这还得看你怎么设计这个系统，假设约定 <span class="arithmatex">\(人x\)</span> 这个谓述蕴含了 <span class="arithmatex">\(Ex\)</span> ，那么其实也可以回到上面的简化版本 <span class="arithmatex">\(\forall x (人x \supset □有头x)\)</span> ，如果没有约定这个谓述为真蕴含了存在性，那么上面更加更加健壮一些。</p>
+<p>另外，如果系统公理比较多，且如果还认为“每个人必须有头”是一种必然的无前提的定理，那么，也可以写 <span class="arithmatex">\(□\forall x (人x \supset (Ex \supset □有头x))\)</span> ，或者挪进去继续写 <span class="arithmatex">\(□\forall x □(人x \supset (Ex \supset □有头x))\)</span> ，看上去略有繁琐，但可以谋求另一种健壮的优雅，有资料会引入一些对于前缀的大量必然符号与大量全称符号的简写。</p>
+<p>这当然导致一些结果，例如我们会发现， <span class="arithmatex">\(F\)</span> 为 <span class="arithmatex">\(E\)</span> （存在）、 <span class="arithmatex">\(·=·\)</span> （自我同一）、如果被染为红色那么为红色这样的谓述总是本质属性。有些人可能接受不了这件事，接受不了所有事情（或者说大部分）都有同样一些本质属性，但有些人觉得没关系，本质属性可以是<strong>平凡的</strong>，即便我们一般关注不平凡的。</p>
+<p>Kripke这方面的著名论述是<strong>起源本质主义，事物必然具有它的起源</strong>。那么，跨世界两个事物起源不一样则必然没有同一性。这当然可以质疑，比如说，起源有时候难以说明，人的起源是父母？还是受精卵呢？<strong>起源能不能是一个过程</strong>，而不是简单指认几个别的存在了事？</p>
+<p>假设父母具有跨世界同一性，两个世界同样时间两个人都生了第一个孩子，教育经历社会经历完全一致，二者特别相似，差异很大的是，世界w1中，父亲精子a是小明1的起源，世界w2中，父亲精子b是小明2的起源。二者父母有同一性精子没有同一性，那么小明1和小明2有没有同一性？</p>
+<p>请注意这不是“（跨世界）兄弟”的关系。这时请想想吧，假设你在另一个世界有一个其实来源精子和你的那个不同的人，但是你们性格蛮像，甚至染色体交叉组合变化、基因微观突变、子宫挤压环境、童年早期经历、后天重大经历、自我心路历程都很像，凭什么认为你们俩没有同一性呢？甚至——干脆有一个性转的你，你们人格结构、社会关系都特别像，我没看出为什么这里不能说有同一性。总之我们要问，像生命体这样高度复杂、后天高度发展、甚至是有自我发展能力的系统性事物，这些系统的<strong>高度复杂的后期属性</strong>（诸如人格结构、社会关系）真的不如<strong>起源</strong>更本质吗？人的经历、记忆、思想有没有可能比起源更本质？</p>
+<p>起源本质主义可以援引莱布尼茨律进行反驳，跨世界同一可以解释属性相似，但是属性相似不蕴含跨世界同一，代替品就是代替品，性转的ta很像你，但和你没有同一性。也就是说，<strong>起源本质主义看来，我们上面构想的性转不具有同一性，如果要坚持性转的你还是你这个直觉，必须要求所有可能世界中性转的你也需要通过同一个精子来产生</strong>——也许，另一个世界中，那个精子的属性发生一些变化，例如精子产生的时候染色体拉开的方向不一样导致精子含有的X还是Y发生变化，或者哎呀有点罕见SRY基因发生良性的、后来一辈子没有发现的“完美性转变异”，导致同一个精子确实导致了你性别的不一样。不论如何，可能世界的性转版的你，和你来自同一个精子。</p>
+<p>上面的论证请注意一个非常非常刁钻的点，你的<strong>来源精子有没有SRY基因，大概率来自这个精子的起源</strong>，即减数分裂这个过程的情况。那么起源本质主义暗示了一种来源链条，起源本质主义如果要保证可能世界有足够的多样性，不至于被这些起源本质给限定得特别匮乏，那么为了说明世界间差异（如果不说明这个就很可怕，每个世界之间的同一性非常稀薄），就要承认起源相同但属性不一样的“分叉”。这实际上大大削弱起源的地位，即起源决定的很多属性不是必然的，属性更多是偶然的，他们会分叉——这就使得我们推设起源本质主义的信心小了很多。</p>
+<p>还有种属本质主义，事物是什么种类的事物，这个是本质属性。这个相比上一个争议小了很多，很多时候，还被看做我们对于种属属性的一种理解角度。</p>
+<p><img alt="图片" src="https://pica.zhimg.com/v2-10ede48076388a77cdc0fab6a8e6a19e.jpg" /></p>
+<blockquote>
+<p>可能性符号和必然性符号相互嵌套</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/LeoTian123" target="_blank" rel="noopener" title="GitHub | LeoTian123" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../mkdocs/javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
