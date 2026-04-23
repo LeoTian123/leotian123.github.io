@@ -52,10 +52,11 @@ nav:
     - DDG:
       - maths/DDG/index.md
       - DDG应用引导-第2章: maths/DDG/DDG应用引导-第2章.md
-      - 关于代码的可视化: maths/DDG/关于代码的可视化.md
+      - 初步可视化的pyOpenGL方案: maths/DDG/关于代码的可视化.md
       - DDG应用引导-第5章: maths/DDG/DDG应用引导-第5章.md
       - DDG应用引导-第6章: maths/DDG/DDG应用引导-第6章.md
       - DDG应用引导-第7章: maths/DDG/DDG应用引导-第7章.md
+      - 在第8章之前: maths/DDG/在第8章之前.md
       - DDG应用引导-第8章: maths/DDG/DDG应用引导-第8章.md
     - delaunay-voronoi: maths/delaunay-voronoi/delaunay-voronoi.md
      
@@ -226,19 +227,7 @@ extra:
     - name: GitHub | LeoTian123
       icon: fontawesome/brands/github
       link: https://github.com/LeoTian123
-    # - name: Bilibili | 风竹云墨
-    #   icon: fontawesome/brands/bilibili
-    #   link: https://space.bilibili.com/262390776
     
-    # - name: QQ
-    #   icon: fontawesome/brands/qq
-    #   link: 
-    # - name: 小红书
-    #   icon: fontawesome/solid/images
-    #   link: 
-    # - name: 支持
-    #   icon: fontawesome/solid/mug-saucer
-    #   link: 
 
 # [Extensions]
 plugins:
