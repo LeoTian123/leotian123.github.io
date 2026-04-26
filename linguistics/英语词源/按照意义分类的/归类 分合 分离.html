@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+        <title>归类 分合 分离</title>
+
+        <style>
+          html {
+            margin: 0;
+            padding: 0;
+          }
+
+          @font-face {
+  font-family: 'mm-iconfont';
+  src: url('data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAVcAA0AAAAADSAAAAUHAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GVgCCShEICo0IigYLGAABNgIkAx4EIAWFLAd0G58KyI7S1LBNkiTFr/P/+6Z638ziLBkIQ8wrsxwEKUmBA4Dwlfarxzy8f+PP7b21ZXFa6IFleXg1a60AqO3LF3jX79fq2xMRxM/jDd1CpYX3FxcP1SqJuY6YNU3FUiQ2jtU11Up8H/EkAATA3TXpGgA83rt/vfLZBDABYQCGcAKRAAxAFXRBBnayKwD+gZ+nPyqFBjBygXL/DlvTIWjwo3cVuK8s9Sl++AEEEjlOjElBk3hilJIMpUKKY21LyxouyaqeWOQjuRrUI+IKdQAY7d9DwI5a04k3MIQFzgG2AOwIKjVqJIrYTsbHABOn6EE+VdOSA1gHO0CS9GBxkMQUvqKqmhP23oxVltyoYu+7Facuv129xJ6zAUpuNJw/Noer8zbl/7HRtyFEqCv9mw2LZ3VXCfF7ULGQwXk1E0zFkant5pHX+SO069xIZQFP7GuSunhzT+uPuaGY8wjz93lhNH9+VyPuCPieEDFvrGZaKEn8By0/Xn3v0RVHUmC89ZOhDlh3jGjeou4WwZ4VRP5wFNIcni96pNDC/qa/zwFLw/qDuH+eGGTtvRnLltyoYu67FceX3+5qwVyZ4I0Xa9BhhYiSnsziTU5ZezSSLTiSYq47FsUXHwcvFjNkwu3NBXzMKiJ/15BtsMQ1xgy5e7/7/fvd7t3pcudO16737nWjDd3v3u16ULnTY0/s1yP0/Scmui+Y0HDii4p2hF3JmehUsiKsiv/3cSrHVX6R/IJJdzYQ9r9pP26TdOc/zP6LnbKg9ZkfiIwv+XOzYQe94qkIvdk05Kn/lyMsmm8KPh98KGQVX3h25WBxRS+vXRVyjG6mfDgvpohyqM+M8zOu6OX0K63v9aXZ8EOl+hM99FbLkGeTpl4Nig85BNS98ahbdCwAz502byvV8h3Wg/UjvlpDaulHWXJ45xmpkR+vfH/c0lR+U6qRDFPFMasTvr+qVeUxFMVUJpGYeohQqEP2nPx5SKO4ooVwruVuCjlnklU9Hy5kSay6LNeiYqv7PjU71+oQWCgHdmB+QcB1t5V7+623sbeXXsGLgy+EbAxegxZ1XtyouW5Ld5F9q9GtCZ11Z2HDJg27dS5c0djIMyrvwL1Elbgmbkv3nTmpbTx5a58ZEeHlIiJmhEeUCw87OCNCZSJMkqK4nWJa+E70KviUNnlpz8pnolu0atLWPDd5Ye+6N0Latm/RSb7VtNuTc6v4gwfcUq568CBa6AgAAAnf3mlYOr2/U+eHZkg41F2gtCyzuA+AhmkRcXiKqLkGv0G0LKl6EWquoiXD9ua35Kvrb/DSahlAIBNQhmOQZyAoDJUTmoihl4lRjTZxhnkgcQ+BzH1GFGkwk5AdnosNwXEIHFUdQBaAiYRpZGJsHhMXZjJI3FUgc8+Bwv1kErqFfbIhLWZBaGw410AjbdshEgwyzrnAYKW8POuMJEDcicMjIvxjg+tAiRK5pAole26Fi4FOXHlGKTbQcPjt4uTbTV5w7sY13AgFgxNUVE4FuIWzBBXLVegDmsd7+xlrL3oZYbQ8lXKUI3lyPYaTxhIJmrG5rmK9vlSCoflfKeQabKRy8CCw7YjReZVGjvRc/8Gn3vEiLOr74PlAfv+1Q9VSHs/l6Tm/nMFjJuLiPNHTGI9vR5xALUQwYDyIsGDESSKZFFJJI908y2iXWzJq0Cj5RDdOO6nFE954+YIpXx1UcFoaLx+TN/EhpYPVt1cBAA==') format('woff2'),
+      url('data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAfMAA0AAAAADSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAHsAAAABoAAAAcjQ+WV0dERUYAAAeQAAAAHgAAAB4AKQART1MvMgAAAaAAAABCAAAAVjxwSCNjbWFwAAAB/AAAAEkAAAFK5m7pl2dhc3AAAAeIAAAACAAAAAj//wADZ2x5ZgAAAmAAAAN8AAAGiB3BA0toZWFkAAABMAAAADAAAAA2GiKzS2hoZWEAAAFgAAAAHQAAACQHcAOFaG10eAAAAeQAAAAYAAAAHg2lAQZsb2NhAAACSAAAABgAAAAYB5YI6G1heHAAAAGAAAAAHwAAACABHQB6bmFtZQAABdwAAAFNAAACrJtyy2Nwb3N0AAAHLAAAAFkAAAB0hhp62HjaY2BkYGAA4iTORQfi+W2+MnCzMIDA7a3bl8Nptv8NzJOYG4BcDgYmkCgASEMMAXjaY2BkYGBu+N/AEMPCAALMkxgYGVABCwBRzAL+AAAAeNpjYGRgYOBmyGPgYAABJiDmAkIGhv9gPgMAFOkBmAB42mNgZGFgnMDAysDA1Ml0hoGBoR9CM75mMGLkAIoysDIzYAUBaa4pDA7PGJ8ZMDf8b2CIYW5kaAQKM4LkAN52DA4AAHjaY2GAABYIZmPwBMI8MPRkaAAAEskCuHjaY2BgYGaAYBkGRgYQcAHyGMF8FgYNIM0GpBkZmJ4xPjP4/5+BAUhr/f8vxSR5C6oeCBjZGOAcRiYgwcSAChgZhj0AAM5gCc8AAAAAAAAAAAAAAACYAPQBjgH2Al4CugMSA0R42o1UT2zTdhR+z26c2ooduXbiEIdkjhtnKzRMThuXqI34syKlaDBp1ZD2hwMMkJAojAPigKAwDrtsmjggDcSFcoALEtzWy05rx20r5VAEhx2oYOyI2CVxeT+7JU0h0RTne9/zTy953/f8DL0grFzjv+DPQhxysAU82A374Ss4BoBZNFQFo1YJi2oNvYilYELVk2XLrXhqCdFN6kLULuFQhW61uMf4Fsw7xO11vNDhPvfv4Cji6GDzchi5c83LcV2Pc+fiOqLucyyxGeBthq/fwn8MfmTQ3zrecJM/iyMDjecDI0iRT1HchX1K47miaQqfUvqaM3qW/U1WX4uLIQ+vtgQAeqC+Ms1P8dPQC2kYgCr5ZKmWaued4YLl5jDJPLMtSskzjXwxEmFeHK6hUXaTmzF0iuXcT36C+25KUpr/cOO6cimGaGrN7VoG03N4WJIRZcm/EcZ5SQ6AOG83ZrlfFWlB+UHWGs9009T5m3raPyhL20SFQJJfyFIprKNAfQttfY/Bp/ANnHindxqvEPY+VNFo5Fmk+SfKWQybTqxrfwxL6FlhzkrGaPRGkIdyW3nrnOTq3OmTIpNb15XzciYQmzmDW/P0lBVyVTEWE6shpm05/gRjgigK/quoKEYZx951yepB4MasLD6Mf6/0Nf5edcP0B/PbED/eMSi4GBM1UcZvFQpksbPphfzBhCRUBCmAW2J0WOgVo+WoyCj7eQLm2RR5dmXVsw9hBEZhR8uz4ns8ywuU0jZQ4tgFq32DDCtheaqtcvdp6qdP0niaL8kH+bxs6s0q9f2Y4yNYjfCcP4dVx6UNc/y5IKp4xL++uLuT1KNU8iASQY/jJ1nRg7AYPcf9c2LZv4JTAO16TPgIttNzsLOrnvL/EJSwh98VlNaaI7qZ1v7oruj6rg2KtExa429pmW6KrtbjCwsb9aQhCyVwodJ9PnTyPhHs03Eqj/AT/w4eNwuI/Rn/ahBzrHv27TgR/zfcOckKfsn0s0I8ZhbG68t16jvStosOdV3rvomWS1tEGe2QsZ6XGae3KPFOq3UXf06l/FOGsRbvsatT1zNGKZUqGbP0JbYagIdpAH6aZ47LsAlAxGTFq2HREaIK5uhFUAzeFYaC3Ev/4pe/18flC1//ta8u7Hk6s9TTszQTIFf0Dw1l9u6bv1ZLfPb5wwPzaweEbwCNs0tEeNqNkT9OwzAYxZ/7D9FIHUAwe2IAmv4ZO1Kp7Awd2NrUCa2SOHLcSl04BAMH4Bg9AMfgAD0Fr+HrUpbGyqefn5/fl9gArvADhb/nBo/CCgFehWu4wEa4Tv1TuEHeCTfJx5wWAlUTbuNBxcIBrtWOCapxydl9lXZghVs8CdfQQSxcp/4u3CB/CTfJ38It8l64janqCAe4Ux9UxnAwmMGzLqAxx5Z1iQgWOTsdqqcP7bEzM28Wer7Vy8jmsc095Yyj+8+PLOseTcALsxOskbKP49Qk63Tmztt7jmfKfIeSrsOqxgAh+pSNK5c214Owf17OM3PyKuv0PEreb4IhVc+9mq9jQkaaSJLh36VkjaJaW1GJqIeMNblxx6MrN8nQ+1jHzmZ6wrYmTa0unF2ZyNP8VvUoMEKPIz5JD6vvz2jzvhj1erEEhJHN8AuKq3jTAAAAeNpdiEsOgCAQxXgogp+reChxJnESgUTQ86u4s4smrdLqY6iG+jPWq6HRoIVBBwuHfgoci6Q4h9Ofhg652AWJFFNhkzfmYr2Uxe9P7ULcUFotSX7PDa0DFeMAAAAAAAAB//8AAgABAAAADAAAABYAAAACAAEAAwAKAAEABAAAAAIAAAAAeNpjYGBgZACCq0vUOUD07a3bl8NoAEb7B4YAAA==') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.mm-iconfont::before {
+  font-family: 'mm-iconfont', sans-serif !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+          .mention[data-type='1']::before,
+          .mention[data-type='3']::before,
+          .mention[data-type='8']::before,
+          .mention[data-type='11']::before,
+          .mention[data-type='12']::before,
+          .mention[data-type='15']::before,
+          .mention[data-type='16']::before {
+            content: '\e62f';
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -4px;
+            font-size: inherit;
+          }
+          .mention[data-type='3']::before {
+            content: '\e62c';
+          }
+          .mention[data-type='8']::before {
+            content: '\e62d';
+          }
+          .mention[data-type='11']::before {
+            content: '\e62b';
+          }
+          .mention[data-type='12']::before {
+            content: '\e62a';
+          }
+          .mention[data-type='15']::before {
+            content: '\e62e';
+          }
+          .mention[data-type='22']::before {
+            content: '\e602';
+          }
+
+          body {
+            margin: 50px 20px;
+            padding: 0;
+            color: #333;
+            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'PingFang SC',
+                  Helvetica, Arial, 'Microsoft YaHei', 微软雅黑, 黑体, Heiti, sans-serif,
+                  SimSun, 宋体, serif,
+                  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+          }
+
+          body.narrow {
+            max-width: 790px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+
+          .title {
+            min-height: 40px;
+            padding-left: 10px;
+            padding-bottom: 24px;
+            margin-bottom: 20px;
+            line-height: 40px;
+            font-size: 26px;
+            font-weight: 500;
+            border-bottom: 1px solid #e5e6e8;
+          }
+
+          .node-list {
+            margin: 0 0 0 28px;
+            padding: 0;
+            list-style: none;
+          }
+
+          .node {
+            position: relative;
+          }
+
+          .node.drill-node > .content {
+            margin-bottom: 15px;
+            font-size: 20px;
+            line-height: 28px;
+          }
+
+          .node.drill-node > .note {
+            margin-bottom: 10px;
+          }
+
+          .content {
+            min-height: 24px;
+            padding-top: 2px;
+            padding-bottom: 3px;
+            line-height: 24px;
+            font-size: 16px;
+          }
+
+          .note {
+            position: relative;
+            padding-bottom: 2px;
+            line-height: 22px;
+            font-size: 14px;
+            color: #888;
+            white-space: pre-wrap;
+          }
+
+          .content > *,
+          .note > * {
+            padding-top: 2px;
+            padding-bottom: 2px;
+          }
+
+          .note:empty {
+            padding-bottom: 0;
+          }
+
+          .node.finished .content,
+          .node.finished .note {
+            opacity: 0.5;
+          }
+
+          .node.finished > .content {
+            text-decoration: line-through;
+          }
+
+          .heading1 > .content {
+            min-height: 34px;
+            line-height: 34px;
+            font-size: 24px;
+            font-weight: 500;
+          }
+
+          .heading2 > .content {
+            min-height: 30px;
+            line-height: 30px;
+            font-size: 21px;
+            font-weight: 500;
+          }
+
+          .heading3 > .content {
+            min-height: 27px;
+            line-height: 27px;
+            font-size: 19px;
+            font-weight: 500;
+          }
+
+          .mention {
+            padding-left: 2px;
+            padding-right: 2px;
+            color: #5856d5;
+            word-break: break-all;
+            text-decoration: none;
+          }
+
+          .content-link {
+            color: unset;
+            opacity: 0.6;
+            word-break: break-all;
+          }
+
+          .tag {
+            text-decoration: underline;
+            opacity: 0.6;
+          }
+
+          .bold {
+            font-weight: bold;
+          }
+
+          .italic {
+            font-style: italic;
+          }
+
+          .underline {
+            text-decoration: underline;
+          }
+
+          .content .highlight-red,
+          .highlight-red > .content > * {
+            background-color: #ff8c8c99;
+          }
+
+          .content .highlight-yellow,
+          .highlight-yellow > .content > * {
+            background-color: #ffff2699;
+          }
+
+          .content .highlight-blue,
+          .highlight-blue > .content > * {
+            background-color: #8ce5ff99;
+          }
+
+          .content .highlight-cyan,
+          .highlight-cyan > .content > * {
+            background-color: #a3ffca99;
+          }
+
+          .content .highlight-pink,
+          .highlight-pink > .content > * {
+            background-color: #f3a6ff99;
+          }
+
+          .content .highlight-olive,
+          .highlight-olive > .content > * {
+            background-color: #c8ff8c99;
+          }
+
+          .content .highlight-grey,
+          .highlight-grey > .content > * {
+            background-color: #b1b6be99;
+          }
+
+          .text-color-red {
+            color: #dc2d1e;
+          }
+
+          .text-color-yellow {
+            color: #ffaf38;
+          }
+
+          .text-color-green {
+            color: #75c940;
+          }
+
+          .text-color-blue {
+            color: #3da8f5;
+          }
+
+          .text-color-purple {
+            color: #797ec9;
+          }
+
+          .bullet {
+            position: absolute;
+            left: -25px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            border-radius: 9px;
+          }
+
+          .node.collapsed > .bullet {
+            background-color: #dee0e3;
+          }
+
+          .heading1 > .bullet {
+            top: 10px;
+          }
+
+          .heading2 > .bullet {
+            top: 8px;
+          }
+
+          .heading3 > .bullet {
+            top: 6px;
+          }
+
+          .bullet-dot {
+            position: absolute;
+            left: 6px;
+            top: 6px;
+            width: 6px;
+            height: 6px;
+            background-color: rgb(100, 106, 115);
+            border-radius: 3px;
+          }
+
+          .image-list {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          }
+
+          .image-item {
+            padding-top: 2px;
+            padding-bottom: 8px;
+          }
+
+          .image {
+            display: block;
+            max-width: 100%;
+          }
+
+          .children {
+            position: relative;
+          }
+
+          .note::before,
+          .image-list::before,
+          .children::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -17px;
+            width: 1px;
+            height: 100%;
+            background-color: #dee0e3;
+          }
+
+          .node.drill-node > .note::before,
+          .node.drill-node > .image-list::before,
+          .node.drill-node > .children::before,
+          body.noline .note::before,
+          body.noline .image-list::before,
+          body.noline .children::before {
+            display: none;
+          }
+
+          .node.drill-node > .note,
+          .node.drill-node > .content,
+          .node.drill-node > .image-list,
+          .node.drill-node > .children {
+            margin-left: 10px;
+          }
+
+          body.noline .node-list {
+            margin-right: 20px;
+          }
+
+          .publish {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+          }
+
+          .publish-link {
+            color: #4694FF;
+          }
+
+          .node .mention.mm-iconfont::before {
+            content: '\e601';
+          }
+
+          .node .mention.mm-iconfont {
+             color: #5856d5;
+          }
+
+          @media print {
+            body {
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+          }
+
+          @page {
+            margin-left: 0.25in;
+            margin-right: 0.25in;
+            margin-top: 0.5in;
+            margin-bottom: 0.5in;
+          }
+        </style>
+        <style>
+        @font-face{font-family:KaTeX_AMS;src:url(fonts/KaTeX_AMS-Regular.woff2) format("woff2"),url(fonts/KaTeX_AMS-Regular.woff) format("woff"),url(fonts/KaTeX_AMS-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Bold.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Bold.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Regular.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Regular.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Bold.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Bold.woff) format("woff"),url(fonts/KaTeX_Fraktur-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Regular.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Regular.woff) format("woff"),url(fonts/KaTeX_Fraktur-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Bold.woff2) format("woff2"),url(fonts/KaTeX_Main-Bold.woff) format("woff"),url(fonts/KaTeX_Main-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Main-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Main-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Italic.woff2) format("woff2"),url(fonts/KaTeX_Main-Italic.woff) format("woff"),url(fonts/KaTeX_Main-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Regular.woff2) format("woff2"),url(fonts/KaTeX_Main-Regular.woff) format("woff"),url(fonts/KaTeX_Main-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Math-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Math-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-Italic.woff2) format("woff2"),url(fonts/KaTeX_Math-Italic.woff) format("woff"),url(fonts/KaTeX_Math-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Bold.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Bold.woff) format("woff"),url(fonts/KaTeX_SansSerif-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Italic.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Italic.woff) format("woff"),url(fonts/KaTeX_SansSerif-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Regular.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Regular.woff) format("woff"),url(fonts/KaTeX_SansSerif-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Script;src:url(fonts/KaTeX_Script-Regular.woff2) format("woff2"),url(fonts/KaTeX_Script-Regular.woff) format("woff"),url(fonts/KaTeX_Script-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size1;src:url(fonts/KaTeX_Size1-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size1-Regular.woff) format("woff"),url(fonts/KaTeX_Size1-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size2;src:url(fonts/KaTeX_Size2-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size2-Regular.woff) format("woff"),url(fonts/KaTeX_Size2-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size3;src:url(fonts/KaTeX_Size3-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size3-Regular.woff) format("woff"),url(fonts/KaTeX_Size3-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size4;src:url(fonts/KaTeX_Size4-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size4-Regular.woff) format("woff"),url(fonts/KaTeX_Size4-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Typewriter;src:url(fonts/KaTeX_Typewriter-Regular.woff2) format("woff2"),url(fonts/KaTeX_Typewriter-Regular.woff) format("woff"),url(fonts/KaTeX_Typewriter-Regular.ttf) format("truetype");font-weight:400;font-style:normal}.katex{font:normal 1.21em KaTeX_Main,Times New Roman,serif;line-height:1.2;text-indent:0;text-rendering:auto;border-color:currentColor}.katex *{-ms-high-contrast-adjust:none!important}.katex .katex-version:after{content:"0.12.0"}.katex .katex-mathml{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}.katex .katex-html>.newline{display:block}.katex .base{position:relative;white-space:nowrap;width:min-content}.katex .base,.katex .strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathnormal{font-family:KaTeX_Math;font-style:italic}.katex .mathit{font-family:KaTeX_Main;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-weight:700;font-style:italic}.katex .amsrm,.katex .mathbb,.katex .textbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak,.katex .textfrak{font-family:KaTeX_Fraktur}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr,.katex .textscr{font-family:KaTeX_Script}.katex .mathsf,.katex .textsf{font-family:KaTeX_SansSerif}.katex .mathboldsf,.katex .textboldsf{font-family:KaTeX_SansSerif;font-weight:700}.katex .mathitsf,.katex .textitsf{font-family:KaTeX_SansSerif;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{display:inline-table;table-layout:fixed;border-collapse:collapse}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;vertical-align:bottom;position:relative}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;vertical-align:bottom;font-size:1px;width:2px;min-width:2px}.katex .vbox{-ms-flex-direction:column;flex-direction:column;align-items:baseline}.katex .hbox,.katex .vbox{display:-ms-inline-flexbox;display:inline-flex}.katex .hbox{-ms-flex-direction:row;flex-direction:row;width:100%}.katex .thinbox{display:inline-flex;flex-direction:row;width:0;max-width:0}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline,.katex .hline,.katex .mfrac .frac-line,.katex .overline .overline-line,.katex .rule,.katex .underline .underline-line{min-height:1px}.katex .mspace{display:inline-block}.katex .clap,.katex .llap,.katex .rlap{width:0;position:relative}.katex .clap>.inner,.katex .llap>.inner,.katex .rlap>.inner{position:absolute}.katex .clap>.fix,.katex .llap>.fix,.katex .rlap>.fix{display:inline-block}.katex .llap>.inner{right:0}.katex .clap>.inner,.katex .rlap>.inner{left:0}.katex .clap>.inner>span{margin-left:-50%;margin-right:50%}.katex .rule{display:inline-block;border:0 solid;position:relative}.katex .hline,.katex .overline .overline-line,.katex .underline .underline-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline{display:inline-block;width:100%;border-bottom-style:dashed}.katex .sqrt>.root{margin-left:.27777778em;margin-right:-.55555556em}.katex .fontsize-ensurer.reset-size1.size1,.katex .sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .sizing.reset-size2.size1{font-size:.83333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .sizing.reset-size2.size3{font-size:1.16666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .sizing.reset-size2.size4{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .sizing.reset-size2.size6{font-size:1.66666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .sizing.reset-size2.size10{font-size:3.45666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .sizing.reset-size2.size11{font-size:4.14666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .sizing.reset-size3.size1{font-size:.71428571em}.katex .fontsize-ensurer.reset-size3.size2,.katex .sizing.reset-size3.size2{font-size:.85714286em}.katex .fontsize-ensurer.reset-size3.size3,.katex .sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .sizing.reset-size3.size4{font-size:1.14285714em}.katex .fontsize-ensurer.reset-size3.size5,.katex .sizing.reset-size3.size5{font-size:1.28571429em}.katex .fontsize-ensurer.reset-size3.size6,.katex .sizing.reset-size3.size6{font-size:1.42857143em}.katex .fontsize-ensurer.reset-size3.size7,.katex .sizing.reset-size3.size7{font-size:1.71428571em}.katex .fontsize-ensurer.reset-size3.size8,.katex .sizing.reset-size3.size8{font-size:2.05714286em}.katex .fontsize-ensurer.reset-size3.size9,.katex .sizing.reset-size3.size9{font-size:2.46857143em}.katex .fontsize-ensurer.reset-size3.size10,.katex .sizing.reset-size3.size10{font-size:2.96285714em}.katex .fontsize-ensurer.reset-size3.size11,.katex .sizing.reset-size3.size11{font-size:3.55428571em}.katex .fontsize-ensurer.reset-size4.size1,.katex .sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .sizing.reset-size5.size1{font-size:.55555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .sizing.reset-size5.size2{font-size:.66666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .sizing.reset-size5.size3{font-size:.77777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .sizing.reset-size5.size4{font-size:.88888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .sizing.reset-size5.size6{font-size:1.11111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .sizing.reset-size5.size7{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .sizing.reset-size5.size10{font-size:2.30444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .sizing.reset-size5.size11{font-size:2.76444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .sizing.reset-size7.size1{font-size:.41666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .sizing.reset-size7.size3{font-size:.58333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .sizing.reset-size7.size4{font-size:.66666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .sizing.reset-size7.size6{font-size:.83333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .sizing.reset-size7.size10{font-size:1.72833333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .sizing.reset-size7.size11{font-size:2.07333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .sizing.reset-size8.size1{font-size:.34722222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .sizing.reset-size8.size2{font-size:.41666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .sizing.reset-size8.size3{font-size:.48611111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .sizing.reset-size8.size4{font-size:.55555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .sizing.reset-size8.size6{font-size:.69444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .sizing.reset-size8.size7{font-size:.83333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .sizing.reset-size8.size10{font-size:1.44027778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .sizing.reset-size8.size11{font-size:1.72777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .sizing.reset-size9.size1{font-size:.28935185em}.katex .fontsize-ensurer.reset-size9.size2,.katex .sizing.reset-size9.size2{font-size:.34722222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .sizing.reset-size9.size3{font-size:.40509259em}.katex .fontsize-ensurer.reset-size9.size4,.katex .sizing.reset-size9.size4{font-size:.46296296em}.katex .fontsize-ensurer.reset-size9.size5,.katex .sizing.reset-size9.size5{font-size:.52083333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .sizing.reset-size9.size6{font-size:.5787037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .sizing.reset-size9.size7{font-size:.69444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .sizing.reset-size9.size8{font-size:.83333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .sizing.reset-size9.size10{font-size:1.20023148em}.katex .fontsize-ensurer.reset-size9.size11,.katex .sizing.reset-size9.size11{font-size:1.43981481em}.katex .fontsize-ensurer.reset-size10.size1,.katex .sizing.reset-size10.size1{font-size:.24108004em}.katex .fontsize-ensurer.reset-size10.size2,.katex .sizing.reset-size10.size2{font-size:.28929605em}.katex .fontsize-ensurer.reset-size10.size3,.katex .sizing.reset-size10.size3{font-size:.33751205em}.katex .fontsize-ensurer.reset-size10.size4,.katex .sizing.reset-size10.size4{font-size:.38572806em}.katex .fontsize-ensurer.reset-size10.size5,.katex .sizing.reset-size10.size5{font-size:.43394407em}.katex .fontsize-ensurer.reset-size10.size6,.katex .sizing.reset-size10.size6{font-size:.48216008em}.katex .fontsize-ensurer.reset-size10.size7,.katex .sizing.reset-size10.size7{font-size:.57859209em}.katex .fontsize-ensurer.reset-size10.size8,.katex .sizing.reset-size10.size8{font-size:.69431051em}.katex .fontsize-ensurer.reset-size10.size9,.katex .sizing.reset-size10.size9{font-size:.83317261em}.katex .fontsize-ensurer.reset-size10.size10,.katex .sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .sizing.reset-size10.size11{font-size:1.19961427em}.katex .fontsize-ensurer.reset-size11.size1,.katex .sizing.reset-size11.size1{font-size:.20096463em}.katex .fontsize-ensurer.reset-size11.size2,.katex .sizing.reset-size11.size2{font-size:.24115756em}.katex .fontsize-ensurer.reset-size11.size3,.katex .sizing.reset-size11.size3{font-size:.28135048em}.katex .fontsize-ensurer.reset-size11.size4,.katex .sizing.reset-size11.size4{font-size:.32154341em}.katex .fontsize-ensurer.reset-size11.size5,.katex .sizing.reset-size11.size5{font-size:.36173633em}.katex .fontsize-ensurer.reset-size11.size6,.katex .sizing.reset-size11.size6{font-size:.40192926em}.katex .fontsize-ensurer.reset-size11.size7,.katex .sizing.reset-size11.size7{font-size:.48231511em}.katex .fontsize-ensurer.reset-size11.size8,.katex .sizing.reset-size11.size8{font-size:.57877814em}.katex .fontsize-ensurer.reset-size11.size9,.katex .sizing.reset-size11.size9{font-size:.69453376em}.katex .fontsize-ensurer.reset-size11.size10,.katex .sizing.reset-size11.size10{font-size:.83360129em}.katex .fontsize-ensurer.reset-size11.size11,.katex .sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .op-limits>.vlist-t{text-align:center}.katex .accent>.vlist-t{text-align:center}.katex .accent .accent-body{position:relative}.katex .accent .accent-body:not(.accent-full){width:0}.katex .overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;min-width:1px}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{display:block;position:absolute;width:100%;height:inherit;fill:currentColor;stroke:currentColor;fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1}.katex svg path{stroke:none}.katex img{border-style:none;min-width:0;min-height:0;max-width:none;max-height:none}.katex .stretchy{width:100%;display:block;position:relative;overflow:hidden}.katex .stretchy:after,.katex .stretchy:before{content:""}.katex .hide-tail{width:100%;position:relative;overflow:hidden}.katex .halfarrow-left{position:absolute;left:0;width:50.2%;overflow:hidden}.katex .halfarrow-right{position:absolute;right:0;width:50.2%;overflow:hidden}.katex .brace-left{position:absolute;left:0;width:25.1%;overflow:hidden}.katex .brace-center{position:absolute;left:25%;width:50%;overflow:hidden}.katex .brace-right{position:absolute;right:0;width:25.1%;overflow:hidden}.katex .x-arrow-pad{padding:0 .5em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox,.katex .fcolorbox{box-sizing:border-box;border:.04em solid}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap{margin-left:-.2em;margin-right:-.2em}.katex .sout{border-bottom-style:solid;border-bottom-width:.08em}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:block;text-align:center;white-space:nowrap}.katex-display>.katex>.katex-html{display:block;position:relative}.katex-display>.katex>.katex-html>.tag{position:absolute;right:0}.katex-display.leqno>.katex>.katex-html>.tag{left:0;right:auto}.katex-display.fleqn>.katex{text-align:left;padding-left:2em}
+        </style>
+      </head>
+      <body >
+        <div class="title">归类 分合 分离</div>
+        <ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*spel 分开（spill spoil）</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>spill/spɪl/洒出，溢出，泼出，泄露：来自古英语 spillan,破坏，杀死，致残，肢解，来自 Proto-Germanic*spilthjan,破坏，毁灭，来 自 PIE*spel,分开，劈开。</span><span class=" text-color-yellow">在英语中，原来的意义在公元1600年后逐渐消失。及物动词的意义“使（液体）流出或溢出”于14世纪中期发展； “从容器内流到地面上”的含义从15世纪初开始。此词从“杀死”的意义中演化出来，可能是因为该词指流血。</span><span class=" text-color-green">spill someone's blood杀人</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>spillage/'spɪlɪdʒ/洒出物：spill,洒出，-age,名词后缀。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>spillover/'spɪləʊvə/溢出部分；外流人口；意外效果：spill,洒出，over,超过。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>spoil/spɒɪl/脏物，战利品；破坏，糟蹋；变质，腐败；溺爱，娇惯：来自拉丁语 spoliare,抢劫，打劫，剥落，剥除衣服，是 spolia 的动词形式，单数是 spolium,战利品，原义为剥皮。源自原意 *spolio- "皮肤，兽皮"，源自 PIE *spol-yo-，可能源自 *spel- (1) "。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>despoil/dɪ'spɒɪl/掠夺：de-, 向下，离开。spoil, 掠夺。即掠夺，夺走。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>spoilage/'spɒɪlɪdʒ/变质，腐坏，腐败：spoil,变质，腐坏，腐败，-age,名词后缀。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>spoiler/'spɒɪlə/破坏者，扰乱者：spoil,糟蹋，破坏，-er,人。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）spoliation/,spəʊlɪ'eɪʃ(ə)n/n强取豪夺</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>spool/spuːl/线轴：古北法语 spole， espole “线轴”（13世纪），源自中古荷兰语 spoele “线轴”，源自原始日耳曼语 *spolon</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*(s)plei- 分离（split）</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>flint/flɪnt/火石，燧石：古英语flint 指“燧石； 硬度很高，敲打时会迸发出火花的一种岩石”，源自原始日耳曼语 *flintaz。其前身据说是派生自 PIE 词根 *(s)plei- “切割，分离”。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>plinth/plɪnθ/柱基，底座，基座：来自希腊语plinthos,砖，方砖，来自PIE*splind,分开，劈开，源自根 *(s)plei- "接合，分裂"。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>splice/splaɪs/影片剪辑时的链接操作；绞接，捻接：原为航海俚语词，来自中古荷兰语 splissen,绞接，捻接，来自 Proto-Germanic*spli,分开，来 自 PIE*splei,分开。</span><span class=" text-color-green">two people get spliced结婚</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>splint/splɪnt/夹板 用来受伤了做固定用的那个东西：可能源自中低地德语 splinte， splente “薄铁片”或同源的中古荷兰语 splinte “夹板”，可能字面意思是“切下的薄片”，也许来自于一个日耳曼语的分支，源自 PIE *(s)plei-。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>splinter 尖片, 碎片；刺</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>split/splɪt/分裂，分开，分摊：在中古英语中没有发现，可能源自低地德语，比如中古荷兰语 splitten，源自原始日耳曼语 *spleitanan。可能来自这里。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>splitting/'splɪtɪŋ/头痛欲裂的：来自 split,分开。引申比喻义头痛欲裂的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>splat/splæt/"噼啪声降落"，1897年，拟声词。中古英语中， splatten 表示“伸展、展开、舒展； 分开鱼”（用于烹饪），可能与 split 相关。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>拉丁语taliare分裂 分开 来自于拉丁语talea细长的棍子、杆子；剪枝</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>tailor/'teɪlə/裁缝，定制，定做：来自古法语 tailleor,裁缝，来自 tailler,剪，切，来自拉丁语 taliare,分开，剪开，来自 talea,砍， 小枝，嫩枝，词源同 tally,retail.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>curtail/kɜː'teɪl/缩短（受这里的影响）：来自PIE*sker, 剪，切，词源同shear, short. -ault, 贬义后缀，词源同valiant, 勇敢的，顽固的。比较-ard, 贬义后缀，来自hard, 见bastard. 原指剪短尾巴的马，拼写受tail影响俗化。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>detail/'diːteɪl/细节：de-, 向下，强调。-tail, 切，词源同retail, tailor. 即完全切开的，引申义细节。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>entail/ɪn'teɪl; en-/限定继承，使必要，需要：en-, 进入，使。-tail, 砍，切，词源同retail, tailor. 来自法律用语，切下来的一块，留给后人继承的遗产，特指继承者继承的不能转让的房产或庄园，其继承权利受到一定的限制。引申义使必要。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>retail/'riːteɪl/零售，销售：re-,向后，往回，-tail,剪，切，词源同 tailor.即切下来，引申词义零售，销售。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>retailer 零售商：来自 retail,零售。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>tally/'tælɪ/记录；积分表；一致：来自古法语 taille,木头上的刻痕，来自拉丁语 talea,砍，切，小枝，词源同 tailor,retail.引申词 义记录，积分表等，词义一致来自古代的一种借贷方法，把一块记录有欠债的小木条从中劈 成两半，债务人和债权人各持一半，以做为还款凭证。比较 indenture,契约，合同。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*da 分开（time deal democracy demon</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*di-ti- 时间的划分，原始日耳曼语*tīdi(z)- 时间的划分</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>tide/taɪd/时节，季节，潮汐，潮水：来自古英语 tid,一段时间，时期，时节，来自 Proto-Germanic*tidiz,一段时间，来自 PIE*di-ti, 分开，切分，扩大格于 PIE*da-,分开，切开，词源同 time,deal.后用于指潮汐，潮水，因潮涨 潮落的规律而引申该词义。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>tidings/'taɪdɪŋz/消息，音讯：来自 tide,随潮而来，-ing,动名词后缀，-s,表复数。引申词义消息，音讯。比较古诗“早知潮有信，嫁与弄潮儿”。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>tidy/'taɪdɪ/整齐的，整洁的：来自 tide,时令，季节，-y,形容词后缀，对应 timely.即适时的，当令的。引申词义情况好的， 整洁的，整齐的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>betide/bɪ'taɪd/发生：前缀be-, 强调。tide, 潮汐，音讯。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>zeitgeist/'zaɪtgaɪst/时代精神：来自德语Zeitgeist，来自Zeit,时间，时代，词源同tide,Geist,精神，词源同ghost,</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*di-mon-，原始日耳曼语中的timon-时间</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>time/taɪm/时间，时刻，时代，节拍，拍子，次，回：来自古英语 tima,一段时间，限时，来自 Proto-Germanic*timon,一段时间，来自 PIE*di-mon, 来自*da,分开，切分，词源同 tide,democracy,*mon,名词后缀，即-men,-ment.后引申诸相关词 义，并由一段时间引申词义次，回。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*dail- 分开，原始日耳曼语*dailaz *dailan一个范围，程度，数量，量</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>deal/diːl/经营，买卖：来自PIE*dail, 分配，词源同time, demotic. 引申义发牌，交易，经营。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>dole/dəʊl/失业救济金：词源同deal, 分发，分配，发配。引申义施舍或失业救济金。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>ordeal/ɔː'diːəl/磨难：来自古英语ordel,裁决，裁定，身体的磨难，来自Proto-Germanic*uz-dailjam,即deal out,神的安排，神的旨意，来自*uz,向外，词源同out,*dailijam,安排，分配，词源同deal.原指古代一种用折磨肉体来裁决对错的极其残忍的迷信审判，如使一个人赤脚走在烧红的铁块或铁板上，如果这个人安然无恙的走过这块铁板，则说明神判断他无罪，如果他倒在铁块上，则死有余辜。后引申词义磨难，折磨。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*da-mo- 分割，希腊语dēmos人民 最初意思地区</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>Damocles/'dæməkli:z/达摩克利斯之剑：来自古希腊城邦Syracuse的大臣Damocles，他很羡慕他的国王Dionysius的权力和生活，Dionysius知道后，一次在宴会上安排他坐在主座，但是在他的头上悬挂着一根头发丝系的长剑，并告诫他不要只看到国王辉煌的表相，却没有看到背后的危险。其字面意思为damos, 人民，词源同demotic. -kles,名声，词源同listen, incline.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>demagogue/'deməgɒg/蛊惑民心的政客：dema-, 人民，见demotic.-agoga, 做，领导，词源同agent. 词义贬义化，用来指暴民的领导者，蛊惑民心的政客。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>demiurge/'diːmɪɜːdʒ; 'dem-/巨匠造物主：demo-, 人民，词源同demotic. -urg, 制造，词源同work. 最早由古希腊哲学家柏拉图用来指神，造物主。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>democracy/dɪ'mɒkrəsɪ/民主制：demo-, 人民。-cracy, 管理，统治。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>demography/dɪ'mɒgrəfɪ/人口统计学：demo-, 人民。-graph, 写，记录。用来指人口统计学。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>demotic/dɪ'mɒtɪk/人民的，通俗的：来自PIE*da, 分开，词源同demon. 即与神分开的，凡人。引申词义人民的，通俗的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>endemic/en'demɪk/地方性的：en-, 进入，使。-demic, 人民，区域，词源同demotic, democracy.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>epidemic/epɪ'demɪk/流行的：epi-, 在上，在中。-demo, 人民，词源同demotic, democracy.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>pandemic/pæn'demɪk/流行病：pan-,全部，所有，-dem,人民，词源同democracy,demotic.即全民传染的。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*dai-mon- 分配者，供应者，希腊语daimōn 神</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>demon/'diːmən/恶魔：来自PIE*da, 分开，分配，命运的分配者。原指神灵，后词义贬义化，指魔鬼。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>pandemonium/,pændə'monɪəm/骚乱：pan-,全部，所有，demon,魔鬼。即地狱，引申词义混乱，骚乱。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>geodesic/,dʒiːə(ʊ)'desɪk; -'diːsɪk/测地线的（曲面上两点间距离最短的线）：geo-, 地，地球。-des, 来自PIE*da, 分割，分配，词源同deal, demon.</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*krei 筛选 区分（certain concert</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>拉丁语 cernere certus certare筛选</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>concern/kən'sɜːn/vt. 涉及，关系到；使担心 n. 关心；关系；关心的事：15世纪的古法语 concerner，直接源自中世纪拉丁语 concernere “关心，触及，属于”，是晚期拉丁语 concernere 的比喻用法，意为“筛选，像筛子一样混合”，源自拉丁语 com “与，一起”和 cernere “筛选”，</span><span class=" text-color-yellow">因此意为“感知，理解”。从15世纪后期开始，意为“影响利益，重要”； 因此意为“担心，困扰，使不安”（17世纪）。反身用法“忙碌，占用，从事”（“关心自己”）始于1630年代。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span class=" text-color-green">As far as starting a family is concerned, the trend is for women having their children later in life.就组建家庭而言，这一趋势是女性在晚年生孩子。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span class=" text-color-green">Any injury to a child is a cause of great concern to us.任何对儿童的伤害都是我们非常关心的问题。How they are paid should be of little concern to the bank as long as they are paid.只要他们得到了支付，银行就不应该关心他们的支付方式。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span class=" text-color-green">That doesn't concern me.那与我无关。This concerns them deeply.这事对他们关系很大。to concern oneself with public work关心公众事务</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span class=" text-color-green">my main concern was to support my family.我主要关心的是养家糊口。his concern is to heal sick people.他关心的是治好病人。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>concert/'kɒnsət/音乐会，协奏曲：法语 concert（16世纪），来自意大利 concerto “音乐会，和谐”，源自 concertare “使一致”，显然源自拉丁语 concertare “热心争辩，竞争，争论”，来自certare “竞争，奋斗”， certus 的频率形式，是 cernere 的变体过去分词“分离，区分，决定”。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span class=" text-color-yellow">拉丁语（“与...竞争”）和中世纪意大利语（“使一致”）之间的提议的意义演变似乎很极端，很难解释。也许是从“与...竞争”转变为“与...并肩奋斗”（比较英语 fight with），或者可能是通过“会谈，通过辩论达成协议”的概念。有人认为这个意义的转变是通过混淆拉丁语 concertus 和 consertus 而发生的，后者是 concerere 的过去分词，意为“加入，适应，联合”。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>disconcert/,dɪskən'sɜːt/使不安 使为难 使慌张 使窘迫：法语 disconcerter（现代法语 déconcerter）"混乱的"，由 dis- "相反"和 concerter 组成。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>decree/dɪ'kriː/n法令 判决；v 颁布；命令；判决；注定：古法语 decre，是 decret（公元12世纪，现代法语 décret 的变体）的一个变体，源于拉丁文 decretum，是 decretus 的中性形式，过去分词形式是 decernere，意为“颁布、决定、宣布裁决”。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>discern/dɪ'sɜːn/识别，领悟，认识；看清楚，辨别：古法语 discerner（13世纪）“区分（之间），分离”（通过筛选），直接源自拉丁语 discernere “分离，分开，分配； 区分，感知”。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>discreet/dɪ'skriːt/慎重的：来自古法语 discret “谨慎，明智，聪明”，源自拉丁语 discretus “分离，不同”，在中世纪拉丁语中意为“有识别力的，小心的”，是 discernere “分离，分开，分配； 区分，感知”的过去分词。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>excrement/'ekskrɪm(ə)nt/排泄物：拉丁语 excrementum，源自 excretus 的词干，该词为 excernere 的过去分词，意为“筛选，排放”。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>excrete/ɪk'skriːt; ek-/排泄：1610年代，源自拉丁语 excretus，是 excernere 的过去分词。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）incertitude/ɪn'sɜːtɪtjuːd/&lt;夸张&gt;不肯定,不确定</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）recrement/'rɛkrɪmənt/废物,渣滓,再吸收物质</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>secret/'siːkrɪt/秘密，保密，诀窍，保密的，隐秘的：来自拉丁语 secretus,分开的，隐藏的，过去分词格于 secernere,分开，隐藏，来自 se-,分开， cernere,分开，词源同 crisis,discern,critical.后形容词过名词使用，引申诸相关词义。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>secretary/'sekrɪt(ə)rɪ/秘书，干事，部长，大臣：中世纪拉丁语 secretarius “文员，公证人，抄写员； 机密官员，知己”，这是一个用于各种机密官员的头衔，是一个形容词的名词用法。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span class=" highlight-yellow">古法语certain</span><span> 确定，有把握；可靠的，肯定的，确保的，源自俗拉丁语 *certanus，这是拉丁语 certus 的扩展形式，确定的 已建立的 毫无疑问的 值得依赖的，最初是 cernere "区分，决定"的变体过去分词，字面意思是"筛选，分离"</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>ascertain/,æsə'teɪn/vt. 弄清, 确定, 查明：</span><span class=" text-color-green">an attempt to ascertain the cause of the accident.力求查明事故原因的努力。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>certain/'sɜːt(ə)n; -tɪn/1 肯定无疑有把握的 2.某种的 3.轻微微小显而易见却难以描述的：转移的意义，指的是对人的引用，"对自己的知识或判断充满信心，对某事或某物有确定的认识"，源自14世纪中期（这在拉丁语中也有相同的意义）。在英语中，"被证实为无可置疑的真实"的含义源自大约1400年。"不确定的，没有具体命名的，已知但未描述的"的含义源自14世纪晚期。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span class=" text-color-green">We are certain of victory.我们一定会获得胜利。He is certain to come.他一定会来的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span class=" text-color-green">to a certain degree在一定程度上</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span class=" text-color-green">a certain indisposition to face reality有点不愿面对现实</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span class=" text-color-yellow">有一个有趣的语义转移，从确定的变成不确定的，类似汉语“一定的”。在[ a certain hour ]中， hour 是非常'确定'或'固定'的，但它并没有传达给读者； 对他来说，就他的知识而言，它仍然非常不确定； 它可能是在任何时间，尽管，它确实是在特定的时间。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>拉丁语criminis 控告 罪行</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>crime/kraɪm/犯罪：古法语 crimne “罪行，致命的罪恶”（12世纪，现代法语 crime），源自拉丁语 crimen（属格 criminis “指控，起诉，控告； 罪行，过错，冒犯”，可能来自 cernere “决定，筛选”。即区分出来的非法行为。Klein（引用 Brugmann）拒绝这一说法，建议 *cri-men，最初可能是“求救的呼声”。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>discriminate/dɪ'skrɪmɪneɪt/区分，歧视：拉丁语 discriminatus，过去分词 discriminare “分割，分离”，源自 discrimen（属格 discriminis）“间隔，区别，差异”，派生名词，源自 discernere “分离，分开，分配； 区分，感知”，源自 dis- “离开，远离”+ cernere “区分，分离，筛选”。</span><span class=" text-color-yellow">贬义，“对某一类人进行有害的区分”（通常基于种族或肤色）首次记录于1866年的美国英语。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>criminal/'krɪmɪn(ə)l/n罪犯a犯罪的 刑事的 罪恶的：古法语 criminel, criminal，直接源于晚期拉丁语 criminalis “涉及犯罪”。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>recriminate/rɪ'krɪmɪneɪt/反责，反控：来自拉丁语 recriminari,申诉，指责，来自 re-,向后，再次，criminari,谴责，指认有罪，词源 同 crime.引申词义反责，反控。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>希腊语 krinein 分离，决定，判断</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>crisis/'kraɪsɪs/危机：源自</span><span class=" highlight-yellow">希腊语 krisis</span><span> 的拉丁化形式，意为“疾病的转折点，表明康复或死亡的变化”，字面意思为“判断，审判结果，选择”，源自 krinein “分离，决定，判断”，源自 PIE 词根。1620年代开始在英语中出现了转义的非医学意义。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>critic/'krɪtɪk/批评家，评论家；爱挑剔的人：原写作critick，公元1580年代，“能够判断、在某个特定领域内有评判能力的人”，法语 critique（14世纪），源自拉丁语 criticus “法官、审查员、评估员”，同时也指“能够发现文学作品中虚假段落的语法学家”，源自</span><span class=" highlight-yellow">希腊语 kritikos</span><span> “能够做出判断的人”，源自 krinein “分离、决定”。公元1600年左右开始，该词的意思演变为“评判书籍、戏剧等的价值的人”。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>diacritic/,daɪə'krɪtɪk/变音符：希腊语 diakritikos 的拉丁化形式，意为“分离或区分”，源自 diakrinein “将一个分离出来”，由 dia “之间”和 krinein “分离、决定、判断”。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>endocrine/'endə(ʊ)kraɪn; -krɪn/内分泌(腺)的, 激素的：1914年，由 endo- 和希腊语拉丁形式 krinein "分离，区分"组成。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>hypocrisy/hɪ'pɒkrɪsɪ/伪善，虚伪：公元1200年左右， ipocrisie，古法语 ypocrisie，来自晚期拉丁语 hypocrisis，“伪善”，也指“模仿一个人的言语和姿态”，来自雅典希腊语 hypokrisis “在舞台上表演； 假装”，比喻为“伪善”，来自 hypokrinesthai “扮演角色，假装”，也指“回答”，来自 hypo- “在...下面” + krinein 的中间语态“筛选，决定”。</span><span class=" text-color-blue">在雅典希腊语中的意义演变是从“逐渐分离”到“回答”到“在舞台上回答另一个演员”到“扮演角色”。16世纪英语中恢复了 h-。</span><span class=" text-color-yellow">来自于古希腊时期的一种舞台表演形式，即边说边紧跟着发表看法，评论或进行阐释，引申词义表演，演戏。现义伪善，虚伪义可能来自于此，或来自hypo-,下面，欠缺，-kris,评论，观点，即不敢发表观点和看法的，掩饰真实情感的，引申词义伪善，虚伪。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>希腊语 krites 法官</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>criterion/kraɪ'tɪərɪən/标准：1660年代，源自希腊语 kriterion 的拉丁化形式，意为「判断的手段，标准」，源自 krites「法官」。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>拉丁语 cribrum 筛子</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>garble/'gɑːb(ə)l/歪曲，篡改：15世纪初，“检查和清除（香料）中的污垢和杂质”，源自盎格鲁-法语 garbeler “筛选”（14世纪末），直接源自中世纪拉丁语、加泰罗尼亚语和意大利语 garbellare，源自阿拉伯语 gharbal “筛选”，与 kirbal “筛子”有关，后者可能源自晚期拉丁语 cribellum，是拉丁语 cribrum “筛子”的缩小形式。</span><span class=" text-color-yellow">从15世纪末开始，以“整理任何事物的细微部分”、“去除令人反感的东西”为一般意义，然后是“为了某种不正当目的而歪曲或给出错误印象”； 尤其是“混淆、困惑或歪曲语言”。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*der 剖开 剥皮 削皮（dermatology tear）</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>希腊语 derma “皮肤，兽皮，皮革”</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）dermal/'dɜːməl/皮肤的；真皮的</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>dermatology/,dɜːmə'tɒlədʒɪ/皮肤病学：dermat-, 皮肤。-logy, 学科。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）echinoderm/ɪ'kaɪnə(ʊ)dɜːm; 'ekɪn-/棘皮类动物</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>epidermis/,epɪ'dɜːmɪs/表皮：epi-, 在上，在中。-derm, 皮肤，词源同dermal, hypodermic.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>hypodermic/haɪpə(ʊ)'dɜːmɪk/皮下注射：hypo-,在下，-derm,皮肤，词源同dermatology,tear.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>pachyderm/'pækɪdɜːm/厚皮动物：来自希腊语pachys,厚的，-derm,皮，词源同dermatology.如大象即厚皮动物。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>scleroderma/,sklɪərə'dɜːmə/硬皮病，硬皮症：sclero-,硬的，-derm,皮肤，词源同 dermal,dermatology.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>taxidermy/'tæksɪ,dɜːmɪ/动物标本剥制术：来自希腊语 taxis,安排，排列，分类，-derm,皮肤，词源同 dermatology.</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>日耳曼</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>tart/tɑːt/ 1 a酸的 锋利的：可能来自古英语 teart "痛苦的，尖锐的，严重的，粗糙的"（指惩罚，疼痛，苦难），来自日耳曼语 *ter-t-, 来自 PIE 词根 *der- "分裂，剥皮，剥落"。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（2 n甜果馅饼）："小馅饼"，14世纪末，源自于古法语 tarte "扁平的、顶部开放的糕点"（13世纪），可能是 torte, 的变体，源自于晚期拉丁语 torta "圆面包"，可能来自于 torquere 的过去分词（源自于 PIE 词根 *terkw- "扭曲"）。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（3 n妓女，骚货 v打扮）：1887年，“妓女，不道德的女人”，最初用作对女孩或女人的爱称（1864年），有时被认为是 sweetheart 的缩写。但另一种理论将其追溯到 jam-tart（见 tart（n.1）），这是19世纪初英国俚语，指“有吸引力的女人”。</span><span class=" text-color-green">tart up 打扮、装饰，通常用于形容人或物的外观被精心打扮或装饰</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>tear/tɪə/（1眼泪）2撕裂，撕碎：来自古英语teran,撕碎，撕扯，来自Proto-Germanic*teran,撕碎，撕扯，来自PIE*der,撕开， 皮肤，词源同dermis,dermotology,turd.可能来自PIE*da,分开，词源同deal,time.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（少）tetter/'tetə/皮疹；皮肤病：皮肤病，古英语 teter，源自 PIE 词根 *der- 的重复形式。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>turd /tɜːd/ 可鄙的人；粪便：古英语 tord"一块粪便"，源自原始日耳曼语 *turdam，源自原始印欧语 *drtom，是动词根 *der- 的过去分词，意为"分裂、剥皮、削皮"，因此指"从身体上分离（"撕下"）的东西"。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>拉丁语vellere 拔 撕"to pluck, stretch," from PIE *wel-no-, suffixed form of *uelh- "to strike"（）</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>svelte/svelt/苗条的，修长的：来自法语 svelte,苗条的，来自意大利语 svellere,拔出，来自通俗拉丁语*exvellere,拔出，来自 ex-,向外，vellere,拔，拉，来自 PIEwel,拉，撕，词源同 wool,vulture.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>convulse/kən'vʌls/痉挛：con-, 强调。-vul, 拔，扯，词源同vulture, wool.</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>revulsion/rɪ'vʌlʃ(ə)n/嫌恶，恶心：来自拉丁语 revellere,拉掉，拔起，来自 re-,向后，离开，vellere,拉，拔，词源同 vulture,wool.-s, 过去分词格。后用于心理含义指嫌恶，恶心。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>velvet/'velvɪt/天鹅绒：来自拉丁语villus,毛发，绒毛，来自PIE*wel,撕，拔，词源同wool,vulture,用于指天鹅绒。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>vulnerable/'vʌln(ə)rəb(ə)l/脆弱的：来自拉丁语vulnus,伤口，来自PIE*wele,拔，击打，词源同wool,vulture。引申义有伤口的，脆弱的。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>vulture/'vʌltʃə/秃鹫：来自PIE*wele,拔，撕，词源同wool,vulnerable。用来指秃鹫。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>*rei 撕开 劈 砍（riparian）</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>拉丁语ripa 岸边</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>riparian/raɪ'peərɪən/河边的，岸边的：1849年，由 -an 和拉丁语 riparius "河岸的"组成，源自 riparia "岸边"，后来用于指两岸之间流动的河流，源自 ripa "（陡峭的）河岸，岸边"。这可能在词源上是指"断裂"（并指示从地面到河床的下降），或者是指"被河流切割出来的东西"，源自 PIE 词根 *rei- "划痕，撕裂，切割"</span><span class=" text-color-purple">（也是希腊语 ereipia "废墟"， eripne "斜坡，悬崖"，古挪威语 rifa "断裂，撕裂"，丹麦语 rift "破口"，中古高地德语 rif "河岸，海岸"，英语 riven， rift 的来源）。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>arrive/ə'raɪv/vi到达：约于公元1200年，指“到达陆地，结束海上旅程”，源自盎格鲁-法语 ariver，古法语 ariver（11世纪），“到达陆地”，源自通俗拉丁语 *arripare，“触及海岸”，源自拉丁语 ad ripam，“到岸边”，由 ad “到”（见 ad-)和 ripa “岸边”（见 riparian）组成。</span><span class=" text-color-yellow">最初的概念是在漫长的航行后登陆。自14世纪后，也指非海上旅行。指“到达某个位置或心态状态”的意义始于14世纪后期。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>arrival/əˈraɪvl/到达；到达者；到来：14世纪末，“海上航行结束时到达陆地的行为，下船”，源自盎格鲁-法语 arrivaille，源自古法语 ariver “到达陆地”（参见 arrive）。</span><span class=" text-color-yellow">一般意义上的“到达任何旅程的终点”的含义始于16世纪。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>river/'rɪvə/河，江：最早出现于13世纪初（12世纪晚期在姓氏中出现），指“在明确的水道或河道中流动的相当大的水体”，源自盎格鲁-法语 rivere，古法语 riviere “河流，河岸，河岸”，源自通俗拉丁语 *riparia “河岸，海岸，河流”（源头还包括西班牙语 ribera，意大利语 riviera），是拉丁语 riparius “河岸的”（参见 riparian）的女性名词用法。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>日耳曼</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>rift/rɪft/n分裂，分歧，裂缝：源自斯堪的纳维亚地区（类似于丹麦和挪威语中的 rift “裂缝”，古冰岛语中的 ript（发音为“rift”）“断裂； 与古斯堪的纳维亚语 ripa, rifa “撕裂，破坏契约”有关。（请参见 riven）。 可能在中古英语中受到 rive（动词）的影响。</span><span class=" text-color-green">the formation of the Great Rift Valley.东非大裂谷的形成。</span></div>
+    
+    
+    
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>rive/raɪv/vt撕开，破裂：约1200年，源自斯堪的纳维亚或北海日耳曼语源，类似于古诺尔斯语 rifa "撕裂"，源自原始日耳曼语 *rifanan "撕裂，抓痕"（比较瑞典语 rifva，丹麦语 rive "抓，撕裂"），源自 PIE 词根 *rei- "抓，撕裂，切割"。</span></div>
+    
+    
+    <div class="children"><ul class="node-list">
+    <li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>riven/ˈrɪvn/裂开的，四分五裂的：是rive的过去分词。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul></div>
+  </li>
+<li class="node">
+    <div class="bullet">
+    <div class="bullet-dot"></div>
+  </div>
+    <div class="content mm-editor" ><span>（可能）rife/raɪf/普遍的，盛行的：古英语 rife “丰富的，普遍的”，常用于有害或讨厌的事物，源自原始日耳曼语 *rif-（也是古挪威语 rifr，瑞典语 river，挪威语 riv，中古荷兰语 riif，中低地德语 rive 的来源），据说源自 PIE 词根 *rei- “划痕，撕裂，切割”。</span></div>
+    
+    
+    
+  </li>
+  </ul></div>
+  </li>
+  </ul>
+        <div class="publish" style="display: flex; align-items: center; justify-content: center;">
+        <span>by&nbsp;</span>
+        <span style="color:#dc9b04"> Leo Tian</span>
+        <span>&nbsp;由&nbsp;</span>
+        <svg width="12" height="12" viewBox="0 0 176 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M27.0026 84.7169L27.0026 84.7187C27.1543 105.515 33.9015 115.962 40.8965 126.793C41.7901 128.177 42.6878 129.567 43.5763 130.986L43.5761 130.986L43.5837 130.997C49.6561 140.131 48.6663 152.568 40.617 160.617C31.4397 169.794 16.5603 169.794 7.38299 160.617C-0.666371 152.568 -1.65605 140.131 4.41557 131.003L4.48092 130.905L4.48238 130.893L5.40506 129.434L5.40713 129.431L8.60254 124.464L8.60329 124.463C14.9616 114.519 20.7111 104.275 20.9895 85.4386L20.9895 85.4367L20.9974 84.7206L20.9974 84.7169L21 84.0018V84C21 72.0349 18.8456 63.4536 15.6833 56.2661C13.2366 50.7047 10.1829 45.976 7.093 41.1912C6.20169 39.811 5.30737 38.4261 4.42373 37.0152L4.42388 37.0151L4.41636 37.0038C-1.65613 27.8693 -0.666305 15.4323 7.38299 7.38299C16.5603 -1.79433 31.4397 -1.79433 40.617 7.38299C48.6664 15.4324 49.656 27.8693 43.5844 36.9969L43.5164 37.0992L43.515 37.1121L42.6052 38.5507L42.6032 38.5539L39.1998 43.8464L39.1988 43.848C32.8381 53.823 27.1423 64.183 27.0026 83.2793L27.0026 83.2812L27 83.9992L27 84.0028L27.0026 84.7169ZM171.584 36.9969L171.516 37.0996L171.515 37.1124L170.605 38.5507L170.603 38.5539L167.2 43.8464L167.199 43.848C160.838 53.823 155.142 64.183 155.003 83.2793L155.003 83.2812L155 83.9992L155 84.0028L155.003 84.7169L155.003 84.7187C155.154 105.515 161.901 115.962 168.896 126.793C169.79 128.177 170.688 129.567 171.576 130.986L171.576 130.986L171.584 130.997C177.656 140.131 176.666 152.568 168.617 160.617C159.44 169.794 144.56 169.794 135.383 160.617C127.334 152.568 126.344 140.131 132.416 131.003L132.481 130.905L132.482 130.893L133.405 129.434L133.407 129.431L136.603 124.464L136.603 124.463C142.962 114.519 148.711 104.275 148.989 85.4386L148.989 85.4367L148.997 84.7206L148.997 84.7169L149 84.0018V84C149 72.0349 146.846 63.4536 143.683 56.2661C141.237 50.7047 138.183 45.976 135.093 41.1912C134.202 39.811 133.307 38.4261 132.424 37.0152L132.424 37.0151L132.416 37.0038C126.344 27.8693 127.334 15.4323 135.383 7.38299C144.56 -1.79433 159.44 -1.79433 168.617 7.38299C176.666 15.4324 177.656 27.8693 171.584 36.9969ZM88 60.5C100.979 60.5 111.5 71.0213 111.5 84C111.5 96.9787 100.979 107.5 88 107.5C75.0213 107.5 64.5 96.9787 64.5 84C64.5 71.0213 75.0213 60.5 88 60.5Z" fill="rgb(143, 149, 158)" stroke="rgb(143, 149, 158)"/>
+          </svg>
+        <span style="color:#dc9b04">&nbsp;幕布</span>
+        <span>&nbsp;发布</span>
+      </div>
+      </body>
+    </html>
+  
